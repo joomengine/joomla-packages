@@ -1,0 +1,12 @@
+{
+    "name": "Company Contacts",
+    "description": "Company Contacts",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "dbd6c79e-63ed-4e1c-b0d8-a70821439b47",
+    "php_view": "$areas = [\r\n\t'email' => (object) ['label' => JustTEXT::_('Email'), 'href' => 'mailto:'],\r\n\t'phone' => (object) ['label' => JustTEXT::_('Phone'), 'href' => 'tel:'],\r\n\t'website' => (object) ['label' => JustTEXT::_('Website'), 'href' => ''],\r\n];",
+    "add_php_view": 1,
+    "layout": "<ul class=\"list-unstyled small mb-0\">\r\n<?php foreach ($areas as $area => $target): ?>\r\n\t<?php if (!empty($displayData->{$area})): ?>\r\n\t\t<li>\r\n\t\t\t<strong><?php echo Text::_($target->label); ?>:<\/strong>\r\n\t\t\t<a\r\n\t\t\t\thref=\"<?php echo $target->href . $displayData->{$area}; ?>\"\r\n\t\t\t\ttarget=\"_blank\"\r\n\t\t\t\ttitle=\"<?php echo Text::_($target->label); ?>\"\r\n\t\t\t>\r\n\t\t\t\t<?php echo $displayData->{$area}; ?>\r\n\t\t\t<\/a>\r\n\t\t<\/li>\r\n\t<?php endif; ?>\r\n<?php endforeach; ?>\r\n<\/ul>",
+    "libraries": null,
+    "alias": "companycontacts"
+}
