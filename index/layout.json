@@ -82,5 +82,12 @@
         "path": "src\/layout\/f576d714-6991-419b-bfcd-d6dd917346d7",
         "settings": "src\/layout\/f576d714-6991-419b-bfcd-d6dd917346d7\/item.json",
         "guid": "f576d714-6991-419b-bfcd-d6dd917346d7"
+    },
+    "fb042c16-7652-4485-a5fd-9bb9ac1ab89c": {
+        "name": "Basic Item Link",
+        "desc": "Basic Item Link",
+        "path": "src\/layout\/fb042c16-7652-4485-a5fd-9bb9ac1ab89c",
+        "settings": "src\/layout\/fb042c16-7652-4485-a5fd-9bb9ac1ab89c\/item.json",
+        "guid": "fb042c16-7652-4485-a5fd-9bb9ac1ab89c"
     }
 }
