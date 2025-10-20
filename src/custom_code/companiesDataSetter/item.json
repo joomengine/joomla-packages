@@ -1,0 +1,24 @@
+{
+    "system_name": "Companies Data Setter",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "companiesDataSetter",
+    "code": "\t\t$this->entity = '';\r\n\t\t$pkg = (int) $this->input->getInt('id', 0);\r\n\t\t$targeted = false;\r\n\t\tif (!empty($pkg))\r\n\t\t{\r\n\t\t\t$this->entity = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Item')->table($this->entity_type)->value($pkg, 'id', $guidKey);\r\n\t\t\t$companies = !empty($this->entity) ? Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')->table($joinTable)->values(\r\n\t\t\t\t[$this->entity], $this->entity_type, 'company') : null;\r\n\t\t\tif (Super___0a59c65c_9daf_4bc9_baf4_e063ff9e6a8a___Power::check($companies, true))\r\n\t\t\t{\r\n\t\t\t\t$companies = array_map(function($company) use ($db) { return $db->quote($company); }, $companies);\r\n\t\t\t\t$query->where('a.guid IN (' . implode(', ', $companies) .')');\r\n\t\t\t\t$targeted = true;\r\n\t\t\t}\r\n\t\t}\r\n\t\tif ($targeted)\r\n\t\t{\r\n[CUSTOMCODE=modelCompanySearchQuery]\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\t$query->where('a.id = 0'); \/\/ empty set\r\n\t\t}\r\n\t\tunset($companies, $search);\r\n\t\t\/\/ give us a random ordering here (new order every minute)\r\n\t\t$query->order('RAND(' . $this->getTimeBasedRandomSeed() . ')');",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": "",
+    "@dependencies": [
+        {
+            "key": "function_name",
+            "value": "modelCompanySearchQuery",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        }
+    ]
+}
