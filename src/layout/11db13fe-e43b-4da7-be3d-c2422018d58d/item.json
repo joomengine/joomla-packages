@@ -1,0 +1,12 @@
+{
+    "name": "Company Details",
+    "description": "Company Details",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "11db13fe-e43b-4da7-be3d-c2422018d58d",
+    "php_view": "$areas = [\r\n\t'contactname' => JustTEXT::_('Contact Name'),\r\n\t'company_type' => JustTEXT::_('Company Type'),\r\n\t'companysize' => JustTEXT::_('Company Size'),\r\n\t'chamber_of_commerce' => JustTEXT::_('Chamber of Commerce'),\r\n];",
+    "add_php_view": 1,
+    "layout": "<ul class=\"list-unstyled small mb-0\">\r\n<?php foreach ($areas as $area => $label): ?>\r\n\t<?php if (!empty($displayData->{$area})): ?>\r\n\t\t<li><strong><?php echo Text::_($label); ?>:<\/strong> <?php echo $displayData->{$area}; ?><\/li>\r\n\t<?php endif; ?>\r\n<?php endforeach; ?>\r\n<\/ul>",
+    "libraries": null,
+    "alias": "companydetails"
+}
