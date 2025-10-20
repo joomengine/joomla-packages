@@ -1,0 +1,108 @@
+{
+    "admin_view": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+    "addrelations": {
+        "addrelations0": {
+            "listfield": "5d3d34dd-4876-4c6a-86ab-b4e162f22c08",
+            "column_name": "Company",
+            "joinfields": [
+                "1a67060a-9e45-4b3b-8be6-8025bf3a3026",
+                "e4fff45e-0335-44f6-9dc7-54f2dc81d659",
+                "80fa4894-de6b-495f-9343-42b481edc385"
+            ],
+            "area": "2",
+            "join_type": "2",
+            "set": "[field=5d3d34dd-4876-4c6a-86ab-b4e162f22c08]<?php if (!empty($item->company_type)): ?> <small>[field=80fa4894-de6b-495f-9343-42b481edc385]<\/small><?php endif; ?>\r\n\t\t\t<small><ul class=\"list-unstyled\">\r\n\t\t\t<?php if (!empty($item->chamber_of_commerce)): ?><li><?php echo Text::_('Chamber of Commerce'); ?>: <b> [field=1a67060a-9e45-4b3b-8be6-8025bf3a3026]<\/b><\/li><?php endif; ?>\r\n\t\t\t<?php if (!empty($item->companysize)): ?><li><?php echo Text::_('Company Size'); ?>:  <b>[field=e4fff45e-0335-44f6-9dc7-54f2dc81d659]<b\/><\/li><?php endif; ?>\r\n\t\t\t<\/ul><\/small>"
+        },
+        "addrelations1": {
+            "listfield": "5711daf2-43c4-4b35-9d0c-b96962062734",
+            "column_name": "Contact",
+            "joinfields": [
+                "ba32af1e-0b57-4dcc-b9bb-7cec104c0ee7",
+                "76886659-3578-4091-8c00-330c85f618dc",
+                "b84bc31f-90ba-44bc-8808-c8fb3248ccd5"
+            ],
+            "area": "2",
+            "join_type": "2",
+            "set": "<small><ul class=\"list-unstyled\">\r\n\t\t\t<?php if (!empty($item->contactname)): ?><li>[field=5711daf2-43c4-4b35-9d0c-b96962062734]<\/li><?php endif; ?>\r\n\t\t\t<?php if (!empty($item->email)): ?><li>[field=ba32af1e-0b57-4dcc-b9bb-7cec104c0ee7]<\/li><?php endif; ?>\r\n\t\t\t<?php if (!empty($item->phone)): ?><li>[field=76886659-3578-4091-8c00-330c85f618dc]<\/li><?php endif; ?>\r\n\t\t\t<?php if (!empty($item->website)): ?><li>[field=b84bc31f-90ba-44bc-8808-c8fb3248ccd5]<\/li><?php endif; ?>\r\n\t\t\t<\/ul><\/small>"
+        },
+        "addrelations2": {
+            "listfield": "cdb60c2c-8961-446c-ab8c-7ff3dc960091",
+            "column_name": "Owner",
+            "area": "1",
+            "join_type": "1",
+            "set": ", "
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "5d3d34dd-4876-4c6a-86ab-b4e162f22c08",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "5711daf2-43c4-4b35-9d0c-b96962062734",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "cdb60c2c-8961-446c-ab8c-7ff3dc960091",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "1a67060a-9e45-4b3b-8be6-8025bf3a3026",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "e4fff45e-0335-44f6-9dc7-54f2dc81d659",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "80fa4894-de6b-495f-9343-42b481edc385",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "ba32af1e-0b57-4dcc-b9bb-7cec104c0ee7",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "76886659-3578-4091-8c00-330c85f618dc",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "b84bc31f-90ba-44bc-8808-c8fb3248ccd5",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        }
+    ]
+}
