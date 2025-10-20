@@ -1,0 +1,223 @@
+{
+    "system_name": "Companies (Service Directory)",
+    "name_single": "Company",
+    "short_description": "List of companies",
+    "php_allowedit": "",
+    "php_postsavehook": "\t\t$user = $this->app->getIdentity();\r\n\t\tif (!$user->authorise('core.edit.state', 'com_[[[component]]].[[[view]]]'))\r\n\t\t{\r\n\t\t\t$id = $model->getState('[[[view]]].id', 0);\r\n\t\t\tif ($id > 0)\r\n\t\t\t{\r\n\t\t\t\t\/\/ set the item into unpublish state\r\n\t\t\t\tSuper___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Item')\r\n\t\t\t\t\t->table('[[[view]]]')\r\n\t\t\t\t\t->set((object) ['id' => $id, 'published' => 0], 'id', 'update');\r\n\t\t\t}\r\n\t\t}",
+    "php_before_save": "[CUSTOMCODE=saveGUIDPower]",
+    "php_getlistquery": "\t\t\/\/ Define company-related filters\r\n\t\t$filters = [\r\n\t\t\t'company_tag' => 'tag',\r\n\t\t\t'company_language' => 'language',\r\n\t\t\t'company_area_of_expertise' => 'area_of_expertise',\r\n\t\t\t'social_handle' => 'platform'\r\n\t\t];\r\n\r\n\t\t$data = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items');\r\n\r\n\t\tforeach ($filters as $filterName => $keyName)\r\n\t\t{\r\n\t\t\t$filterValue = $this->state->get(\"filter.$filterName\");\r\n\r\n\t\t\tif (!empty($filterValue))\r\n\t\t\t{\r\n\t\t\t\t$filterValues = is_array($filterValue) ? $filterValue : [$filterValue];\r\n\t\t\t\t$guids = $data->table($filterName)->values($filterValues, $keyName, 'company');\r\n\r\n\t\t\t\tif ($guids !== null)\r\n\t\t\t\t{\r\n\t\t\t\t\t$query->where($db->quoteName('a.guid') . ' IN (' . implode(',', array_map([$db, 'quote'], $guids)) . ')');\r\n\t\t\t\t}\r\n\t\t\t\telse\r\n\t\t\t\t{\r\n\t\t\t\t\t$query->where($db->quoteName('a.id') . ' = 0');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}",
+    "php_getitems": "",
+    "name_list": "Companies",
+    "icon": "images\/vdm\/icon\/company.png#joomlaImage:\/\/local-images\/vdm\/icon\/company.png?width=128&height=128",
+    "php_after_publish": "\t\t\/\/ linked tables to update\r\n\t\t$_tables_array = [\r\n\t\t\t'file' => 'entity',\r\n\t\t\t'address' => 'company',\r\n\t\t\t'portfolio' => 'company',\r\n\t\t\t'social_handle' => 'company',\r\n\t\t\t'company_tag' => 'company',\r\n\t\t\t'company_language' => 'company',\r\n\t\t\t'company_area_of_expertise' => 'company'\r\n\t\t];\r\n[CUSTOMCODE=publishMethodAfterSyncChildren]",
+    "add_fadein": 1,
+    "description": "",
+    "icon_category": "",
+    "icon_add": "images\/vdm\/icon\/add_company.png#joomlaImage:\/\/local-images\/vdm\/icon\/add_company.png?width=128&height=128",
+    "php_after_cancel": "",
+    "mysql_table_charset": "utf8mb4",
+    "php_batchmove": "",
+    "type": 1,
+    "php_after_delete": "\t\t\/\/ linked tables to update\r\n\t\t$_tables_array = [\r\n\t\t\t'file' => 'entity',\r\n\t\t\t'address' => 'company',\r\n\t\t\t'portfolio' => 'company',\r\n\t\t\t'social_handle' => 'company',\r\n\t\t\t'company_tag' => 'company',\r\n\t\t\t'company_language' => 'company',\r\n\t\t\t'company_area_of_expertise' => 'company'\r\n\t\t];\r\n[CUSTOMCODE=deleteMethodAfterSyncChildren]",
+    "source": 1,
+    "php_getitem": "",
+    "addpermissions": null,
+    "php_getitems_after_all": "",
+    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
+    "addtabs": {
+        "addtabs0": {
+            "name": "Details"
+        },
+        "addtabs1": {
+            "name": "Contact info"
+        },
+        "addtabs2": {
+            "name": "Media"
+        },
+        "addtabs3": {
+            "name": "Portfolio"
+        },
+        "addtabs4": {
+            "name": "Support"
+        }
+    },
+    "php_save": "",
+    "php_allowadd": "",
+    "php_before_cancel": "",
+    "addlinked_views": {
+        "addlinked_views0": {
+            "adminview": "bc12b55c-6763-4cec-864b-3529df4f89c4",
+            "tab": "5",
+            "key": "company",
+            "parentkey": "guid",
+            "addnew": 1
+        }
+    },
+    "php_batchcopy": "",
+    "php_before_publish": "",
+    "alias_builder_type": 1,
+    "php_before_delete": "",
+    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n\t\t\/\/ Define the configuration for the Cascading Select Manager\r\n\t\tText::script('Select a country');\r\n\t\tText::script('Select a country first');\r\n\t\tText::script('Select a state');\r\n\t\tText::script('Select a state first');\r\n\t\tText::script('Select a city');\r\n\t\t$cascadingSelectManagerConfig = (object) [\r\n\t\t\t'matchMode' => 'endsWith',\r\n\t\t\t'subformContainerId' => 'control-wrapper-addresses',\r\n\t\t\t'initialData' => (object) ($this->item->addresses ?? []),\r\n\t\t\t'chain' => [\r\n\t\t\t\t(object) [\r\n\t\t\t\t\t'name' => 'country',\r\n\t\t\t\t\t'id' => '__country',\r\n\t\t\t\t\t'placeholder' => (object) ['ready' => JustTEXT::_('Select a country')]\r\n\t\t\t\t],\r\n\t\t\t\t(object) [\r\n\t\t\t\t\t'name' => 'state',\r\n\t\t\t\t\t'id' => '__state',\r\n\t\t\t\t\t'endpoint' => (object) [\r\n\t\t\t\t\t\t'url' => \"{$url}index.php?option=com_[[[component]]]&task=ajax.getCountryStates&format=json&raw=true&{$token}=1\",\r\n\t\t\t\t\t\t'basedOn' => 'country',\r\n\t\t\t\t\t\t'paramKey' => 'country'\r\n\t\t\t\t\t],\r\n\t\t\t\t\t'placeholder' => (object) ['initial' => JustTEXT::_('Select a country first'), 'ready' => JustTEXT::_('Select a state')]\r\n\t\t\t\t],\r\n\t\t\t\t(object) [\r\n\t\t\t\t\t'name' => 'city',\r\n\t\t\t\t\t'id' => '__city',\r\n\t\t\t\t\t'endpoint' => (object) [\r\n\t\t\t\t\t\t'url' => \"{$url}index.php?option=com_[[[component]]]&task=ajax.getStateCities&format=json&raw=true&{$token}=1\",\r\n\t\t\t\t\t\t'basedOn' => 'state',\r\n\t\t\t\t\t\t'paramKey' => 'state'\r\n\t\t\t\t\t],\r\n\t\t\t\t\t'placeholder' => (object) ['initial' => JustTEXT::_('Select a state first'), 'ready' => JustTEXT::_('Select a city')]\r\n\t\t\t\t]\r\n\t\t\t]\r\n\t\t];\r\n\r\n\t\t\/\/ Convert the PHP array to a JavaScript object\r\n\t\t$cascadingSelectManagerConfigJson = json_encode($cascadingSelectManagerConfig);\r\n\t\t$script = \"document.addEventListener('DOMContentLoaded', () => { new CascadingSelectManager({$cascadingSelectManagerConfigJson}); });\";\r\n\r\n\t\t\/\/ Use WebAssetManager if available (Joomla 4+), otherwise fallback\r\n\t\tif (method_exists($document, 'getWebAssetManager'))\r\n\t\t{\r\n\t\t\t\/** @var \\Joomla\\CMS\\WebAsset\\WebAssetManager $wa *\/\r\n\t\t\t$wa = $document -> getWebAssetManager();\r\n\t\t\t$wa->addInlineScript($script);\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\t $document -> addScriptDeclaration($script);\r\n\t\t}\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
+    "mysql_table_row_format": "DYNAMIC",
+    "alias_builder": {
+        "0": ""
+    },
+    "sql": "INSERT INTO `#__[[[component]]]_company` (`id`, `asset_id`, `alias`, `address`, `city`, `coc`, `companysize`, `contactname`, `country`, `description`, `email`, `expertise`, `guid`, `hero`, `logo`, `name`, `phone`, `portfolio`, `state`, `website`, `zip`, `params`, `published`, `created_by`, `modified_by`, `created`, `modified`, `checked_out`, `checked_out_time`, `version`, `hits`, `access`, `ordering`, `metakey`, `metadesc`, `metadata`) VALUES\r\n(1, 152, `tlwebdesign`, 'Keizer Karel-V-Straat 12', 'Sittard', '14103113', '1 person', 'Tom van der Laan', 'a1b2c3d4-1111-2222-3333-1234567890ab', NULL, 'tom@tlwebdesign.nl', NULL, '', 'images\/BusinessDirectory\/companies\/hero\/joomlacommunity-bg.png#joomlaImage:\/\/local-images\/BusinessDirectory\/companies\/hero\/joomlacommunity-bg.png?width=1920&height=749', 'images\/BusinessDirectory\/companies\/logo\/TLWebdesign-logo-met-payoff.png#joomlaImage:\/\/local-images\/BusinessDirectory\/companies\/logo\/TLWebdesign-logo-met-payoff.png?width=1200&height=277', 'TLWebdesign', '.310654763138', '{\\\"portfolio0\\\":{\\\"portfolio_name\\\":\\\"APV Zuyzderland\\\",\\\"portfolio_url\\\":\\\"https:\\\\\/\\\\\/apvzuyderland.nl\\\",\\\"portfolio_image\\\":\\\"images\\\\\/BusinessDirectory\\\\\/companies\\\\\/portfolio\\\\\/Scherm-afbeelding%202025-04-03%20om%2021.28.54.png#joomlaImage:\\\\\/\\\\\/local-images\\\\\/BusinessDirectory\\\\\/companies\\\\\/portfolio\\\\\/Scherm-afbeelding 2025-04-03 om 21.28.54.png?width=2634&height=1678\\\"}}', 'f36a1b3c-1df2-430e-a981-71a1c1000016', 'https:\/\/tlwebdesign.nl', '6137HC', NULL, 1, 945, 945, '2025-04-03 19:58:18', '2025-04-03 19:58:46', 0, '0000-00-00 00:00:00', 3, 0, 1, 1, '', '', '{\\\"robots\\\":\\\"\\\",\\\"author\\\":\\\"\\\",\\\"rights\\\":\\\"\\\"}');\r\n",
+    "add_php_getitem": 0,
+    "add_category_submenu": 1,
+    "add_php_getitems": 0,
+    "add_php_getitems_after_all": 0,
+    "add_php_getlistquery": 1,
+    "add_css_view": 0,
+    "add_php_getform": 1,
+    "css_view": "",
+    "add_php_before_save": 1,
+    "add_css_views": 0,
+    "add_php_save": 0,
+    "css_views": "",
+    "add_php_postsavehook": 1,
+    "add_javascript_view_file": 1,
+    "add_php_allowadd": 0,
+    "javascript_view_file": "[CUSTOMCODE=cascadingSelectManagerJS]",
+    "add_php_allowedit": 0,
+    "add_javascript_view_footer": 0,
+    "add_php_before_cancel": 0,
+    "javascript_view_footer": "",
+    "add_php_after_cancel": 0,
+    "add_javascript_views_file": 0,
+    "add_php_batchcopy": 0,
+    "javascript_views_file": "",
+    "add_php_batchmove": 0,
+    "add_javascript_views_footer": 0,
+    "add_php_before_publish": 0,
+    "javascript_views_footer": "",
+    "add_php_after_publish": 1,
+    "add_custom_button": 1,
+    "add_php_before_delete": 0,
+    "custom_button": null,
+    "add_php_after_delete": 1,
+    "php_controller": "[CUSTOMCODE=formControllerEdit]",
+    "add_php_document": 1,
+    "php_model": "",
+    "mysql_table_engine": "InnoDB",
+    "php_controller_list": "",
+    "mysql_table_collate": "utf8mb4_unicode_ci",
+    "php_model_list": "\t\/**\r\n\t * Get the filter form - Override the parent method\r\n\t *\r\n\t * @param   array    $data      data\r\n\t * @param   boolean  $loadData  load current data\r\n\t *\r\n\t * @return  Joomla___c4fe7377_f891_4218_b7e3_a40bc99c0a61___Power|boolean  The Joomla___c4fe7377_f891_4218_b7e3_a40bc99c0a61___Power object or false on error\r\n\t *\r\n\t * @since   JCB 2.12.5\r\n\t *\/\r\n\tpublic function getFilterForm($data = [], $loadData = true)\r\n\t{\r\n\t\t\/\/ load form from the parent class\r\n\t\t$form = parent::getFilterForm($data, $loadData);\r\n\t\t$items = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items');\r\n\r\n\t\t\/\/ Create the filters\r\n\t\t$attributes = [\r\n\t\t\t[\r\n\t\t\t\t'table' => 'tag',\r\n\t\t\t\t'key' => 'guid',\r\n\t\t\t\t'name' => 'name',\r\n\t\t\t\t'attributes' => [\r\n\t\t\t\t\t'name' => 'company_tag',\r\n\t\t\t\t\t'type' => 'list',\r\n\t\t\t\t\t'multiple' => true,\r\n\t\t\t\t\t'layout' => 'joomla.form.field.list-fancy-select',\r\n\t\t\t\t\t'hint' => '-  ' . Text::_('Select Tags') . '  -',\r\n\t\t\t\t\t'onchange' => 'this.form.submit();',\r\n\t\t\t\t]\r\n\t\t\t],\r\n\t\t\t[\r\n\t\t\t\t'table' => 'language',\r\n\t\t\t\t'key' => 'langtag',\r\n\t\t\t\t'name' => 'name',\r\n\t\t\t\t'attributes' => [\r\n\t\t\t\t\t'name' => 'company_language',\r\n\t\t\t\t\t'type' => 'list',\r\n\t\t\t\t\t'multiple' => true,\r\n\t\t\t\t\t'layout' => 'joomla.form.field.list-fancy-select',\r\n\t\t\t\t\t'hint' => '-  ' . Text::_('Select Languages') . '  -',\r\n\t\t\t\t\t'onchange' => 'this.form.submit();',\r\n\t\t\t\t]\r\n\t\t\t],\r\n\t\t\t[\r\n\t\t\t\t'table' => 'area_of_expertise',\r\n\t\t\t\t'key' => 'guid',\r\n\t\t\t\t'name' => 'name',\r\n\t\t\t\t'attributes' => [\r\n\t\t\t\t\t'name' => 'company_area_of_expertise',\r\n\t\t\t\t\t'type' => 'list',\r\n\t\t\t\t\t'multiple' => true,\r\n\t\t\t\t\t'layout' => 'joomla.form.field.list-fancy-select',\r\n\t\t\t\t\t'hint' => '-  ' . Text::_('Select Areas of Expertise') . '  -',\r\n\t\t\t\t\t'onchange' => 'this.form.submit();',\r\n\t\t\t\t]\r\n\t\t\t],\r\n\t\t\t[\r\n\t\t\t\t'table' => 'platform',\r\n\t\t\t\t'key' => 'guid',\r\n\t\t\t\t'name' => 'name',\r\n\t\t\t\t'attributes' => [\r\n\t\t\t\t\t'name' => 'social_handle',\r\n\t\t\t\t\t'type' => 'list',\r\n\t\t\t\t\t'multiple' => true,\r\n\t\t\t\t\t'layout' => 'joomla.form.field.list-fancy-select',\r\n\t\t\t\t\t'hint' => '-  ' . Text::_('Select Social Platforms') . '  -',\r\n\t\t\t\t\t'onchange' => 'this.form.submit();',\r\n\t\t\t\t]\r\n\t\t\t]\r\n\t\t];\r\n\r\n\t\tforeach ($attributes as $filter)\r\n\t\t{\r\n\t\t\t$field_name = $filter['attributes']['name'] ?? null;\r\n\t\t\tif (empty($field_name))\r\n\t\t\t{\r\n\t\t\t\tcontinue;\r\n\t\t\t}\r\n\t\t\t$options = [];\r\n\t\t\t\/\/ get all filters\r\n\t\t\tif (($filters = $items->table($filter['table'])->get([1,2,-1,-2,0], 'published')) !== null)\r\n\t\t\t{\r\n\t\t\t\tforeach ($filters as $item)\r\n\t\t\t\t{\r\n\t\t\t\t\t$name = $item->{$filter['name']} ?? null;\r\n\t\t\t\t\t$key = $item->{$filter['key']} ?? null;\r\n\t\t\t\t\tif (!empty($name) && !empty($key))\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t$options[$key] = $name;\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\t$form->setField(Super___1198aecf_84c6_45d2_aea8_d531aa4afdfa___Power::xml($filter['attributes'], $options), 'filter');\r\n\t\t\t$form->setValue(\r\n\t\t\t\t$field_name,\r\n\t\t\t\t'filter',\r\n\t\t\t\t$this->state->get(\"filter.{$field_name}\")\r\n\t\t\t);\r\n\t\t\tarray_push($this->filter_fields, $field_name);\r\n\t\t}\r\n\r\n\t\treturn $form;\r\n\t}",
+    "add_sql": 1,
+    "add_php_ajax": 1,
+    "php_ajaxmethod": "\t\/**\r\n\t * Get the country states if they exist.\r\n\t *\r\n\t * @param string $country  The country guid\r\n\t *\r\n\t * @return array\r\n\t * @since 5.0.2\r\n\t *\/\r\n\tpublic function getCountryStates(string $country): array\r\n\t{\r\n\t\tif (Super___9c513baf_b279_43fd_ae29_a585c8cbc4f0___Power::valid($country))\r\n\t\t{\r\n\t\t\ttry\r\n\t\t\t{\r\n\t\t\t\t$result = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')->table('state')->get([$country], 'country');\r\n\t\t\t}\r\n\t\t\tcatch (\\Exception $error)\r\n\t\t\t{\r\n\t\t\t\treturn ['error' => $error->getMessage()];\r\n\t\t\t}\r\n\r\n\t\t\tif ($result !== null)\r\n\t\t\t{\r\n\t\t\t\t$states = array_map(function ($state) {\r\n\t\t\t\t\treturn (object) ['value' => $state->guid, 'text' => $state->name];\r\n\t\t\t\t}, $result);\r\n\r\n\t\t\t\treturn ['data' => $states];\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\treturn ['error' => Text::_('The country states could not be found')];\r\n\t}\r\n\r\n\t\/**\r\n\t * Get the state cities if they exist.\r\n\t *\r\n\t * @param string $country  The country guid\r\n\t *\r\n\t * @return array\r\n\t * @since 5.0.2\r\n\t *\/\r\n\tpublic function getStateCities(string $state): array\r\n\t{\r\n\t\tif (Super___9c513baf_b279_43fd_ae29_a585c8cbc4f0___Power::valid($state))\r\n\t\t{\r\n\t\t\ttry\r\n\t\t\t{\r\n\t\t\t\t$result = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')->table('city')->get([$state], 'state');\r\n\t\t\t}\r\n\t\t\tcatch (\\Exception $error)\r\n\t\t\t{\r\n\t\t\t\treturn ['error' => $error->getMessage()];\r\n\t\t\t}\r\n\r\n\t\t\tif ($result !== null)\r\n\t\t\t{\r\n\t\t\t\t$cities = array_map(function ($city) {\r\n\t\t\t\t\treturn (object) ['value' => $city->guid, 'text' => $city->name];\r\n\t\t\t\t}, $result);\r\n\r\n\t\t\t\treturn ['data' => $cities];\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\treturn ['error' => Text::_('The state cities could not be found')];\r\n\t}",
+    "guid": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+    "ajax_input": {
+        "ajax_input0": {
+            "value_name": "country",
+            "task_name": "getCountryStates",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "getCountryStates",
+            "user_check": "1"
+        },
+        "ajax_input1": {
+            "value_name": "state",
+            "task_name": "getStateCities",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "getStateCities",
+            "user_check": "1"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "bc12b55c-6763-4cec-864b-3529df4f89c4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "admin_view",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_fields",
+            "table": "#__componentbuilder_admin_fields",
+            "direction": "in"
+        },
+        {
+            "key": "admin_view",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_fields_relations",
+            "table": "#__componentbuilder_admin_fields_relations",
+            "direction": "in"
+        },
+        {
+            "key": "function_name",
+            "value": "saveGUIDPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "publishMethodAfterSyncChildren",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "deleteMethodAfterSyncChildren",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "setGUIDFormPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "vdmUploaderConfig",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "addUikitThreeToAdminViews",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "cascadingSelectManagerJS",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "formControllerEdit",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "5f3fe439-b4c8-5b36-8368-2089f2cd4e83.png",
+            "pointer": "5f3fe439-b4c8-5b36-8368-2089f2cd4e83--png",
+            "value": "images\/vdm\/icon\/company.png",
+            "entity": "file",
+            "table": "file_system",
+            "target": "images"
+        },
+        {
+            "key": "5d9fcd6a-b5d6-5459-a3c4-dacbbda34401.png",
+            "pointer": "5d9fcd6a-b5d6-5459-a3c4-dacbbda34401--png",
+            "value": "images\/vdm\/icon\/add_company.png",
+            "entity": "file",
+            "table": "file_system",
+            "target": "images"
+        }
+    ]
+}
