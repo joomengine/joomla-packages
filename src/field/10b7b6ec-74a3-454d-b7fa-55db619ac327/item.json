@@ -1,0 +1,35 @@
+{
+    "name": "Show Login",
+    "fieldtype": "b868ed59-4208-4206-8504-95a35a74a11c",
+    "datatype": "INT",
+    "indexes": "0",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"radio\"\n\tname=\"show_login\"\n\tlabel=\"Show Login\"\n\tlayout=\"joomla.form.field.radio.switcher\"\n\toption=\"1|Yes,0|No\"\n\tdefault=\"0\"\n\tfilter=\"integer\"\n\/>",
+    "datalenght": "1",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "1",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "10b7b6ec-74a3-454d-b7fa-55db619ac327",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "b868ed59-4208-4206-8504-95a35a74a11c",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
