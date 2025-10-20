@@ -1,0 +1,15 @@
+{
+    "system_name": "Get Search Link",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "getSearchLink",
+    "code": "$id = $this->input->getInt('id', 0);\r\n$search_link = Joomla___d4c76099_4c32_408a_8701_d0a724484dfd___Power::_(Joomla___92167f18_8543_40e8_92af_053ef4c210d1___Power::[[[arg0]]]($id)) . '\/';\r\n$search_value = $this->input->get('search', null, 'STRING');",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": ""
+}
