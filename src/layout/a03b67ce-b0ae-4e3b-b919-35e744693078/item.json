@@ -1,0 +1,21 @@
+{
+    "name": "Company Relationship",
+    "description": "Company Relationship",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "a03b67ce-b0ae-4e3b-b919-35e744693078",
+    "php_view": "\/\/ Extract all keys from $displayData as individual variables.\r\nextract($displayData);\r\n\r\n\/\/ Set Blank Label if empty\r\n$label ??= JustTEXT::_('No Label');\r\n\r\n$bucket = [];\r\nforeach ($items as $item)\r\n{\r\n\t$name = $item->name ?? null;\r\n\t$link = $item->link ?? null;\r\n\tif (!empty($link) && !empty($name))\r\n\t{\r\n\t\t$bucket[] = LayoutHelper::render('basicitemlink', (object) ['name' => $name, 'link' => $link]);\r\n\t}\r\n}",
+    "add_php_view": 1,
+    "layout": "<?php if (!empty($bucket)): ?>\r\n<li><strong><?php echo Text::_($label); ?>:<\/strong> <?php echo implode(' ', $bucket); ?><\/li>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "companyrelationship",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "fb042c16-7652-4485-a5fd-9bb9ac1ab89c",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
