@@ -1,0 +1,12 @@
+{
+    "name": "Panel Box",
+    "description": "Panel Boxes",
+    "dynamic_get": "0",
+    "snippet": "0",
+    "guid": "1afdb574-2773-49f6-86a4-ac0c63f798e0",
+    "php_view": "",
+    "add_php_view": 0,
+    "layout": "<div><?php echo $displayData; ?><\/div>",
+    "libraries": null,
+    "alias": "panelbox"
+}
