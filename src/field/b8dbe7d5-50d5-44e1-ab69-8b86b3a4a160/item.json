@@ -1,0 +1,35 @@
+{
+    "name": "Category (Companies)",
+    "fieldtype": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+    "datatype": "VARCHAR",
+    "indexes": "2",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"categories\"\n\tname=\"category\"\n\tlabel=\"Category\"\n\tdescription=\"Choose the category that best fits your company\u2019s industry or services.\"\n\tmessage=\"Error: select the category that best fits your company\u2019s industry or services.\"\n\tclass=\"list_class\"\n\tlayout=\"joomla.form.field.list-fancy-select\"\n\tmultiple=\"false\"\n\trequired=\"true\"\n\textends=\"list\"\n\tbutton=\"false\"\n\ttable=\"#__###component###_category\"\n\tcomponent=\"com_###component###\"\n\tentity=\"###view###\"\n\tview=\"category\"\n\tviews=\"categories\"\n\tvalue_field=\"name\"\n\tkey_field=\"guid\"\n\tprime_php=\"1\"\n\ttype_php_1=\"__.o0=base64=Oo.__CQkvLyBHZXQgdGhlIGRhdGFic2Ugb2JqZWN0Lg0KCQkkZGIgPSBGYWN0b3J5OjpnZXREQk8oKTsNCgkJJHF1ZXJ5ID0gJGRiLT5nZXRRdWVyeSh0cnVlKTsNCgkJJHF1ZXJ5LT5zZWxlY3QoJGRiLT5xdW90ZU5hbWUoYXJyYXkoJ2EuIyMjSUQjIyMnLCdhLiMjI1RFWFQjIyMnKSxhcnJheSgnIyMjSUQjIyMnLCcjIyNDT0RFX1RFWFQjIyMnKSkpOw0KCQkkcXVlcnktPmZyb20oJGRiLT5xdW90ZU5hbWUoJyMjI1RBQkxFIyMjJywgJ2EnKSk7DQoJCSRxdWVyeS0+d2hlcmUoJGRiLT5xdW90ZU5hbWUoJ2EucHVibGlzaGVkJykgLiAnID0gMScpOw0KCQkkcXVlcnktPm9yZGVyKCdhLiMjI1RFWFQjIyMgQVNDJyk7DQoJCSRkYi0+c2V0UXVlcnkoKHN0cmluZykkcXVlcnkpOw0KCQkkaXRlbXMgPSAkZGItPmxvYWRPYmplY3RMaXN0KCk7DQoJCSRvcHRpb25zID0gW107DQoJCWlmICgkaXRlbXMpDQoJCXsNCgkJCWlmICgkdGhpcy0+bXVsdGlwbGUgPT09IGZhbHNlKQ0KCQkJew0KCQkJCSRvcHRpb25zW10gPSBIdG1sOjpfKCdzZWxlY3Qub3B0aW9uJywgJycsIFRleHQ6Ol8oJ1NlbGVjdCBhIENhdGVnb3J5JykpOw0KCQkJfQ0KCQkJZm9yZWFjaCgkaXRlbXMgYXMgJGl0ZW0pDQoJCQl7DQoJCQkJJG9wdGlvbnNbXSA9IEh0bWw6Ol8oJ3NlbGVjdC5vcHRpb24nLCAkaXRlbS0+IyMjSUQjIyMsICRpdGVtLT4jIyNDT0RFX1RFWFQjIyMpOw0KCQkJfQ0KCQl9DQoJCXJldHVybiAkb3B0aW9uczs=\"\n\/>",
+    "datalenght": "Other",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "36",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "b8dbe7d5-50d5-44e1-ab69-8b86b3a4a160",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
