@@ -1,0 +1,15 @@
+{
+    "system_name": "Model Escape",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "modelEscape",
+    "code": "\t\/**\r\n\t * Escapes a value for output in a view script.\r\n\t *\r\n\t * @param   mixed  $var     The output to escape.\r\n\t * @param   bool   $shorten The switch to shorten.\r\n\t * @param   int    $length  The shorting length.\r\n\t *\r\n\t * @return  mixed  The escaped value.\r\n\t * @since   5.1.2\r\n\t *\/\r\n\tprotected function escape($var, bool $shorten = false, int $length = 40)\r\n\t{\r\n\t\tif (!is_string($var))\r\n\t\t{\r\n\t\t\treturn $var;\r\n\t\t}\r\n\r\n\t\treturn Super___1f28cb53_60d9_4db1_b517_3c7dc6b429ef___Power::html($var, $this->_charset ?? 'UTF-8', $shorten, $length);\r\n\t}",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": ""
+}
