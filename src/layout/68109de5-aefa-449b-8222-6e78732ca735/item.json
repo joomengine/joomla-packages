@@ -1,0 +1,21 @@
+{
+    "name": "Addresses",
+    "description": "Company Addresses",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "68109de5-aefa-449b-8222-6e78732ca735",
+    "php_view": "$items = $displayData ?? [];\r\n$count = is_array($items) ? count($items) : 0;\r\n\r\n$uid = 'bs-carousel-' . substr(md5(uniqid('', true)), 0, 8);\r\n\r\n\/\/ How many cards you want per *slide* on large screens\r\n$perSlide = 4;\r\n\r\n\/\/ Chunk items into slides (only used if we actually show the carousel)\r\n$slides = $count > 3 ? array_chunk($items, $perSlide) : [];",
+    "add_php_view": 1,
+    "layout": "<?php if ($count === 0) : ?>\r\n\t<!-- nothing to render -->\r\n<?php elseif ($count <= $perSlide) : ?>\r\n\t<div class=\"container px-0\">\r\n\t\t<div class=\"row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3\">\r\n\t\t\t<?php foreach ($items as $item): ?>\r\n\t\t\t\t<div class=\"col\">\r\n\t\t\t\t\t<div class=\"card h-100\">\r\n\t\t\t\t\t\t<div class=\"card-body\">\r\n\t\t\t\t\t\t\t<?php echo LayoutHelper::render('address', $item); ?>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t<?php endforeach; ?>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<?php else : ?>\r\n\t<div class=\"container px-0\">\r\n\t\t<div class=\"d-flex flex-row flex-nowrap overflow-auto gap-3 p-2\">\r\n\t\t\t<?php foreach ($items as $item): ?>\r\n\t\t\t\t<div class=\"card flex-shrink-0\" style=\"width: 18rem;\">\r\n\t\t\t\t\t<div class=\"card-body\">\r\n\t\t\t\t\t\t<?php echo LayoutHelper::render('address', $item); ?>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t<?php endforeach; ?>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "addresses",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "98522d87-88ac-4d4c-b23a-cbde41d0c6d9",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
