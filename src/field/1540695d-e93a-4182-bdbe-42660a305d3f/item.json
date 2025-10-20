@@ -1,0 +1,35 @@
+{
+    "name": "Ordering Level (Categories)",
+    "fieldtype": "fdbb50ea-35d2-45b2-a0bc-076fdf1544b8",
+    "datatype": "INT",
+    "indexes": "2",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"integer\"\n\tname=\"level\"\n\tlabel=\"Level\"\n\tdescription=\"The ordering level of the category.\"\n\tclass=\"fieldSmall\"\n\tfirst=\"0\"\n\tlast=\"20\"\n\tstep=\"1\"\n\/>",
+    "datalenght": "11",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "1540695d-e93a-4182-bdbe-42660a305d3f",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "fdbb50ea-35d2-45b2-a0bc-076fdf1544b8",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
