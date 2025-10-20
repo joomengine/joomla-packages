@@ -622,5 +622,53 @@
         "path": "src\/field\/90197849-128e-40b2-be4a-792617ab5b2d",
         "settings": "src\/field\/90197849-128e-40b2-be4a-792617ab5b2d\/item.json",
         "guid": "90197849-128e-40b2-be4a-792617ab5b2d"
+    },
+    "fb3115a1-e579-401a-9b53-9469cd4739e4": {
+        "name": "GUID (Hidden)",
+        "path": "src\/field\/fb3115a1-e579-401a-9b53-9469cd4739e4",
+        "settings": "src\/field\/fb3115a1-e579-401a-9b53-9469cd4739e4\/item.json",
+        "guid": "fb3115a1-e579-401a-9b53-9469cd4739e4"
+    },
+    "1616608c-5307-4496-89e2-36a326a84716": {
+        "name": "Crop Width (in pixels)",
+        "path": "src\/field\/1616608c-5307-4496-89e2-36a326a84716",
+        "settings": "src\/field\/1616608c-5307-4496-89e2-36a326a84716\/item.json",
+        "guid": "1616608c-5307-4496-89e2-36a326a84716"
+    },
+    "ab0d3b92-bd90-4957-ab71-cbc7a5fabeb3": {
+        "name": "Crop Height (in pixels)",
+        "path": "src\/field\/ab0d3b92-bd90-4957-ab71-cbc7a5fabeb3",
+        "settings": "src\/field\/ab0d3b92-bd90-4957-ab71-cbc7a5fabeb3\/item.json",
+        "guid": "ab0d3b92-bd90-4957-ab71-cbc7a5fabeb3"
+    },
+    "1c8bc5a9-06ab-429f-99d7-0b48e6b2b118": {
+        "name": "Country (custom)",
+        "path": "src\/field\/1c8bc5a9-06ab-429f-99d7-0b48e6b2b118",
+        "settings": "src\/field\/1c8bc5a9-06ab-429f-99d7-0b48e6b2b118\/item.json",
+        "guid": "1c8bc5a9-06ab-429f-99d7-0b48e6b2b118"
+    },
+    "6fc68e03-8e01-41dc-895d-0bf8a29b65a6": {
+        "name": "Platform (custom)",
+        "path": "src\/field\/6fc68e03-8e01-41dc-895d-0bf8a29b65a6",
+        "settings": "src\/field\/6fc68e03-8e01-41dc-895d-0bf8a29b65a6\/item.json",
+        "guid": "6fc68e03-8e01-41dc-895d-0bf8a29b65a6"
+    },
+    "874b0de4-46fb-4f4a-aa8a-d95c2e275a09": {
+        "name": "Type (custom)",
+        "path": "src\/field\/874b0de4-46fb-4f4a-aa8a-d95c2e275a09",
+        "settings": "src\/field\/874b0de4-46fb-4f4a-aa8a-d95c2e275a09\/item.json",
+        "guid": "874b0de4-46fb-4f4a-aa8a-d95c2e275a09"
+    },
+    "e80df9fc-5f50-468d-888c-e19cd96c3db1": {
+        "name": "State (dynamic list)",
+        "path": "src\/field\/e80df9fc-5f50-468d-888c-e19cd96c3db1",
+        "settings": "src\/field\/e80df9fc-5f50-468d-888c-e19cd96c3db1\/item.json",
+        "guid": "e80df9fc-5f50-468d-888c-e19cd96c3db1"
+    },
+    "d95dc35a-7467-4010-8d35-f3dab696a808": {
+        "name": "City (dynamic list)",
+        "path": "src\/field\/d95dc35a-7467-4010-8d35-f3dab696a808",
+        "settings": "src\/field\/d95dc35a-7467-4010-8d35-f3dab696a808\/item.json",
+        "guid": "d95dc35a-7467-4010-8d35-f3dab696a808"
     }
 }
