@@ -1,0 +1,43 @@
+{
+    "joomla_component": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+    "addfoldersfullpath": null,
+    "addfilesfullpath": null,
+    "addfolders": null,
+    "addfiles": {
+        "addfiles0": {
+            "file": "DownloadControllerAdmin.php",
+            "path": "admin\/src\/Controller\/DownloadController.php",
+            "notnew": "1"
+        },
+        "addfiles1": {
+            "file": "DownloadControllerSite.php",
+            "path": "site\/src\/Controller\/DownloadController.php",
+            "notnew": "1"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+            "entity": "joomla_component",
+            "table": "#__componentbuilder_joomla_component",
+            "direction": "out"
+        },
+        {
+            "key": "797652ab-b353-5998-bae2-d251bb393e11.php",
+            "pointer": "797652ab-b353-5998-bae2-d251bb393e11--php",
+            "value": "DownloadControllerAdmin.php",
+            "entity": "file",
+            "table": "file_system",
+            "target": "custom"
+        },
+        {
+            "key": "06db9aec-7e63-5174-93cd-1de5117ea5d9.php",
+            "pointer": "06db9aec-7e63-5174-93cd-1de5117ea5d9--php",
+            "value": "DownloadControllerSite.php",
+            "entity": "file",
+            "table": "file_system",
+            "target": "custom"
+        }
+    ]
+}
