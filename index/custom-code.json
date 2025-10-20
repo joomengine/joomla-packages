@@ -1,0 +1,65 @@
+{
+    "saveGUIDPower": {
+        "name": "save GUID (Power)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/saveGUIDPower",
+        "settings": "src\/custom_code\/saveGUIDPower\/item.json",
+        "guid": "saveGUIDPower"
+    },
+    "setGUIDFormPower": {
+        "name": "Set GUID in Form (power)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/setGUIDFormPower",
+        "settings": "src\/custom_code\/setGUIDFormPower\/item.json",
+        "guid": "setGUIDFormPower"
+    },
+    "vdmUploaderConfig": {
+        "name": "vdmUploaderConfig",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/vdmUploaderConfig",
+        "settings": "src\/custom_code\/vdmUploaderConfig\/item.json",
+        "guid": "vdmUploaderConfig"
+    },
+    "addUikitThreeToAdminViews": {
+        "name": "addUikitThreeToAdminViews",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/addUikitThreeToAdminViews",
+        "settings": "src\/custom_code\/addUikitThreeToAdminViews\/item.json",
+        "guid": "addUikitThreeToAdminViews"
+    },
+    "publishMethodAfterSyncChildren": {
+        "name": "Publish Method After Sync Children",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/publishMethodAfterSyncChildren",
+        "settings": "src\/custom_code\/publishMethodAfterSyncChildren\/item.json",
+        "guid": "publishMethodAfterSyncChildren"
+    },
+    "deleteMethodAfterSyncChildren": {
+        "name": "Delete Method After Sync Children",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/deleteMethodAfterSyncChildren",
+        "settings": "src\/custom_code\/deleteMethodAfterSyncChildren\/item.json",
+        "guid": "deleteMethodAfterSyncChildren"
+    },
+    "formControllerEdit": {
+        "name": "FormController Edit Method",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/formControllerEdit",
+        "settings": "src\/custom_code\/formControllerEdit\/item.json",
+        "guid": "formControllerEdit"
+    },
+    "cascadingSelectManagerJS": {
+        "name": "CascadingSelectManager JS",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/cascadingSelectManagerJS",
+        "settings": "src\/custom_code\/cascadingSelectManagerJS\/item.json",
+        "guid": "cascadingSelectManagerJS"
+    },
+    "getFileTypeDetails": {
+        "name": "getFileTypeDetails",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/getFileTypeDetails",
+        "settings": "src\/custom_code\/getFileTypeDetails\/item.json",
+        "guid": "getFileTypeDetails"
+    }
+}
