@@ -1,0 +1,35 @@
+{
+    "name": "Created By (Owner - View)",
+    "fieldtype": "b0641980-5e78-42f6-972f-86aa607db23e",
+    "datatype": "INT",
+    "indexes": "2",
+    "null_switch": "NOT NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"user\"\n\tname=\"created_by\"\n\tlabel=\"Owner\"\n\tdescription=\"The user that owns this [[[View]]].\"\n\/>",
+    "datalenght": "11",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "0",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "cdb60c2c-8961-446c-ab8c-7ff3dc960091",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "b0641980-5e78-42f6-972f-86aa607db23e",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
