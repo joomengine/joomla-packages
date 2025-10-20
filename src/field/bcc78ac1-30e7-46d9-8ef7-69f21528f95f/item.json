@@ -1,0 +1,35 @@
+{
+    "name": "Area of Expertise",
+    "fieldtype": "a1cdb0a5-517c-425c-998a-333e92af3e32",
+    "datatype": "VARCHAR",
+    "indexes": "2",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": "",
+    "on_save_model_field": "",
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"ModalSelect\"\n\tname=\"area_of_expertise\"\n\tlabel=\"Area of Expertise\"\n\tsql_title_table=\"#__###component###_area_of_expertise\"\n\tsql_title_column=\"name\"\n\tsql_title_key=\"guid\"\n\turlSelect=\"index.php?option=com_###component###&amp;view=areas_of_expertise&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid\"\n\turlNew=\"index.php?option=com_###component###&amp;task=area_of_expertise.add&amp;layout=modal&amp;tmpl=component\"\n\turlEdit=\"index.php?option=com_###component###&amp;task=area_of_expertise.edit&amp;guid={id}&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid\"\n\ttitleSelect=\"Select your Area of Expertise\"\n\ttitleNew=\"New Area of Expertise\"\n\ttitleEdit=\"Edit Area of Expertise\"\n\ticonSelect=\"icon-copy\"\n\tselect=\"true\"\n\tnew=\"true\"\n\tedit=\"true\"\n\tclear=\"true\"\n\trequired=\"true\"\n\tclass=\"input-large\"\n\tdescription=\"Select the area in which you specialize to indicate your field of expertise.\"\n\thint=\"Choose your primary area of expertise.\"\n\/>",
+    "datalenght": "Other",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "36",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "bcc78ac1-30e7-46d9-8ef7-69f21528f95f",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "a1cdb0a5-517c-425c-998a-333e92af3e32",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
