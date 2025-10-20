@@ -124,5 +124,26 @@
         "path": "src\/custom_code\/modelEscape",
         "settings": "src\/custom_code\/modelEscape\/item.json",
         "guid": "modelEscape"
+    },
+    "phpConfigurationCheckCall": {
+        "name": "php Configuration Check (call)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/phpConfigurationCheckCall",
+        "settings": "src\/custom_code\/phpConfigurationCheckCall\/item.json",
+        "guid": "phpConfigurationCheckCall"
+    },
+    "databaseSchemaCheckCall": {
+        "name": "Database Schema Check (call)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/databaseSchemaCheckCall",
+        "settings": "src\/custom_code\/databaseSchemaCheckCall\/item.json",
+        "guid": "databaseSchemaCheckCall"
+    },
+    "unlockThePowerOfJoomlaDevelopment": {
+        "name": "Unlock the Power of Joomla! Development",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/unlockThePowerOfJoomlaDevelopment",
+        "settings": "src\/custom_code\/unlockThePowerOfJoomlaDevelopment\/item.json",
+        "guid": "unlockThePowerOfJoomlaDevelopment"
     }
 }
