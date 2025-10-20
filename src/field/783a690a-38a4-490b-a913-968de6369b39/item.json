@@ -1,0 +1,35 @@
+{
+    "name": "Language (modalselect)",
+    "fieldtype": "a1cdb0a5-517c-425c-998a-333e92af3e32",
+    "datatype": "VARCHAR",
+    "indexes": "2",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": "[[[field]]] = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')->table('company_language')->values([$item->guid], 'company', 'language');",
+    "on_save_model_field": "if (!empty([[[field]]]) && is_array([[[field]]]))\r\n{\r\n\t$langSub = [];\r\n\t$companyGuid = $data['guid'] ?? 'error';\r\n\r\n\t\/\/ Retrieve existing language records for this company\r\n\t$existing = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')\r\n\t\t->table('company_language')\r\n\t\t->get([$companyGuid], 'company');\r\n\r\n\t\/\/ Index existing records by language for quick lookup\r\n\t$existingMap = [];\r\n\tif (!empty($existing))\r\n\t{\r\n\t\tforeach ($existing as $row)\r\n\t\t{\r\n\t\t\tif (!empty($row->language))\r\n\t\t\t{\r\n\t\t\t\t$existingMap[$row->language] = $row->guid ?? '';\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\t\/\/ Build subform data entries\r\n\tforeach ([[[field]]] as $n => $lang)\r\n\t{\r\n\t\tif (!is_string($lang) || $lang === '')\r\n\t\t{\r\n\t\t\tcontinue; \/\/ Skip invalid entries\r\n\t\t}\r\n\r\n\t\t$langSub[\"language{$n}\"] = [\r\n\t\t\t'guid'     => $existingMap[$lang] ?? '',\r\n\t\t\t'language' => $lang\r\n\t\t];\r\n\t}\r\n\r\n\tSuper___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Subform')\r\n\t\t->table('company_language')\r\n\t\t->set($langSub, 'guid', 'company', $companyGuid);\r\n}",
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"ModalSelect\"\n\tname=\"language\"\n\tlabel=\"Language(s)\"\n\tsql_title_table=\"#__###component###_language\"\n\tsql_title_column=\"name\"\n\tsql_title_key=\"langtag\"\n\turlSelect=\"index.php?option=com_###component###&amp;view=languages&amp;layout=modal&amp;tmpl=component&amp;titleKey=langtag\"\n\turlNew=\"index.php?option=com_###component###&amp;task=language.add&amp;layout=modal&amp;tmpl=component\"\n\turlEdit=\"index.php?option=com_###component###&amp;task=language.edit&amp;langtag={id}&amp;layout=modal&amp;tmpl=component&amp;titleKey=langtag\"\n\ttitleSelect=\"Select a Language\"\n\ttitleNew=\"New Language\"\n\ttitleEdit=\"Edit Language\"\n\ticonSelect=\"icon-copy\"\n\tselect=\"true\"\n\tnew=\"true\"\n\tedit=\"true\"\n\tclear=\"true\"\n\trequired=\"true\"\n\tclass=\"input-large\"\n\thint=\"Select a Language\"\n\tdefault=\"en-GB\"\n\/>",
+    "datalenght": "255",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "783a690a-38a4-490b-a913-968de6369b39",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "a1cdb0a5-517c-425c-998a-333e92af3e32",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
