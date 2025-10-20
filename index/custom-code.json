@@ -82,5 +82,19 @@
         "path": "src\/custom_code\/modelCompanySearchQuery",
         "settings": "src\/custom_code\/modelCompanySearchQuery\/item.json",
         "guid": "modelCompanySearchQuery"
+    },
+    "processServiceDirectoryItem": {
+        "name": "Process Service Directory Item",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/processServiceDirectoryItem",
+        "settings": "src\/custom_code\/processServiceDirectoryItem\/item.json",
+        "guid": "processServiceDirectoryItem"
+    },
+    "getSearchLink": {
+        "name": "Get Search Link",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/getSearchLink",
+        "settings": "src\/custom_code\/getSearchLink\/item.json",
+        "guid": "getSearchLink"
     }
 }
