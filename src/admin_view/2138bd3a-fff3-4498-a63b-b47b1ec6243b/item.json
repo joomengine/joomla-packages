@@ -1,0 +1,166 @@
+{
+    "system_name": "Platform (Directories)",
+    "name_single": "Platform",
+    "short_description": "Platforms",
+    "php_allowedit": "",
+    "php_postsavehook": "",
+    "php_before_save": "[CUSTOMCODE=saveGUIDPower]",
+    "php_getlistquery": "",
+    "php_getitems": "",
+    "name_list": "Platforms",
+    "icon": "",
+    "php_after_publish": "",
+    "add_fadein": 1,
+    "description": "",
+    "icon_category": "",
+    "icon_add": "",
+    "php_after_cancel": "",
+    "mysql_table_charset": "utf8mb4",
+    "php_batchmove": "",
+    "type": 1,
+    "php_after_delete": "",
+    "source": 1,
+    "php_getitem": "",
+    "addpermissions": {
+        "addpermissions0": {
+            "action": "view.edit",
+            "implementation": 3
+        },
+        "addpermissions1": {
+            "action": "view.edit.own",
+            "implementation": 3
+        },
+        "addpermissions2": {
+            "action": "view.edit.state",
+            "implementation": 3
+        },
+        "addpermissions3": {
+            "action": "view.edit.access",
+            "implementation": 3
+        },
+        "addpermissions4": {
+            "action": "view.edit.created_by",
+            "implementation": 3
+        },
+        "addpermissions5": {
+            "action": "view.edit.created",
+            "implementation": 3
+        },
+        "addpermissions6": {
+            "action": "view.create",
+            "implementation": 3
+        },
+        "addpermissions7": {
+            "action": "view.delete",
+            "implementation": 3
+        },
+        "addpermissions8": {
+            "action": "view.access",
+            "implementation": 3
+        }
+    },
+    "php_getitems_after_all": "",
+    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
+    "addtabs": null,
+    "php_save": "",
+    "php_allowadd": "",
+    "php_before_cancel": "",
+    "addlinked_views": null,
+    "php_batchcopy": "",
+    "php_before_publish": "",
+    "alias_builder_type": 0,
+    "php_before_delete": "",
+    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
+    "mysql_table_row_format": "DYNAMIC",
+    "alias_builder": null,
+    "sql": "--\r\n-- Dumping data for table `#__[[[component]]]_platform`\r\n--\r\n\r\nINSERT INTO `#__[[[component]]]_platform` (`id`, `name`, `website`, `guid`, `access`, `ordering`, `published`, `modified_by`, `modified`, `created_by`, `created`, `checked_out`, `checked_out_time`, `hits`, `version`, `params`) VALUES\r\n(1, 'GitHub', 'https:\/\/github.com', '1b3f6a1b-9724-49f8-b2b9-bc2e6e1f77a9', 1, 1, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(2, 'GitLab', 'https:\/\/gitlab.com', '4a6bce32-6b41-4d9a-b016-d9cb7d9c1253', 1, 2, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(3, 'Bitbucket', 'https:\/\/bitbucket.org', 'ad4cb39e-fb4d-45d2-9378-78876b264a19', 1, 3, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(4, 'SourceForge', 'https:\/\/sourceforge.net', 'a3c7c9f0-56e8-4e2c-8a0f-fc4e3b46a5fd', 1, 4, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(5, 'Stack Overflow', 'https:\/\/stackoverflow.com', 'c8db8ff2-b239-4f17-9374-8daaa84ffb82', 1, 5, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(6, 'Docker Hub', 'https:\/\/hub.docker.com', 'b5c3314f-f0f3-4b23-bf24-fdd1a10a8717', 1, 6, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(7, 'Kaggle', 'https:\/\/www.kaggle.com', '0e54e7f3-1f19-4fd2-b871-f4063cc845e4', 1, 7, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(8, 'Reddit (r\/programming)', 'https:\/\/www.reddit.com\/r\/programming', 'b74e20f1-6df9-47df-972c-707dc5ac53a2', 1, 8, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(9, 'Hacker News', 'https:\/\/news.ycombinator.com', 'f8f1cf32-c22c-4e5d-9f49-7452b2f5f66a', 1, 9, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(10, 'Discord (Dev Communities)', 'https:\/\/discord.com', 'a6df5b44-98cd-4a19-b1a4-71276b49a9e5', 1, 10, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(11, 'Slack (Open Source Workspaces)', 'https:\/\/slack.com', 'e3f7a18d-7b0a-4ed2-8c3a-d8a91e55d45a', 1, 11, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(12, 'Twitter (X)', 'https:\/\/twitter.com', 'acdc0c9a-ff89-4b8f-b273-1e37a81290ab', 1, 12, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(13, 'LinkedIn', 'https:\/\/www.linkedin.com', 'e86d3dbf-fc11-47a9-9e69-42356d5bc2c5', 1, 13, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(14, 'Facebook', 'https:\/\/www.facebook.com', 'cda7f5ef-b5ea-4e71-83d1-33a8f3d1f991', 1, 14, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(15, 'YouTube', 'https:\/\/www.youtube.com', 'adf0b6c3-0a9a-4af8-a74d-0ac34533c497', 1, 15, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(16, 'Twitch', 'https:\/\/www.twitch.tv', 'b44a2f1e-36da-4f47-83e0-44d8ac1ddba5', 1, 16, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(17, 'Dev.to', 'https:\/\/dev.to', 'f2b1e06b-1df6-4b62-8324-5a438e1b9f33', 1, 17, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(18, 'Hashnode', 'https:\/\/hashnode.com', 'd7b90a23-8397-46e3-ae12-cb52fdb5f9ad', 1, 18, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(19, 'CodePen', 'https:\/\/codepen.io', 'b9219b7d-f63e-47f4-8897-80cdeba1a97a', 1, 19, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(20, 'JSFiddle', 'https:\/\/jsfiddle.net', 'f56b7f91-1771-46d8-ae47-c5e60fdb1e15', 1, 20, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(21, 'Product Hunt', 'https:\/\/www.producthunt.com', 'ae71b55e-51f1-4af6-8c26-8a923f94e1a0', 1, 21, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(22, 'Behance', 'https:\/\/www.behance.net', 'e9f47f3e-03f5-47c2-b7f5-cc1f8446a134', 1, 22, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(23, 'Dribbble', 'https:\/\/dribbble.com', 'b4f7b233-34e1-45c1-9302-f0cfb735b31e', 1, 23, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(24, 'Figma Community', 'https:\/\/www.figma.com\/community', 'c437ef66-c2e3-4f3b-8c47-c52dfcb5f111', 1, 24, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(25, 'Open Collective', 'https:\/\/opencollective.com', 'd3ab7bc4-f5f2-40ff-8a79-22e02b4b3f51', 1, 25, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(26, 'Patreon', 'https:\/\/www.patreon.com', 'e2a47fbd-c2f4-47a1-93a1-087d97a02dcd', 1, 26, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(27, 'Tidelift', 'https:\/\/tidelift.com', 'a13f5e88-d3a3-4b5b-91c2-96e3d1e3793d', 1, 27, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(28, 'Crowdin', 'https:\/\/crowdin.com', 'f1b821c1-9b41-46b9-8976-d35ee2c567e8', 1, 28, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(29, 'Transifex', 'https:\/\/www.transifex.com', 'b78a6f7d-9b1d-49e2-8b85-4022ad40dbd9', 1, 29, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, ''),\r\n(30, 'Glitch', 'https:\/\/glitch.com', 'a7cc97d2-5ed3-4d57-b174-f8dbd3bbdc3b', 1, 30, 1, 1001, '2025-03-28 09:40:00', 1001, '2025-03-28 09:40:00', 0, NULL, 0, 1, '');\r\n",
+    "add_php_getitem": 0,
+    "add_category_submenu": 1,
+    "add_php_getitems": 0,
+    "add_php_getitems_after_all": 0,
+    "add_php_getlistquery": 0,
+    "add_css_view": 0,
+    "add_php_getform": 1,
+    "css_view": "",
+    "add_php_before_save": 1,
+    "add_css_views": 0,
+    "add_php_save": 0,
+    "css_views": "",
+    "add_php_postsavehook": 0,
+    "add_javascript_view_file": 0,
+    "add_php_allowadd": 0,
+    "javascript_view_file": "",
+    "add_php_allowedit": 0,
+    "add_javascript_view_footer": 0,
+    "add_php_before_cancel": 0,
+    "javascript_view_footer": "",
+    "add_php_after_cancel": 0,
+    "add_javascript_views_file": 0,
+    "add_php_batchcopy": 0,
+    "javascript_views_file": "",
+    "add_php_batchmove": 0,
+    "add_javascript_views_footer": 0,
+    "add_php_before_publish": 0,
+    "javascript_views_footer": "",
+    "add_php_after_publish": 0,
+    "add_custom_button": 1,
+    "add_php_before_delete": 0,
+    "custom_button": null,
+    "add_php_after_delete": 0,
+    "php_controller": "[CUSTOMCODE=formControllerEdit]",
+    "add_php_document": 1,
+    "php_model": "",
+    "mysql_table_engine": "InnoDB",
+    "php_controller_list": "",
+    "mysql_table_collate": "utf8mb4_unicode_ci",
+    "php_model_list": "",
+    "add_sql": 1,
+    "add_php_ajax": 0,
+    "php_ajaxmethod": "",
+    "guid": "2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+    "ajax_input": null,
+    "@dependencies": [
+        {
+            "key": "admin_view",
+            "value": "2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+            "entity": "admin_fields",
+            "table": "#__componentbuilder_admin_fields",
+            "direction": "in"
+        },
+        {
+            "key": "function_name",
+            "value": "saveGUIDPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "setGUIDFormPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "vdmUploaderConfig",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "addUikitThreeToAdminViews",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "formControllerEdit",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        }
+    ]
+}
