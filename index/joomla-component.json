@@ -1,0 +1,16 @@
+{
+    "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9": {
+        "name": "Service Directory J5",
+        "path": "src\/joomla_component\/35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+        "settings": "src\/joomla_component\/35a38329-d1e9-43df-a8f8-af1b8e6d8bd9\/item.json",
+        "guid": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+        "desc": "A professional directory component for listing and showcasing service providers."
+    },
+    "160d0efb-6bf0-48eb-8d46-55cf74729501": {
+        "name": "Service Directory J6",
+        "path": "src\/joomla_component\/160d0efb-6bf0-48eb-8d46-55cf74729501",
+        "settings": "src\/joomla_component\/160d0efb-6bf0-48eb-8d46-55cf74729501\/item.json",
+        "guid": "160d0efb-6bf0-48eb-8d46-55cf74729501",
+        "desc": "A professional directory component for listing and showcasing service providers."
+    }
+}
