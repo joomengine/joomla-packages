@@ -1,0 +1,12 @@
+{
+    "name": "Basic Item Link",
+    "description": "Basic Item Link",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "fb042c16-7652-4485-a5fd-9bb9ac1ab89c",
+    "php_view": "",
+    "add_php_view": 0,
+    "layout": "<a href=\"<?php echo $displayData->link ?? '#'; ?>\"><?php echo $displayData->name ?? Text::_('Missing Name'); ?><\/a>",
+    "libraries": null,
+    "alias": "basicitemlink"
+}
