@@ -1,0 +1,21 @@
+{
+    "name": "Social Handles",
+    "description": "Social Handles",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "aede0e20-e765-456c-a4a8-b898bf22dc2d",
+    "php_view": "$items = $displayData ?? [];\r\n$count = is_array($items) ? count($items) : 0;",
+    "add_php_view": 1,
+    "layout": "<?php if (!empty($items)) : ?>\r\n    <div class=\"container px-0\">\r\n        <!-- Horizontal scrollable ribbon -->\r\n        <div class=\"d-flex flex-row flex-nowrap overflow-auto py-2 text-nowrap\">\r\n\t\t\t<?php\r\n\t\t\t$lastIndex = $count - 1;\r\n\t\t\tforeach ($items as $i => $item) :\r\n\t\t\t\techo LayoutHelper::render('socialhandle', $item);\r\n\t\t\t\t\/\/ add a dot separator except for the last item\r\n\t\t\t\tif ($i < $lastIndex) :\r\n\t\t\t\t\techo '<span class=\"px-2 text-muted\">\u00b7<\/span>';\r\n\t\t\t\tendif;\r\n\t\t\tendforeach;\r\n\t\t\t?>\r\n        <\/div>\r\n    <\/div>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "socialhandles",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "cae40d38-af5e-4b38-b1fb-0981077d3204",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
