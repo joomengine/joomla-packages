@@ -49,13 +49,17 @@ You can:
 ### Index of JCB Layouts
 
 
+ - **Address** | [Details](src/layout/98522d87-88ac-4d4c-b23a-cbde41d0c6d9) | [Settings](src/layout/98522d87-88ac-4d4c-b23a-cbde41d0c6d9/item.json) | Company Address
  - **Addresses** | [Details](src/layout/68109de5-aefa-449b-8222-6e78732ca735) | [Settings](src/layout/68109de5-aefa-449b-8222-6e78732ca735/item.json) | Company Addresses
  - **Company Contacts** | [Details](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47) | [Settings](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47/item.json) | Company Contacts
  - **Company Details** | [Details](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d) | [Settings](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d/item.json) | Company Details
+ - **Company Portfolio** | [Details](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7) | [Settings](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7/item.json) | Company Portfolio
  - **Company Portfolios** | [Details](src/layout/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39) | [Settings](src/layout/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39/item.json) | Company Portfolios
+ - **Company Relationship** | [Details](src/layout/a03b67ce-b0ae-4e3b-b919-35e744693078) | [Settings](src/layout/a03b67ce-b0ae-4e3b-b919-35e744693078/item.json) | Company Relationship
  - **Company Relationships** | [Details](src/layout/ca28683a-d899-4f33-a771-a7b3b95fe2d3) | [Settings](src/layout/ca28683a-d899-4f33-a771-a7b3b95fe2d3/item.json) | Company Relationships
  - **File Display Engine (Updated)** | [Details](src/layout/95dbb469-1e50-4d26-a72d-9c57a57103f7) | [Settings](src/layout/95dbb469-1e50-4d26-a72d-9c57a57103f7/item.json) | File Display Engine
  - **Panel Box** | [Details](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0) | [Settings](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0/item.json) | Panel Boxes
+ - **Social Handle** | [Details](src/layout/cae40d38-af5e-4b38-b1fb-0981077d3204) | [Settings](src/layout/cae40d38-af5e-4b38-b1fb-0981077d3204/item.json) | Social Handle
  - **Social Handles** | [Details](src/layout/aede0e20-e765-456c-a4a8-b898bf22dc2d) | [Settings](src/layout/aede0e20-e765-456c-a4a8-b898bf22dc2d/item.json) | Social Handles
 
 ### All used in [Joomla Component Builder](https://www.joomlacomponentbuilder.com) - [Source](https://git.vdm.dev/joomla/Component-Builder) - [Mirror](https://github.com/vdm-io/Joomla-Component-Builder) - [Download](https://git.vdm.dev/joomla/pkg-component-builder/releases)
