@@ -1,0 +1,35 @@
+{
+    "name": "Bootstrap Social Icons",
+    "fieldtype": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+    "datatype": "VARCHAR",
+    "indexes": "0",
+    "null_switch": "NOT NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"icons\"\n\tname=\"icon\"\n\tlabel=\"Platform Icon\"\n\tdescription=\"Joomla Standard Social Icons\"\n\tclass=\"bi-icon-field\"\n\tlayout=\"joomla.form.field.list-fancy-select\"\n\textends=\"list\"\n\ttype_php_1=\"__.o0=base64=Oo.__JGljb25zID0gWw0KCQkJJ2ZhY2Vib29rJyAgPT4gJ0ZhY2Vib29rJywNCgkJCSdpbnN0YWdyYW0nID0+ICdJbnN0YWdyYW0nLA0KCQkJJ3R3aXR0ZXInICAgPT4gJ1R3aXR0ZXIgLyBYJywNCgkJCSdsaW5rZWRpbicgID0+ICdMaW5rZWRJbicsDQoJCQkneW91dHViZScgICA9PiAnWW91VHViZScsDQoJCQknd2hhdHNhcHAnICA9PiAnV2hhdHNBcHAnLA0KCQkJJ3RlbGVncmFtJyAgPT4gJ1RlbGVncmFtJywNCgkJCSd0aWt0b2snICAgID0+ICdUaWtUb2snLA0KCQkJJ2dpdGh1YicgICAgPT4gJ0dpdEh1YicsDQoJCQknZGlzY29yZCcgICA9PiAnRGlzY29yZCcsDQoJCQknc2xhY2snICAgICA9PiAnU2xhY2snLA0KCQkJJ2VtYWlsJyAgICAgPT4gJ0VtYWlsJywNCgkJCSdyc3MnICAgICAgID0+ICdSU1MnLA0KCQldOw0KDQoJCSRvcHRpb25zID0gW107DQoNCgkJZm9yZWFjaCAoJGljb25zIGFzICR2YWx1ZSA9PiAkbGFiZWwpDQoJCXsNCgkJCSRvcHRpb25zW10gPSBKb29tbGFfX18zNDY5MGM3NV8xMDkwXzQ3ZWJfOGMwNl83MjI4ZGM3ZWVkZDZfX19Qb3dlcjo6Xygnc2VsZWN0Lm9wdGlvbicsICR2YWx1ZSwgVGV4dDo6XygkbGFiZWwpKTsNCgkJfQ0KDQoJCXJldHVybiAkb3B0aW9uczs=\"\n\/>",
+    "datalenght": "64",
+    "javascript_view_footer": "    jQuery(function($){\r\n\r\n        function updateIconClass(select) {\r\n            const $select = $(select);\r\n            const value = $select.val();\r\n\r\n            \/\/ Remove any previous Bootstrap icon class\r\n            $select.removeClass(function(i, c) {\r\n                return (c.match(\/\\bbi-\\S+\/g) || []).join(' ');\r\n            });\r\n\r\n            \/\/ Add new one if selected\r\n            if (value) {\r\n                $select.addClass('bi bi-' + value);\r\n            }\r\n        }\r\n\r\n        \/\/ Initialize for all icon selects\r\n        $('.bi-icon-field').each(function(){\r\n            updateIconClass(this);\r\n        });\r\n\r\n        \/\/ Update on change\r\n        $(document).on('change', '.bi-icon-field', function(){\r\n            updateIconClass(this);\r\n        });\r\n\r\n        \/\/ For Joomla subform dynamically added rows\r\n        $(document).on('subform-row-add', function(e, row){\r\n            $(row).find('.bi-icon-field').each(function(){\r\n                updateIconClass(this);\r\n            });\r\n        });\r\n    });",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 1,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "dde7015f-ffe1-46a1-b24f-8e9e93aefb38",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
