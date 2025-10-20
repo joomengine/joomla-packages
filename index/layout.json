@@ -5,5 +5,54 @@
         "path": "src\/layout\/95dbb469-1e50-4d26-a72d-9c57a57103f7",
         "settings": "src\/layout\/95dbb469-1e50-4d26-a72d-9c57a57103f7\/item.json",
         "guid": "95dbb469-1e50-4d26-a72d-9c57a57103f7"
+    },
+    "1afdb574-2773-49f6-86a4-ac0c63f798e0": {
+        "name": "Panel Box",
+        "desc": "Panel Boxes",
+        "path": "src\/layout\/1afdb574-2773-49f6-86a4-ac0c63f798e0",
+        "settings": "src\/layout\/1afdb574-2773-49f6-86a4-ac0c63f798e0\/item.json",
+        "guid": "1afdb574-2773-49f6-86a4-ac0c63f798e0"
+    },
+    "ca28683a-d899-4f33-a771-a7b3b95fe2d3": {
+        "name": "Company Relationships",
+        "desc": "Company Relationships",
+        "path": "src\/layout\/ca28683a-d899-4f33-a771-a7b3b95fe2d3",
+        "settings": "src\/layout\/ca28683a-d899-4f33-a771-a7b3b95fe2d3\/item.json",
+        "guid": "ca28683a-d899-4f33-a771-a7b3b95fe2d3"
+    },
+    "68109de5-aefa-449b-8222-6e78732ca735": {
+        "name": "Addresses",
+        "desc": "Company Addresses",
+        "path": "src\/layout\/68109de5-aefa-449b-8222-6e78732ca735",
+        "settings": "src\/layout\/68109de5-aefa-449b-8222-6e78732ca735\/item.json",
+        "guid": "68109de5-aefa-449b-8222-6e78732ca735"
+    },
+    "aede0e20-e765-456c-a4a8-b898bf22dc2d": {
+        "name": "Social Handles",
+        "desc": "Social Handles",
+        "path": "src\/layout\/aede0e20-e765-456c-a4a8-b898bf22dc2d",
+        "settings": "src\/layout\/aede0e20-e765-456c-a4a8-b898bf22dc2d\/item.json",
+        "guid": "aede0e20-e765-456c-a4a8-b898bf22dc2d"
+    },
+    "11db13fe-e43b-4da7-be3d-c2422018d58d": {
+        "name": "Company Details",
+        "desc": "Company Details",
+        "path": "src\/layout\/11db13fe-e43b-4da7-be3d-c2422018d58d",
+        "settings": "src\/layout\/11db13fe-e43b-4da7-be3d-c2422018d58d\/item.json",
+        "guid": "11db13fe-e43b-4da7-be3d-c2422018d58d"
+    },
+    "dbd6c79e-63ed-4e1c-b0d8-a70821439b47": {
+        "name": "Company Contacts",
+        "desc": "Company Contacts",
+        "path": "src\/layout\/dbd6c79e-63ed-4e1c-b0d8-a70821439b47",
+        "settings": "src\/layout\/dbd6c79e-63ed-4e1c-b0d8-a70821439b47\/item.json",
+        "guid": "dbd6c79e-63ed-4e1c-b0d8-a70821439b47"
+    },
+    "b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39": {
+        "name": "Company Portfolios",
+        "desc": "Company Portfolios",
+        "path": "src\/layout\/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39",
+        "settings": "src\/layout\/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39\/item.json",
+        "guid": "b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39"
     }
 }
