@@ -1,0 +1,51 @@
+{
+    "0056abbd-bbf8-41af-a49d-c88a072c561f": {
+        "name": "Category",
+        "desc": "Category of companies",
+        "path": "src\/site_view\/0056abbd-bbf8-41af-a49d-c88a072c561f",
+        "settings": "src\/site_view\/0056abbd-bbf8-41af-a49d-c88a072c561f\/item.json",
+        "guid": "0056abbd-bbf8-41af-a49d-c88a072c561f"
+    },
+    "87eea9c7-a9ff-4c58-a821-792114cfbb51": {
+        "name": "Listing",
+        "desc": "Detailed view of listing",
+        "path": "src\/site_view\/87eea9c7-a9ff-4c58-a821-792114cfbb51",
+        "settings": "src\/site_view\/87eea9c7-a9ff-4c58-a821-792114cfbb51\/item.json",
+        "guid": "87eea9c7-a9ff-4c58-a821-792114cfbb51"
+    },
+    "8949aa66-6f1b-466c-87e8-e3042c980c99": {
+        "name": "Directory",
+        "desc": "Directory or Categories of Companies",
+        "path": "src\/site_view\/8949aa66-6f1b-466c-87e8-e3042c980c99",
+        "settings": "src\/site_view\/8949aa66-6f1b-466c-87e8-e3042c980c99\/item.json",
+        "guid": "8949aa66-6f1b-466c-87e8-e3042c980c99"
+    },
+    "9db36fe2-c6ce-4f5a-bb0f-55b698215a8a": {
+        "name": "Tag",
+        "desc": "Companies in this Tag",
+        "path": "src\/site_view\/9db36fe2-c6ce-4f5a-bb0f-55b698215a8a",
+        "settings": "src\/site_view\/9db36fe2-c6ce-4f5a-bb0f-55b698215a8a\/item.json",
+        "guid": "9db36fe2-c6ce-4f5a-bb0f-55b698215a8a"
+    },
+    "a41d7947-b4dc-4096-8373-8edad58fe716": {
+        "name": " Area of Expertise",
+        "desc": "Companies in this Areas of Expertise",
+        "path": "src\/site_view\/a41d7947-b4dc-4096-8373-8edad58fe716",
+        "settings": "src\/site_view\/a41d7947-b4dc-4096-8373-8edad58fe716\/item.json",
+        "guid": "a41d7947-b4dc-4096-8373-8edad58fe716"
+    },
+    "b3e25afd-b26e-441a-bb27-39924f5eb322": {
+        "name": "Lang",
+        "desc": "Companies in this Language",
+        "path": "src\/site_view\/b3e25afd-b26e-441a-bb27-39924f5eb322",
+        "settings": "src\/site_view\/b3e25afd-b26e-441a-bb27-39924f5eb322\/item.json",
+        "guid": "b3e25afd-b26e-441a-bb27-39924f5eb322"
+    },
+    "ac317a84-c855-4f33-a04e-e4a5d75896f3": {
+        "name": "Companies",
+        "desc": "All Companies",
+        "path": "src\/site_view\/ac317a84-c855-4f33-a04e-e4a5d75896f3",
+        "settings": "src\/site_view\/ac317a84-c855-4f33-a04e-e4a5d75896f3\/item.json",
+        "guid": "ac317a84-c855-4f33-a04e-e4a5d75896f3"
+    }
+}
