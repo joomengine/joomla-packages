@@ -1,0 +1,35 @@
+{
+    "name": "Note - Company Portfolio",
+    "fieldtype": "f9ecacd0-8481-4157-8c71-d7aaefc2b7c3",
+    "datatype": "",
+    "indexes": "",
+    "null_switch": "",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"note\"\n\tname=\"note_portfolio\"\n\tlabel=\"Company Portfolio\"\n\tdescription=\"<section>\r\n\t<h2>Portfolio<\/h2>\r\n\r\n\t<p>\r\n\t\tThe <strong>Portfolio<\/strong> section lets your company showcase real examples of your work, projects, or past\r\n\t\tengagements that demonstrate your expertise and service quality. Use it to highlight what you did, how you did it,\r\n\t\tand the results you delivered. A strong portfolio builds trust, proves credibility, and helps your listing stand out.\r\n\t<\/p>\r\n\r\n\t<p><strong>Include details such as:<\/strong><\/p>\r\n\t<ul>\r\n\t\t<li><strong>Project title<\/strong> and a short description<\/li>\r\n\t\t<li><strong>Industry \/ Sector<\/strong> that this project mainly targets<\/li>\r\n\t\t<li><strong>Services Provided<\/strong> and technologies and tools used for the development of this project<\/li>\r\n\t\t<li><strong>Links<\/strong> to live work or downloadable case studies<\/li>\r\n\t\t<li><strong>Project Description<\/strong> to provide details and information about this project such as:\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Development Strategy<\/li>\r\n\t\t\t\t<li>Tools Used<\/li>\r\n\t\t\t\t<li>Teams Involved<\/li>\r\n\t\t\t\t<li>Project Timeline<\/li>\r\n\t\t\t\t<li>Project Accomplishments<\/li>\r\n\t\t\t<\/ul>\r\n\t\t<\/li>\r\n\t<\/ul>\r\n\r\n\t<p>\r\n\t\t<em>Tip: Feature 3\u20136 of your best projects and keep descriptions clear and results-focused.<\/em>\r\n\t<\/p>\r\n<\/section>\"\n\theading=\"h4\"\n\tclass=\"alert alert-info\"\n\/>",
+    "datalenght": "",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "38e18545-b311-4319-9961-c3667ec1db28",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "f9ecacd0-8481-4157-8c71-d7aaefc2b7c3",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
