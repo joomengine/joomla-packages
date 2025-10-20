@@ -1,0 +1,84 @@
+{
+    "system_name": "Companies",
+    "name": "Companies",
+    "description": "All Companies",
+    "main_get": "236df971-bf74-4f19-a091-06c8d1a3f9a2",
+    "add_php_jview_display": 0,
+    "add_php_document": 0,
+    "add_php_view": 1,
+    "js_document": "",
+    "codename": "companies",
+    "javascript_file": "",
+    "context": "companies",
+    "default": "<?php if (!empty($this->items)): ?>\r\n\t<?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>\r\n\t<?php echo $this->loadTemplate('companies'); ?>\r\n<?php else: ?>\r\n\t<div class=\"alert alert-warning mb-0\" role=\"alert\"><?php echo Text::_('No Items Found'); ?><\/div>\r\n<?php endif; ?>\r\n\r\n<?php\r\n\/\/ Show only if there are items\r\nif (!empty($this->items) && isset($this->pagination)) :\r\n\t$showLinks   = isset($this->pagination->pagesTotal) && $this->pagination->pagesTotal > 1;\r\n\t$showResults = $this->params->def('show_pagination_results', 1);\r\n\t?>\r\n\t<div class=\"pagination d-flex justify-content-between align-items-center flex-wrap mt-3\">\r\n\t\t<?php if ($showLinks) : ?>\r\n\t\t\t<div class=\"page-links\">\r\n\t\t\t\t[[[PAGESLINKS]]]\r\n\t\t\t<\/div>\r\n\t\t<?php else : ?>\r\n\t\t\t<!-- Keep layout stable when links are hidden -->\r\n\t\t\t<div class=\"page-links\"><\/div>\r\n\t\t<?php endif; ?>\r\n\r\n\t\t<?php if ($showResults) : ?>\r\n\t\t\t<div class=\"page-info d-flex align-items-center justify-content-end text-end\">\r\n\t\t\t\t<span class=\"me-2\">[[[PAGESCOUNTER]]]<\/span>\r\n\t\t\t\t[[[LIMITBOX]]]\r\n\t\t\t<\/div>\r\n\t\t<?php endif; ?>\r\n\t<\/div>\r\n<?php endif; ?>",
+    "snippet": "0",
+    "add_php_jview": 0,
+    "custom_get": {
+        "0": "c00a187e-340c-4bd0-9783-48de834183c9"
+    },
+    "css_document": "",
+    "add_javascript_file": 0,
+    "css": "",
+    "add_js_document": 0,
+    "php_ajaxmethod": "",
+    "add_css_document": 0,
+    "libraries": null,
+    "add_css": 0,
+    "dynamic_get": "28dc3ae8-a928-4bfc-b8cd-751ff6248639",
+    "add_php_ajax": 0,
+    "ajax_input": null,
+    "add_custom_button": 1,
+    "php_document": "",
+    "button_position": 0,
+    "php_view": "[CUSTOMCODE=getSearchLink+getCompaniesRoute]",
+    "php_jview_display": "",
+    "custom_button": null,
+    "php_jview": "",
+    "php_controller": "",
+    "guid": "ac317a84-c855-4f33-a04e-e4a5d75896f3",
+    "php_model": "[CUSTOMCODE=processServiceDirectoryItem]",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "236df971-bf74-4f19-a091-06c8d1a3f9a2",
+            "entity": "dynamic_get",
+            "table": "#__componentbuilder_dynamic_get",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "28dc3ae8-a928-4bfc-b8cd-751ff6248639",
+            "entity": "dynamic_get",
+            "table": "#__componentbuilder_dynamic_get",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "7e779cb8-0d76-4141-ba0d-1e3f80026260",
+            "entity": "template",
+            "table": "#__componentbuilder_template",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "f9d33ff5-1621-4f7b-b55e-191960389d94",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "getSearchLink",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "processServiceDirectoryItem",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        }
+    ]
+}
