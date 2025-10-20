@@ -1,0 +1,84 @@
+{
+    "name": "Portfolio (company-subform)",
+    "fieldtype": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+    "datatype": "TEXT",
+    "indexes": "",
+    "null_switch": "NULL",
+    "store": 6,
+    "on_get_model_field": "[[[field]]] = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Subform')->table('portfolio')->get($item->guid ?? '' ,'company', 'portfolios', ['guid','project_title','client_name','target_industry','services_provided','project_url','description']);",
+    "on_save_model_field": "if (isset([[[field]]]))\r\n{\r\n\tSuper___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Subform')->table('portfolio')->set([[[field]]] ?? [], 'guid', 'company', $data['guid'] ?? '');\r\n}",
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"subform\"\n\tname=\"portfolios\"\n\tlabel=\"Portfolio\"\n\tlayout=\"joomla.form.field.subform.repeatable\"\n\tmultiple=\"true\"\n\tbuttons=\"add,remove\"\n\tfields=\"fb3115a1-e579-401a-9b53-9469cd4739e4,1a2db720-19ca-40ff-9570-452bbcebd95b,28caada9-4354-4e87-bd62-4624a0761a9a,bf24f5e2-a0bf-4db0-b993-8c836f9e5b44,8afc97dd-c485-48a5-9723-07df1a15af89,820760db-d634-4f5e-8c5f-63a5709e0d93,7ba7c96e-6838-4a3d-8dc6-bb1328b4e46f\"\n\tdescription=\"Here you can create your Company  Portfolio\"\n\ticon=\"list\"\n\tmax=\"20\"\n\tmin=\"0\"\n\/>",
+    "datalenght": "",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "99ef0b56-e724-4a18-8a67-ee432aa5c17f",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "fb3115a1-e579-401a-9b53-9469cd4739e4",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "1a2db720-19ca-40ff-9570-452bbcebd95b",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "28caada9-4354-4e87-bd62-4624a0761a9a",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "bf24f5e2-a0bf-4db0-b993-8c836f9e5b44",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "8afc97dd-c485-48a5-9723-07df1a15af89",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "820760db-d634-4f5e-8c5f-63a5709e0d93",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "7ba7c96e-6838-4a3d-8dc6-bb1328b4e46f",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        }
+    ]
+}
