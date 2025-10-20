@@ -1,0 +1,15 @@
+{
+    "system_name": "Model Company Search Query",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "modelCompanySearchQuery",
+    "code": "\t\t\t$search = $this->input->get('search', null, 'STRING');\r\n\t\t\tif (!empty($search))\r\n\t\t\t{\r\n\t\t\t\t$search = $db->quote('%' . $db->escape($search) . '%');\r\n\t\t\t\t$query->where('(' .\r\n\t\t\t\t\t'a.name LIKE ' . $search .\r\n\t\t\t\t\t' OR a.contactname LIKE ' . $search .\r\n\t\t\t\t\t' OR a.email LIKE ' . $search .\r\n\t\t\t\t\t' OR a.phone LIKE ' . $search .\r\n\t\t\t\t\t' OR a.website LIKE ' . $search .\r\n\t\t\t\t\t' OR a.chamber_of_commerce LIKE ' . $search .\r\n\t\t\t\t\t' OR a.company_type LIKE ' . $search .\r\n\t\t\t\t\t' OR a.companysize LIKE ' . $search .\r\n\t\t\t\t\t' OR a.description LIKE ' . $search .\r\n\t\t\t\t')');\r\n\t\t\t}",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": ""
+}
