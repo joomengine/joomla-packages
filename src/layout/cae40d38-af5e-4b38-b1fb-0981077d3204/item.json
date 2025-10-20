@@ -1,0 +1,12 @@
+{
+    "name": "Social Handle",
+    "description": "Social Handle",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "cae40d38-af5e-4b38-b1fb-0981077d3204",
+    "php_view": "",
+    "add_php_view": 0,
+    "layout": "<?php if (!empty($displayData->name) && !empty($displayData->handle) && !empty($displayData->link)) : ?>\r\n    <span class=\"d-inline-flex align-items-center\">\r\n\t\t<span class=\"fw-semibold me-1\"><?php echo $displayData->name; ?><\/span>\r\n\t\t<a href=\"<?php echo $displayData->link; ?>\" class=\"link-primary text-decoration-none\">\r\n\t\t\t<?php echo $displayData->handle; ?>\r\n\t\t<\/a>\r\n\t<\/span>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "socialhandle"
+}
