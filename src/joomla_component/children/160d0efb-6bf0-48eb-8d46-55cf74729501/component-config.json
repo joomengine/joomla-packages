@@ -1,0 +1,110 @@
+{
+    "joomla_component": "160d0efb-6bf0-48eb-8d46-55cf74729501",
+    "addconfig": {
+        "addconfig0": {
+            "field": "4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28",
+            "custom_value": "",
+            "tabname": "Category"
+        },
+        "addconfig1": {
+            "field": "10b7b6ec-74a3-454d-b7fa-55db619ac327",
+            "custom_value": "1",
+            "tabname": "Directory"
+        },
+        "addconfig7": {
+            "field": "9531af7c-efb8-4a6b-8c15-4eccbf38522b",
+            "custom_value": "1",
+            "tabname": "Listing"
+        },
+        "addconfig2": {
+            "field": "9277d7f0-edf0-49a6-8615-cf450b286499",
+            "custom_value": "5",
+            "tabname": "Listing"
+        },
+        "addconfig3": {
+            "field": "f8f2b407-bfb0-4b74-a21a-1b5db69c18ff",
+            "custom_value": "5",
+            "tabname": "Listing"
+        },
+        "addconfig4": {
+            "field": "9506cad5-e3cc-466e-b6bb-17f242df6616",
+            "custom_value": "5",
+            "tabname": "Listing"
+        },
+        "addconfig5": {
+            "field": "82835f18-9ee4-41e4-957b-0000a6e8955f",
+            "custom_value": "",
+            "tabname": "Listing"
+        },
+        "addconfig6": {
+            "field": "d2556e49-6f4a-44aa-8640-15e4f101fa9d",
+            "custom_value": "1",
+            "tabname": "Routing"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "160d0efb-6bf0-48eb-8d46-55cf74729501",
+            "entity": "joomla_component",
+            "table": "#__componentbuilder_joomla_component",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "10b7b6ec-74a3-454d-b7fa-55db619ac327",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "9531af7c-efb8-4a6b-8c15-4eccbf38522b",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "9277d7f0-edf0-49a6-8615-cf450b286499",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "f8f2b407-bfb0-4b74-a21a-1b5db69c18ff",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "9506cad5-e3cc-466e-b6bb-17f242df6616",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "82835f18-9ee4-41e4-957b-0000a6e8955f",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "d2556e49-6f4a-44aa-8640-15e4f101fa9d",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        }
+    ]
+}
