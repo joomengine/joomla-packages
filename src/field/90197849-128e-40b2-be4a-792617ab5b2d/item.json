@@ -1,0 +1,35 @@
+{
+    "name": "Comment (ticket_comment)",
+    "fieldtype": "51f288d2-6eaa-42bc-a182-a6f69b3032b8",
+    "datatype": "VARCHAR",
+    "indexes": "0",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"editor\"\n\tname=\"comment\"\n\tlabel=\"Comment\"\n\tdescription=\"Provide a clear and concise comment about this ticket. You may write in plain text or use basic Markdown formatting (e.g., italic, bold, code). Maximum length: 2,000 characters. No tables allowed.\"\n\tmessage=\"Error: Your comment is too long or includes unsupported formatting. Please enter up to 2,000 characters using plain text or Markdown only.\r\n\"\n\twidth=\"100%\"\n\theight=\"400\"\n\tmaxlength=\"2000\"\n\tbuttons=\"false\"\n\tsyntax=\"markdown\"\n\teditor=\"codemirror|none\"\n\tfilter=\"STRING\"\n\trequired=\"true\"\n\tvalidate=\"maxlength\"\n\/>",
+    "datalenght": "2048",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "90197849-128e-40b2-be4a-792617ab5b2d",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "51f288d2-6eaa-42bc-a182-a6f69b3032b8",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
