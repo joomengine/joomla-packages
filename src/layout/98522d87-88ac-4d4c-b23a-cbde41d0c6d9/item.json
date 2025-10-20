@@ -1,0 +1,12 @@
+{
+    "name": "Address",
+    "description": "Company Address",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "98522d87-88ac-4d4c-b23a-cbde41d0c6d9",
+    "php_view": "",
+    "add_php_view": 0,
+    "layout": "<?php if (!empty($displayData)): ?>\r\n\t<?php if (!empty($displayData->type)): ?>\r\n\t\t<h5 class=\"card-title mb-1\"><?php echo $displayData->type; ?><\/h5>\r\n\t<?php endif; ?>\r\n\t<address class=\"mb-0\">\r\n\t\t<div class=\"lh-sm d-flex flex-column\">\r\n\t\t\t<?php if (!empty($displayData->line_one)): ?>\r\n\t\t\t\t<div class=\"fw-medium\"><?php echo $displayData->line_one; ?><\/div>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($displayData->line_two)): ?>\r\n\t\t\t\t<div><?php echo $displayData->line_two; ?><\/div>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($displayData->city) || !empty($displayData->state) || !empty($displayData->postal)): ?>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<?php if (!empty($displayData->city))\techo $displayData->city; ?>\r\n\t\t\t\t\t<?php if (!empty($displayData->state)) echo (!empty($displayData->city) ? ', ' : '') . $displayData->state; ?>\r\n\t\t\t\t\t<?php if (!empty($displayData->postal)) echo ' ' . $displayData->postal; ?>\r\n\t\t\t\t<\/div>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($displayData->country)): ?>\r\n\t\t\t\t<div class=\"text-muted small\"><?php echo $displayData->country; ?><\/div>\r\n\t\t\t<?php endif; ?>\r\n\t\t<\/div>\r\n\t<\/address>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "address"
+}
