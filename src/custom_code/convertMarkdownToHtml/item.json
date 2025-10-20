@@ -1,0 +1,24 @@
+{
+    "system_name": "Convert Markdown To Html",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "convertMarkdownToHtml",
+    "code": "\t\/**\r\n\t * Convert Markdown text to HTML.\r\n\t *\r\n\t * Uses the Super Power class responsible for Markdown-to-HTML conversion.\r\n\t * The converter instance is cached statically to avoid repeated instantiations\r\n\t * within the same request, improving overall performance.\r\n\t *\r\n\t * Example:\r\n\t * ```php\r\n\t * echo $this->convertMarkdownToHtml('# Hello World');\r\n\t * ```\r\n\t *\r\n\t * @param  string  $string  The Markdown-formatted string to convert.\r\n\t *\r\n\t * @return string  The resulting HTML output or an empty string on failure.\r\n\t * @since  5.1.2\r\n\t *\/\r\n\tprotected function convertMarkdownToHtml(string $string): string\r\n\t{\r\n\t\t$string = trim($string);\r\n\t\tif ($string === '')\r\n\t\t{\r\n\t\t\treturn '';\r\n\t\t}\r\n\r\n\t\tstatic $Super___0fb58adc_60dd_42f4_9060_b782a5fd0537___Power = null;\r\n\r\n\t\tif ($Super___0fb58adc_60dd_42f4_9060_b782a5fd0537___Power === null)\r\n\t\t{\r\n\t\t\t$Super___0fb58adc_60dd_42f4_9060_b782a5fd0537___Power = new Super___0fb58adc_60dd_42f4_9060_b782a5fd0537___Power();\r\n\t\t}\r\n\r\n\t\ttry\r\n\t\t{\r\n\t\t\t\/\/ Sanitize: remove all existing HTML to ensure only Markdown is processed\r\n\t\t\t$string = $this->escape($string);\r\n\t\t}\r\n\t\tcatch (\\Throwable $e)\r\n\t\t{\r\n\t\t\treturn '';\r\n\t\t}\r\n\r\n\t\tif (trim($string) === '')\r\n\t\t{\r\n\t\t\treturn '';\r\n\t\t}\r\n\r\n\t\ttry\r\n\t\t{\r\n\t\t\treturn $Super___0fb58adc_60dd_42f4_9060_b782a5fd0537___Power->convert($string);\r\n\t\t}\r\n\t\tcatch (\\Throwable $e)\r\n\t\t{\r\n\t\t\t\/\/ Fail gracefully, return empty string\r\n\t\t\treturn '';\r\n\t\t}\r\n\t}\r\n[CUSTOMCODE=modelEscape]",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": "",
+    "@dependencies": [
+        {
+            "key": "function_name",
+            "value": "modelEscape",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        }
+    ]
+}
