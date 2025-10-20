@@ -1,0 +1,21 @@
+{
+    "name": "Login Module (Default)",
+    "description": "The login module",
+    "dynamic_get": "0",
+    "guid": "1ab304c9-56c7-4561-82de-2d8078ade712",
+    "php_view": "\/\/ get the login module\r\n$this->modules = $this->getModules('[[[component]]]-login', 'array');",
+    "add_php_view": 1,
+    "template": "<?php if (Super___0a59c65c_9daf_4bc9_baf4_e063ff9e6a8a___Power::check($this->modules)): ?>\r\n\t<?php foreach($this->modules as $module): ?>\r\n\t\t<?php echo LayoutHelper::render('panelbox', $module); ?>\r\n\t<?php endforeach; ?>\r\n<?php else: ?>\r\n\t<div class=\"uk-alert uk-alert-large\">\r\n\t\t<h2><?php echo Text::_('Login Module Position'); ?><\/h2>\r\n\t\t<p><?php echo Text::sprintf('Please publish a login module to this <code>%s-login<\/code> position, and insure that you target these pages. This is possible if you add the module to all pages, since this module position should only be available in this component.', '[[[component]]]'); ?><\/p>\r\n\t<\/div>\r\n<?php endif; ?>",
+    "snippet": "0",
+    "libraries": null,
+    "alias": "login-module",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "1afdb574-2773-49f6-86a4-ac0c63f798e0",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
