@@ -96,5 +96,26 @@
         "path": "src\/custom_code\/getSearchLink",
         "settings": "src\/custom_code\/getSearchLink\/item.json",
         "guid": "getSearchLink"
+    },
+    "convertMarkdownToHtml": {
+        "name": "Convert Markdown To Html",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/convertMarkdownToHtml",
+        "settings": "src\/custom_code\/convertMarkdownToHtml\/item.json",
+        "guid": "convertMarkdownToHtml"
+    },
+    "allowCompanyEdit": {
+        "name": "allowCompanyEdit",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/allowCompanyEdit",
+        "settings": "src\/custom_code\/allowCompanyEdit\/item.json",
+        "guid": "allowCompanyEdit"
+    },
+    "getTimeBasedRandomSeed": {
+        "name": "Get Time Based Random Seed",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/getTimeBasedRandomSeed",
+        "settings": "src\/custom_code\/getTimeBasedRandomSeed\/item.json",
+        "guid": "getTimeBasedRandomSeed"
     }
 }
