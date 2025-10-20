@@ -61,5 +61,26 @@
         "path": "src\/custom_code\/getFileTypeDetails",
         "settings": "src\/custom_code\/getFileTypeDetails\/item.json",
         "guid": "getFileTypeDetails"
+    },
+    "companiesDataSetMapper": {
+        "name": "Companies Data Set Mapper",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/companiesDataSetMapper",
+        "settings": "src\/custom_code\/companiesDataSetMapper\/item.json",
+        "guid": "companiesDataSetMapper"
+    },
+    "companiesDataSetter": {
+        "name": "Companies Data Setter",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/companiesDataSetter",
+        "settings": "src\/custom_code\/companiesDataSetter\/item.json",
+        "guid": "companiesDataSetter"
+    },
+    "modelCompanySearchQuery": {
+        "name": "Model Company Search Query",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/modelCompanySearchQuery",
+        "settings": "src\/custom_code\/modelCompanySearchQuery\/item.json",
+        "guid": "modelCompanySearchQuery"
     }
 }
