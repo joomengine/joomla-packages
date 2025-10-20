@@ -51,6 +51,7 @@ You can:
 
  - **Address** | [Details](src/layout/98522d87-88ac-4d4c-b23a-cbde41d0c6d9) | [Settings](src/layout/98522d87-88ac-4d4c-b23a-cbde41d0c6d9/item.json) | Company Address
  - **Addresses** | [Details](src/layout/68109de5-aefa-449b-8222-6e78732ca735) | [Settings](src/layout/68109de5-aefa-449b-8222-6e78732ca735/item.json) | Company Addresses
+ - **Basic Item Link** | [Details](src/layout/fb042c16-7652-4485-a5fd-9bb9ac1ab89c) | [Settings](src/layout/fb042c16-7652-4485-a5fd-9bb9ac1ab89c/item.json) | Basic Item Link
  - **Company Contacts** | [Details](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47) | [Settings](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47/item.json) | Company Contacts
  - **Company Details** | [Details](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d) | [Settings](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d/item.json) | Company Details
  - **Company Portfolio** | [Details](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7) | [Settings](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7/item.json) | Company Portfolio
