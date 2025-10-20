@@ -1,0 +1,163 @@
+{
+    "08a58903-10a4-4ed9-babd-8b9557b095e4": {
+        "name": "Companies (Service Directory)",
+        "path": "src\/admin_view\/08a58903-10a4-4ed9-babd-8b9557b095e4",
+        "settings": "src\/admin_view\/08a58903-10a4-4ed9-babd-8b9557b095e4\/item.json",
+        "guid": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+        "desc": "List of companies"
+    },
+    "904dc405-ff8d-476c-9598-f8f2e05464f4": {
+        "name": "Categories (Directories)",
+        "path": "src\/admin_view\/904dc405-ff8d-476c-9598-f8f2e05464f4",
+        "settings": "src\/admin_view\/904dc405-ff8d-476c-9598-f8f2e05464f4\/item.json",
+        "guid": "904dc405-ff8d-476c-9598-f8f2e05464f4",
+        "desc": "Categories"
+    },
+    "22bdc95c-d3de-4c25-af21-5a17d118b1df": {
+        "name": "Tags (Directories)",
+        "path": "src\/admin_view\/22bdc95c-d3de-4c25-af21-5a17d118b1df",
+        "settings": "src\/admin_view\/22bdc95c-d3de-4c25-af21-5a17d118b1df\/item.json",
+        "guid": "22bdc95c-d3de-4c25-af21-5a17d118b1df",
+        "desc": "Tags"
+    },
+    "6559d7bb-d910-4a9f-9e4d-20568ada7c21": {
+        "name": "Files (Directories)",
+        "path": "src\/admin_view\/6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+        "settings": "src\/admin_view\/6559d7bb-d910-4a9f-9e4d-20568ada7c21\/item.json",
+        "guid": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+        "desc": "Files"
+    },
+    "7e615f03-c169-49fb-b72b-b75fcdec7672": {
+        "name": "Company Portfolio ",
+        "path": "src\/admin_view\/7e615f03-c169-49fb-b72b-b75fcdec7672",
+        "settings": "src\/admin_view\/7e615f03-c169-49fb-b72b-b75fcdec7672\/item.json",
+        "guid": "7e615f03-c169-49fb-b72b-b75fcdec7672",
+        "desc": "Compnay Portfolio"
+    },
+    "d3507dce-582f-49c2-a068-86b789540a97": {
+        "name": "Area of Expertise (Service Directory)",
+        "path": "src\/admin_view\/d3507dce-582f-49c2-a068-86b789540a97",
+        "settings": "src\/admin_view\/d3507dce-582f-49c2-a068-86b789540a97\/item.json",
+        "guid": "d3507dce-582f-49c2-a068-86b789540a97",
+        "desc": "Area of Expertise"
+    },
+    "5992077e-15a5-4ea9-b882-e6e0e1b723ae": {
+        "name": "Address Types (Directories)",
+        "path": "src\/admin_view\/5992077e-15a5-4ea9-b882-e6e0e1b723ae",
+        "settings": "src\/admin_view\/5992077e-15a5-4ea9-b882-e6e0e1b723ae\/item.json",
+        "guid": "5992077e-15a5-4ea9-b882-e6e0e1b723ae",
+        "desc": "Types of Addresses"
+    },
+    "b7b2aba5-8a94-443b-814b-aed5b0b7c550": {
+        "name": "Address (Service Directory)",
+        "path": "src\/admin_view\/b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+        "settings": "src\/admin_view\/b7b2aba5-8a94-443b-814b-aed5b0b7c550\/item.json",
+        "guid": "b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+        "desc": "Addresses of Companies"
+    },
+    "6f3c01b6-7cab-4c17-b113-6ca532af49af": {
+        "name": "Social Media Handles",
+        "path": "src\/admin_view\/6f3c01b6-7cab-4c17-b113-6ca532af49af",
+        "settings": "src\/admin_view\/6f3c01b6-7cab-4c17-b113-6ca532af49af\/item.json",
+        "guid": "6f3c01b6-7cab-4c17-b113-6ca532af49af",
+        "desc": "Social Media Handles"
+    },
+    "2138bd3a-fff3-4498-a63b-b47b1ec6243b": {
+        "name": "Platform (Directories)",
+        "path": "src\/admin_view\/2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+        "settings": "src\/admin_view\/2138bd3a-fff3-4498-a63b-b47b1ec6243b\/item.json",
+        "guid": "2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+        "desc": "Platforms"
+    },
+    "64236c68-ddbf-4e4f-967c-6233be41e378": {
+        "name": "Company Languages (Service Directory)",
+        "path": "src\/admin_view\/64236c68-ddbf-4e4f-967c-6233be41e378",
+        "settings": "src\/admin_view\/64236c68-ddbf-4e4f-967c-6233be41e378\/item.json",
+        "guid": "64236c68-ddbf-4e4f-967c-6233be41e378",
+        "desc": "Company Languages"
+    },
+    "1da2dc67-d28d-482a-abd4-f126b98c8834": {
+        "name": "Company Tags (Service Directory)",
+        "path": "src\/admin_view\/1da2dc67-d28d-482a-abd4-f126b98c8834",
+        "settings": "src\/admin_view\/1da2dc67-d28d-482a-abd4-f126b98c8834\/item.json",
+        "guid": "1da2dc67-d28d-482a-abd4-f126b98c8834",
+        "desc": "Company Tags"
+    },
+    "4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04": {
+        "name": "Company Areas of Expertise (Service Directory)",
+        "path": "src\/admin_view\/4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04",
+        "settings": "src\/admin_view\/4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04\/item.json",
+        "guid": "4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04",
+        "desc": "Company Areas of Expertise"
+    },
+    "671a0faa-afe7-430e-bef1-54701a924ee2": {
+        "name": "Languages (Directories)",
+        "path": "src\/admin_view\/671a0faa-afe7-430e-bef1-54701a924ee2",
+        "settings": "src\/admin_view\/671a0faa-afe7-430e-bef1-54701a924ee2\/item.json",
+        "guid": "671a0faa-afe7-430e-bef1-54701a924ee2",
+        "desc": "A list of languages."
+    },
+    "bc12b55c-6763-4cec-864b-3529df4f89c4": {
+        "name": "Tickets (Service Directory)",
+        "path": "src\/admin_view\/bc12b55c-6763-4cec-864b-3529df4f89c4",
+        "settings": "src\/admin_view\/bc12b55c-6763-4cec-864b-3529df4f89c4\/item.json",
+        "guid": "bc12b55c-6763-4cec-864b-3529df4f89c4",
+        "desc": "Tickets"
+    },
+    "4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a": {
+        "name": "Ticket Comments (Service Directory)",
+        "path": "src\/admin_view\/4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a",
+        "settings": "src\/admin_view\/4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a\/item.json",
+        "guid": "4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a",
+        "desc": "Ticket Comments"
+    },
+    "58f0fc24-0030-49b2-b77a-83f6b7aedfbb": {
+        "name": "Sub-Regions (Directories)",
+        "path": "src\/admin_view\/58f0fc24-0030-49b2-b77a-83f6b7aedfbb",
+        "settings": "src\/admin_view\/58f0fc24-0030-49b2-b77a-83f6b7aedfbb\/item.json",
+        "guid": "58f0fc24-0030-49b2-b77a-83f6b7aedfbb",
+        "desc": "Subregions"
+    },
+    "275a0506-e63f-4c11-a731-124f5ad8cf0f": {
+        "name": "Regions (Directories)",
+        "path": "src\/admin_view\/275a0506-e63f-4c11-a731-124f5ad8cf0f",
+        "settings": "src\/admin_view\/275a0506-e63f-4c11-a731-124f5ad8cf0f\/item.json",
+        "guid": "275a0506-e63f-4c11-a731-124f5ad8cf0f",
+        "desc": "Regions"
+    },
+    "73177bc7-8db6-403e-b859-0613a2876171": {
+        "name": "Country (Directories)",
+        "path": "src\/admin_view\/73177bc7-8db6-403e-b859-0613a2876171",
+        "settings": "src\/admin_view\/73177bc7-8db6-403e-b859-0613a2876171\/item.json",
+        "guid": "73177bc7-8db6-403e-b859-0613a2876171",
+        "desc": "A list of countries."
+    },
+    "8345b808-fc30-4b51-8c9b-05e96bfe26d6": {
+        "name": "States (Directories)",
+        "path": "src\/admin_view\/8345b808-fc30-4b51-8c9b-05e96bfe26d6",
+        "settings": "src\/admin_view\/8345b808-fc30-4b51-8c9b-05e96bfe26d6\/item.json",
+        "guid": "8345b808-fc30-4b51-8c9b-05e96bfe26d6",
+        "desc": "States"
+    },
+    "e4839d74-8f7f-46ed-9a0b-651d5412138e": {
+        "name": "Cities (Directories)",
+        "path": "src\/admin_view\/e4839d74-8f7f-46ed-9a0b-651d5412138e",
+        "settings": "src\/admin_view\/e4839d74-8f7f-46ed-9a0b-651d5412138e\/item.json",
+        "guid": "e4839d74-8f7f-46ed-9a0b-651d5412138e",
+        "desc": "Cities"
+    },
+    "e85e7cd7-baf2-4bb2-939a-8d664f49b7da": {
+        "name": "Timezone (Directories)",
+        "path": "src\/admin_view\/e85e7cd7-baf2-4bb2-939a-8d664f49b7da",
+        "settings": "src\/admin_view\/e85e7cd7-baf2-4bb2-939a-8d664f49b7da\/item.json",
+        "guid": "e85e7cd7-baf2-4bb2-939a-8d664f49b7da",
+        "desc": "Timezones."
+    },
+    "66ae94e9-5283-4bc5-bee8-7f36915f972e": {
+        "name": "File Types (Directories)",
+        "path": "src\/admin_view\/66ae94e9-5283-4bc5-bee8-7f36915f972e",
+        "settings": "src\/admin_view\/66ae94e9-5283-4bc5-bee8-7f36915f972e\/item.json",
+        "guid": "66ae94e9-5283-4bc5-bee8-7f36915f972e",
+        "desc": "File Type"
+    }
+}
