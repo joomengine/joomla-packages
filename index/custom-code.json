@@ -117,5 +117,12 @@
         "path": "src\/custom_code\/getTimeBasedRandomSeed",
         "settings": "src\/custom_code\/getTimeBasedRandomSeed\/item.json",
         "guid": "getTimeBasedRandomSeed"
+    },
+    "modelEscape": {
+        "name": "Model Escape",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/modelEscape",
+        "settings": "src\/custom_code\/modelEscape\/item.json",
+        "guid": "modelEscape"
     }
 }
