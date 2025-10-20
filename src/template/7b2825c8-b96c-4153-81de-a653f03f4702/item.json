@@ -1,0 +1,28 @@
+{
+    "name": "Company Details",
+    "description": "Company Details",
+    "dynamic_get": "",
+    "guid": "7b2825c8-b96c-4153-81de-a653f03f4702",
+    "php_view": "\/\/ Single entity view\r\n$item = $this->item ?? (object) [];",
+    "add_php_view": 1,
+    "template": "<div class=\"container my-5\">\r\n\t<div class=\"row g-2\">\r\n\t\t<div class=\"col-12 col-md-6\">\r\n\t\t\t<?php echo LayoutHelper::render('companydetails', $item); ?>\r\n\t\t<\/div>\r\n\t\t<div class=\"col-12 col-md-6\">\r\n\t\t\t<?php echo LayoutHelper::render('companycontacts', $item); ?>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>",
+    "snippet": "0",
+    "libraries": null,
+    "alias": "companydetails",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "11db13fe-e43b-4da7-be3d-c2422018d58d",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "dbd6c79e-63ed-4e1c-b0d8-a70821439b47",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
