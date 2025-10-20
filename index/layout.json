@@ -89,5 +89,19 @@
         "path": "src\/layout\/fb042c16-7652-4485-a5fd-9bb9ac1ab89c",
         "settings": "src\/layout\/fb042c16-7652-4485-a5fd-9bb9ac1ab89c\/item.json",
         "guid": "fb042c16-7652-4485-a5fd-9bb9ac1ab89c"
+    },
+    "1313d71e-1e97-466e-86e6-ea10054207f1": {
+        "name": "Entity Banner",
+        "desc": "Entity Banner",
+        "path": "src\/layout\/1313d71e-1e97-466e-86e6-ea10054207f1",
+        "settings": "src\/layout\/1313d71e-1e97-466e-86e6-ea10054207f1\/item.json",
+        "guid": "1313d71e-1e97-466e-86e6-ea10054207f1"
+    },
+    "f9d33ff5-1621-4f7b-b55e-191960389d94": {
+        "name": "Search Box",
+        "desc": "Search Box",
+        "path": "src\/layout\/f9d33ff5-1621-4f7b-b55e-191960389d94",
+        "settings": "src\/layout\/f9d33ff5-1621-4f7b-b55e-191960389d94\/item.json",
+        "guid": "f9d33ff5-1621-4f7b-b55e-191960389d94"
     }
 }
