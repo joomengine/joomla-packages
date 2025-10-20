@@ -1,0 +1,14 @@
+{
+    "160d0efb-6bf0-48eb-8d46-55cf74729501": {
+        "name": "160d0efb-6bf0-48eb-8d46-55cf74729501",
+        "path": "src\/joomla_component\/children\/160d0efb-6bf0-48eb-8d46-55cf74729501",
+        "settings": "src\/joomla_component\/children\/160d0efb-6bf0-48eb-8d46-55cf74729501\/component-site-views.json",
+        "guid": "160d0efb-6bf0-48eb-8d46-55cf74729501"
+    },
+    "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9": {
+        "name": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+        "path": "src\/joomla_component\/children\/35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+        "settings": "src\/joomla_component\/children\/35a38329-d1e9-43df-a8f8-af1b8e6d8bd9\/component-site-views.json",
+        "guid": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9"
+    }
+}
