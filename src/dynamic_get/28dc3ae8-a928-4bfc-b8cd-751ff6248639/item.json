@@ -1,0 +1,52 @@
+{
+    "name": "getMineCompanies",
+    "main_source": 1,
+    "gettype": 4,
+    "php_calculation": "",
+    "php_router_parse": null,
+    "add_php_after_getitems": 1,
+    "add_php_router_parse": 0,
+    "view_selection": "a.id AS id\r\na.description AS description\r\na.name AS name\r\na.alias AS alias\r\na.contactname AS contactname\r\na.email AS email\r\na.phone AS phone\r\na.website AS website\r\na.published AS published\r\na.created AS created\r\na.created_by AS created_by\r\na.modified_by AS modified_by",
+    "add_php_before_getitems": 0,
+    "add_php_before_getitem": 0,
+    "add_php_after_getitem": 0,
+    "db_table_main": null,
+    "php_custom_get": null,
+    "plugin_events": null,
+    "db_selection": null,
+    "view_table_main": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+    "add_php_getlistquery": 0,
+    "join_db_table": null,
+    "select_all": 0,
+    "php_before_getitem": "",
+    "getcustom": "getMine",
+    "php_after_getitem": "",
+    "pagination": 0,
+    "php_getlistquery": "",
+    "php_before_getitems": "",
+    "filter": {
+        "filter0": {
+            "filter_type": 2,
+            "state_key": "$user",
+            "operator": 1,
+            "table_key": "a.created_by"
+        }
+    },
+    "php_after_getitems": "\t\tif (!empty($items))\r\n\t\t{\r\n\t\t\t$this->returnUrl = urlencode(base64_encode((string) Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::getInstance()));\r\n\t\t\t$this->mainEscapeFields = [\r\n\t\t\t\t'name', 'contactname', 'email', 'phone', 'website'\r\n\t\t\t];\r\n\r\n\t\t\tforeach ($items as $nr => &$_item)\r\n\t\t\t{\r\n\t\t\t\t$_item = $this->processItem($_item);\r\n\t\t\t}\r\n\t\t}",
+    "where": null,
+    "order": null,
+    "addcalculation": 0,
+    "group": null,
+    "global": null,
+    "guid": "28dc3ae8-a928-4bfc-b8cd-751ff6248639",
+    "join_view_table": null,
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        }
+    ]
+}
