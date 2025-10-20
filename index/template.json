@@ -1,0 +1,51 @@
+{
+    "1ab304c9-56c7-4561-82de-2d8078ade712": {
+        "name": "Login Module (Default)",
+        "desc": "The login module",
+        "path": "src\/template\/1ab304c9-56c7-4561-82de-2d8078ade712",
+        "settings": "src\/template\/1ab304c9-56c7-4561-82de-2d8078ade712\/item.json",
+        "guid": "1ab304c9-56c7-4561-82de-2d8078ade712"
+    },
+    "7e779cb8-0d76-4141-ba0d-1e3f80026260": {
+        "name": "Companies",
+        "desc": "Companies",
+        "path": "src\/template\/7e779cb8-0d76-4141-ba0d-1e3f80026260",
+        "settings": "src\/template\/7e779cb8-0d76-4141-ba0d-1e3f80026260\/item.json",
+        "guid": "7e779cb8-0d76-4141-ba0d-1e3f80026260"
+    },
+    "36627309-1cd6-433c-acbe-f6e4dd94690b": {
+        "name": "Company",
+        "desc": "Company",
+        "path": "src\/template\/36627309-1cd6-433c-acbe-f6e4dd94690b",
+        "settings": "src\/template\/36627309-1cd6-433c-acbe-f6e4dd94690b\/item.json",
+        "guid": "36627309-1cd6-433c-acbe-f6e4dd94690b"
+    },
+    "7b2825c8-b96c-4153-81de-a653f03f4702": {
+        "name": "Company Details",
+        "desc": "Company Details",
+        "path": "src\/template\/7b2825c8-b96c-4153-81de-a653f03f4702",
+        "settings": "src\/template\/7b2825c8-b96c-4153-81de-a653f03f4702\/item.json",
+        "guid": "7b2825c8-b96c-4153-81de-a653f03f4702"
+    },
+    "6cf8a790-0d9f-40e5-a5ee-9513fd715fde": {
+        "name": "Company Extras",
+        "desc": "Company Extras",
+        "path": "src\/template\/6cf8a790-0d9f-40e5-a5ee-9513fd715fde",
+        "settings": "src\/template\/6cf8a790-0d9f-40e5-a5ee-9513fd715fde\/item.json",
+        "guid": "6cf8a790-0d9f-40e5-a5ee-9513fd715fde"
+    },
+    "6ffc4d9e-8334-4523-a573-ba611cd04aeb": {
+        "name": "Company Debug",
+        "desc": "Company Debug",
+        "path": "src\/template\/6ffc4d9e-8334-4523-a573-ba611cd04aeb",
+        "settings": "src\/template\/6ffc4d9e-8334-4523-a573-ba611cd04aeb\/item.json",
+        "guid": "6ffc4d9e-8334-4523-a573-ba611cd04aeb"
+    },
+    "3d13f9b3-a793-4f67-979c-1b03f48fa7ce": {
+        "name": "Company Listings",
+        "desc": "Company Listings",
+        "path": "src\/template\/3d13f9b3-a793-4f67-979c-1b03f48fa7ce",
+        "settings": "src\/template\/3d13f9b3-a793-4f67-979c-1b03f48fa7ce\/item.json",
+        "guid": "3d13f9b3-a793-4f67-979c-1b03f48fa7ce"
+    }
+}
