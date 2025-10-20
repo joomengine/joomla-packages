@@ -1,0 +1,15 @@
+{
+    "system_name": "Companies Data Set Mapper",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "companiesDataSetMapper",
+    "code": "\t\t$db = $this->getDatabase();\r\n\t\t$this->companies = [];\r\n\t\t$this->mapper = [\r\n\t\t\t'guidCompanyCompany_languageL' => [\r\n\t\t\t\t'route' => 'getLangRoute',\r\n\t\t\t\t'set' => 'languages',\r\n\t\t\t\t'escape' => ['name']\r\n\t\t\t],\r\n\t\t\t'guidCompanyCompany_tagT' => [\r\n\t\t\t\t'route' => 'getTagRoute',\r\n\t\t\t\t'set' => 'tags',\r\n\t\t\t\t'escape' => ['name']\r\n\t\t\t],\r\n\t\t\t'guidCompanyCompany_area_of_expertiseEE' => [\r\n\t\t\t\t'route' => 'getAreaofexpertiseRoute',\r\n\t\t\t\t'set' => 'areas_of_expertise',\r\n\t\t\t\t'escape' => ['name']\r\n\t\t\t]\r\n\t\t];\r\n\r\n\t\t$this->mainEscapeFields = [\r\n\t\t\t'name', 'contactname', 'email', 'phone', 'website',\r\n\t\t\t'chamber_of_commerce', 'company_type', 'companysize', 'category_name'\r\n\t\t];\r\n\r\n\t\t$this->baseUrl = rtrim(Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::root(), '\/');\r\n\t\t$this->returnUrl = urlencode(base64_encode((string) Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::getInstance()));\r\n\r\n\t\tforeach ($items as &$_item)\r\n\t\t{\r\n\t\t\t\/\/ Register global values\r\n\t\t\t$this->companies[] = $db->quote($_item->guid);\r\n\r\n\t\t\t\/\/ process the item\r\n\t\t\t$_item = $this->processItem($_item);\r\n\t\t}",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": ""
+}
