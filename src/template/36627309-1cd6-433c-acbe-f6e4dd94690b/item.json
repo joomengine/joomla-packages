@@ -1,0 +1,12 @@
+{
+    "name": "Company",
+    "description": "Company",
+    "dynamic_get": "",
+    "guid": "36627309-1cd6-433c-acbe-f6e4dd94690b",
+    "php_view": "\/\/ Single entity view\r\n$item = $this->item ?? (object) [];\r\n\r\n$name = $item->name ?? '';\r\n$description = $item->description ?? null;\r\n$logo = $item->logo ?? '';\r\n$banner = $item->banner ?? '';",
+    "add_php_view": 1,
+    "template": "<div class=\"container my-5\">\r\n\t<?php if (!empty($banner)): ?>\r\n\t\t<div class=\"mb-4\">\r\n\t\t\t<img\r\n\t\t\t\tsrc=\"<?php echo $banner; ?>\"\r\n\t\t\t\talt=\"\"\r\n\t\t\t\tclass=\"img-fluid w-100 rounded border shadow-sm\"\r\n\t\t\t\twidth=\"1080\"\r\n\t\t\t\theight=\"200\"\r\n\t\t\t\tonerror=\"this.remove()\"\r\n\t\t\t>\r\n\t\t<\/div>\r\n\t<?php endif; ?>\r\n\r\n\t<div class=\"row g-4 align-items-start\">\r\n\t\t<div class=\"col-12 col-md-8\">\r\n\t\t\t<h1 class=\"fw-bold mb-3\">\r\n\t\t\t\t<?php if (!empty($this->item->edit_link)): ?>\r\n\t\t\t\t\t<span class=\"me-3\">\r\n\t\t\t\t\t\t<a href=\"<?php echo $this->item->edit_link; ?>\" title=\"<?php echo Text::_('Edit Listing'); ?>\"><span class=\"icon-pencil-2 article-edit\"><\/span><\/a>\r\n\t\t\t\t\t<\/span>\r\n\t\t\t\t<?php endif; ?>\r\n\t\t\t\t<?php echo $name; ?>\r\n\t\t\t<\/h1>\r\n\r\n\t\t\t<?php echo $this->item->event->onContentAfterTitle ?? ''; ?>\r\n\r\n\t\t\t<?php if (!empty($description)): ?>\r\n\t\t\t\t<div class=\"fs-5 text-muted\">\r\n\t\t\t\t\t<?php echo $description; ?>\r\n\t\t\t\t<\/div>\r\n\t\t\t<?php endif; ?>\r\n\t\t<\/div>\r\n\r\n\t\t<div class=\"col-12 col-md-4\">\r\n\t\t\t<div class=\"d-flex justify-content-md-end\">\r\n\t\t\t\t<?php if (!empty($logo)): ?>\r\n\t\t\t\t\t<img\r\n\t\t\t\t\t\tsrc=\"<?php echo $logo; ?>\"\r\n\t\t\t\t\t\talt=\"<?php echo $name; ?>\"\r\n\t\t\t\t\t\tclass=\"rounded border shadow-sm\"\r\n\t\t\t\t\t\twidth=\"150\"\r\n\t\t\t\t\t\theight=\"150\"\r\n\t\t\t\t\t\tonerror=\"this.remove()\"\r\n\t\t\t\t\t>\r\n\t\t\t\t<?php else: ?>\r\n\t\t\t\t\t<div class=\"bg-light d-flex align-items-center justify-content-center rounded border\" style=\"width:150px; height:150px;\">\r\n\t\t\t\t\t\t<span class=\"text-muted small\">150x150<\/span>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<?php endif; ?>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>",
+    "snippet": "0",
+    "libraries": null,
+    "alias": "company"
+}
