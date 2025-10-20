@@ -1,0 +1,371 @@
+{
+    "name": "Company",
+    "main_source": 1,
+    "gettype": 1,
+    "php_calculation": "",
+    "php_router_parse": null,
+    "add_php_after_getitems": 1,
+    "add_php_router_parse": 0,
+    "view_selection": "a.*",
+    "add_php_before_getitems": 0,
+    "add_php_before_getitem": 0,
+    "add_php_after_getitem": 1,
+    "db_table_main": null,
+    "php_custom_get": null,
+    "plugin_events": [
+        "onContentAfterTitle",
+        "onContentBeforeDisplay",
+        "onContentAfterDisplay"
+    ],
+    "db_selection": null,
+    "view_table_main": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+    "add_php_getlistquery": 1,
+    "join_db_table": null,
+    "select_all": 1,
+    "php_before_getitem": "",
+    "getcustom": "",
+    "php_after_getitem": "\t\tif (!empty($this->_item[$pk]))\r\n\t\t{\r\n\t\t\t$this->mapper = [\r\n\t\t\t\t'guidCompanyCompany_languageL' => [\r\n\t\t\t\t\t'route' => 'getLangRoute',\r\n\t\t\t\t\t'set' => 'languages',\r\n\t\t\t\t\t'escape' => ['name']\r\n\t\t\t\t],\r\n\t\t\t\t'guidCompanyCompany_tagT' => [\r\n\t\t\t\t\t'route' => 'getTagRoute',\r\n\t\t\t\t\t'set' => 'tags',\r\n\t\t\t\t\t'escape' => ['name']\r\n\t\t\t\t],\r\n\t\t\t\t'guidCompanyCompany_area_of_expertiseEE' => [\r\n\t\t\t\t\t'route' => 'getAreaofexpertiseRoute',\r\n\t\t\t\t\t'set' => 'areas_of_expertise',\r\n\t\t\t\t\t'escape' => ['name']\r\n\t\t\t\t],\r\n\t\t\t\t'guidCompanySocial_handleS' => [\r\n\t\t\t\t\t'route' => null,\r\n\t\t\t\t\t'set' => 'social_handles',\r\n\t\t\t\t\t'escape' => ['name', 'handle']\r\n\t\t\t\t],\r\n\t\t\t\t'guidCompanyAddressHH' => [\r\n\t\t\t\t\t'route' => null,\r\n\t\t\t\t\t'set' => 'addresses',\r\n\t\t\t\t\t'escape' => ['line_one', 'line_two', 'postal', 'type', 'country', 'state', 'city']\r\n\t\t\t\t],\r\n\t\t\t\t'guidCompanyPortfolioQQ' => [\r\n\t\t\t\t\t'route' => null,\r\n\t\t\t\t\t'set' => 'portfolios',\r\n\t\t\t\t\t'escape' => ['client_name', 'target_industry', 'services_provided', 'project_url']\r\n\t\t\t\t],\r\n\t\t\t\t'guidEntityFileYY' => [\r\n\t\t\t\t\t'route' => null,\r\n\t\t\t\t\t'set' => 'files'\r\n\t\t\t\t]\r\n\t\t\t];\r\n\r\n\t\t\t$this->mainEscapeFields = [\r\n\t\t\t\t'name', 'contactname', 'contactname', 'email', 'phone', 'website',\r\n\t\t\t\t'chamber_of_commerce', 'company_type', 'companysize', 'category_name'\r\n\t\t\t];\r\n\r\n\t\t\t$this->baseUrl = rtrim(Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::root(), '\/');\r\n\t\t\t$this->returnUrl = urlencode(base64_encode((string) Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::getInstance()));\r\n\r\n\t\t\t$this->_item[$pk] = $this->processItem($this->_item[$pk]);\r\n\t\t}",
+    "pagination": 1,
+    "php_getlistquery": "",
+    "php_before_getitems": "",
+    "filter": {
+        "filter0": {
+            "filter_type": 1,
+            "state_key": "id",
+            "operator": 1,
+            "table_key": "a.id"
+        },
+        "filter1": {
+            "filter_type": 3,
+            "state_key": "access",
+            "operator": 10,
+            "table_key": "yy.access"
+        }
+    },
+    "php_after_getitems": "",
+    "where": {
+        "where0": {
+            "table_key": "a.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where1": {
+            "table_key": "cc.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where2": {
+            "table_key": "l.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where3": {
+            "table_key": "t.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where4": {
+            "table_key": "ee.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where5": {
+            "table_key": "p.published",
+            "operator": 1,
+            "value_key": "1"
+        },
+        "where6": {
+            "table_key": "yy.published",
+            "operator": 1,
+            "value_key": "1"
+        }
+    },
+    "order": null,
+    "addcalculation": 0,
+    "group": null,
+    "global": null,
+    "guid": "3071eabb-8a2d-4281-b6a4-179dbfb30774",
+    "join_view_table": {
+        "join_view_table0": {
+            "view_table": "904dc405-ff8d-476c-9598-f8f2e05464f4",
+            "row_type": 1,
+            "as": "cc",
+            "type": 1,
+            "on_field": "a.category",
+            "operator": 1,
+            "join_field": "cc.guid",
+            "selection": "cc.id AS category_id\r\ncc.alias AS category_alias\r\ncc.description AS category_description\r\ncc.name AS category_name"
+        },
+        "join_view_table1": {
+            "view_table": "64236c68-ddbf-4e4f-967c-6233be41e378",
+            "row_type": 2,
+            "as": "l",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "l.company",
+            "selection": "l.language AS alias"
+        },
+        "join_view_table2": {
+            "view_table": "671a0faa-afe7-430e-bef1-54701a924ee2",
+            "row_type": 1,
+            "as": "ll",
+            "type": 1,
+            "on_field": "l.language",
+            "operator": 1,
+            "join_field": "ll.langtag",
+            "selection": "ll.id AS id\r\nll.name AS name"
+        },
+        "join_view_table3": {
+            "view_table": "1da2dc67-d28d-482a-abd4-f126b98c8834",
+            "row_type": 2,
+            "as": "t",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "t.company",
+            "selection": "t.tag AS guid"
+        },
+        "join_view_table4": {
+            "view_table": "22bdc95c-d3de-4c25-af21-5a17d118b1df",
+            "row_type": 1,
+            "as": "tt",
+            "type": 1,
+            "on_field": "t.tag",
+            "operator": 1,
+            "join_field": "tt.guid",
+            "selection": "tt.id AS id\r\ntt.description AS description\r\ntt.name AS name\r\ntt.alias AS alias"
+        },
+        "join_view_table5": {
+            "view_table": "4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04",
+            "row_type": 2,
+            "as": "ee",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "ee.company",
+            "selection": "ee.area_of_expertise AS guid"
+        },
+        "join_view_table6": {
+            "view_table": "d3507dce-582f-49c2-a068-86b789540a97",
+            "row_type": 1,
+            "as": "aa",
+            "type": 1,
+            "on_field": "ee.area_of_expertise",
+            "operator": 1,
+            "join_field": "aa.guid",
+            "selection": "aa.id AS id\r\naa.name AS name\r\naa.alias AS alias\r\naa.description AS description"
+        },
+        "join_view_table7": {
+            "view_table": "6f3c01b6-7cab-4c17-b113-6ca532af49af",
+            "row_type": 2,
+            "as": "s",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "s.company",
+            "selection": "s.platform AS guid\r\ns.handle AS handle"
+        },
+        "join_view_table8": {
+            "view_table": "2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+            "row_type": 1,
+            "as": "p",
+            "type": 1,
+            "on_field": "s.platform",
+            "operator": 1,
+            "join_field": "p.guid",
+            "selection": "p.id AS id\r\np.name AS name\r\np.website AS website"
+        },
+        "join_view_table9": {
+            "view_table": "b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+            "row_type": 2,
+            "as": "hh",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "hh.company",
+            "selection": "hh.line_one AS line_one\r\nhh.line_two AS line_two\r\nhh.postal AS postal"
+        },
+        "join_view_table10": {
+            "view_table": "5992077e-15a5-4ea9-b882-e6e0e1b723ae",
+            "row_type": 1,
+            "as": "jj",
+            "type": 1,
+            "on_field": "hh.type",
+            "operator": 1,
+            "join_field": "jj.guid",
+            "selection": "jj.name AS type"
+        },
+        "join_view_table11": {
+            "view_table": "73177bc7-8db6-403e-b859-0613a2876171",
+            "row_type": 1,
+            "as": "ii",
+            "type": 1,
+            "on_field": "hh.country",
+            "operator": 1,
+            "join_field": "ii.guid",
+            "selection": "ii.name AS country"
+        },
+        "join_view_table12": {
+            "view_table": "8345b808-fc30-4b51-8c9b-05e96bfe26d6",
+            "row_type": 1,
+            "as": "kk",
+            "type": 1,
+            "on_field": "hh.state",
+            "operator": 1,
+            "join_field": "kk.guid",
+            "selection": "kk.name AS state"
+        },
+        "join_view_table13": {
+            "view_table": "e4839d74-8f7f-46ed-9a0b-651d5412138e",
+            "row_type": 1,
+            "as": "uu",
+            "type": 1,
+            "on_field": "hh.city",
+            "operator": 1,
+            "join_field": "uu.guid",
+            "selection": "uu.name AS city"
+        },
+        "join_view_table14": {
+            "view_table": "7e615f03-c169-49fb-b72b-b75fcdec7672",
+            "row_type": 2,
+            "as": "qq",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "qq.company",
+            "selection": "qq.client_name AS client_name\r\nqq.target_industry AS target_industry\r\nqq.services_provided AS services_provided\r\nqq.project_url AS project_url\r\nqq.description AS description\r\nqq.project_title AS project_title"
+        },
+        "join_view_table15": {
+            "view_table": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+            "row_type": 2,
+            "as": "yy",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "yy.entity",
+            "selection": "yy.name AS name\r\nyy.size AS size\r\nyy.mime AS mime\r\nyy.file_type AS file_type\r\nyy.extension AS extension\r\nyy.file_path AS file_path\r\nyy.entity_type AS entity_type\r\nyy.entity AS entity\r\nyy.guid AS guid"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "904dc405-ff8d-476c-9598-f8f2e05464f4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "64236c68-ddbf-4e4f-967c-6233be41e378",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "671a0faa-afe7-430e-bef1-54701a924ee2",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "1da2dc67-d28d-482a-abd4-f126b98c8834",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "22bdc95c-d3de-4c25-af21-5a17d118b1df",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "4e7dcf8b-89db-45d3-9a1d-0a0e733fcc04",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "d3507dce-582f-49c2-a068-86b789540a97",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "6f3c01b6-7cab-4c17-b113-6ca532af49af",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "2138bd3a-fff3-4498-a63b-b47b1ec6243b",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "5992077e-15a5-4ea9-b882-e6e0e1b723ae",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "73177bc7-8db6-403e-b859-0613a2876171",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "8345b808-fc30-4b51-8c9b-05e96bfe26d6",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "e4839d74-8f7f-46ed-9a0b-651d5412138e",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "7e615f03-c169-49fb-b72b-b75fcdec7672",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        }
+    ]
+}
