@@ -1,0 +1,12 @@
+{
+    "name": "Company Portfolio",
+    "description": "Company Portfolio",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "f576d714-6991-419b-bfcd-d6dd917346d7",
+    "php_view": "$client_name = $displayData->client_name ?? '';\r\n$project_title = $displayData->project_title ?? '';\r\n$target_industry = $displayData->target_industry ?? '';\r\n$services_provided = $displayData->services_provided ?? '';\r\n$project_url = $displayData->project_url ?? '';\r\n$portfolio_desc = $displayData->description ?? '';",
+    "add_php_view": 1,
+    "layout": "<div class=\"row g-4\">\r\n\t<div class=\"col-12 col-lg-8\">\r\n\t\t<?php if (!empty($project_title)): ?>\r\n\t\t\t<h4 class=\"mb-2\"><?php echo $project_title; ?><\/h4>\r\n\t\t<?php endif; ?>\r\n\r\n\t\t<ul class=\"list-unstyled small mb-3\">\r\n\t\t\t<?php if (!empty($client_name)): ?>\r\n\t\t\t\t<li><strong><?php echo Text::_('Client'); ?>:<\/strong> <?php echo $client_name; ?><\/li>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($target_industry)): ?>\r\n\t\t\t\t<li><strong><?php echo Text::_('Industry'); ?>:<\/strong> <?php echo $target_industry; ?><\/li>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($services_provided)): ?>\r\n\t\t\t\t<li><strong><?php echo Text::_('Services'); ?>:<\/strong> <?php echo $services_provided; ?><\/li>\r\n\t\t\t<?php endif; ?>\r\n\t\t\t<?php if (!empty($project_url)): ?>\r\n\t\t\t\t<li><strong><?php echo Text::_('Url'); ?>:<\/strong> <a href=\"<?php echo $project_url; ?>\"><?php echo $project_url; ?><\/a><\/li>\r\n\t\t\t<?php endif; ?>\r\n\t\t<\/ul>\r\n\r\n\t\t<?php if (trim($portfolio_desc) !== ''): ?>\r\n\t\t\t<div class=\"text-muted\">\r\n\t\t\t\t<?php echo $portfolio_desc; ?>\r\n\t\t\t<\/div>\r\n\t\t<?php endif; ?>\r\n\t<\/div>\r\n<\/div>",
+    "libraries": null,
+    "alias": "companyportfolio"
+}
