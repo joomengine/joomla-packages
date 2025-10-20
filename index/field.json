@@ -670,5 +670,53 @@
         "path": "src\/field\/d95dc35a-7467-4010-8d35-f3dab696a808",
         "settings": "src\/field\/d95dc35a-7467-4010-8d35-f3dab696a808\/item.json",
         "guid": "d95dc35a-7467-4010-8d35-f3dab696a808"
+    },
+    "4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28": {
+        "name": "Categories (Menu only)",
+        "path": "src\/field\/4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28",
+        "settings": "src\/field\/4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28\/item.json",
+        "guid": "4b2b3c03-7e86-4ded-ba45-c3eb6fa9dc28"
+    },
+    "d2556e49-6f4a-44aa-8640-15e4f101fa9d": {
+        "name": "Remove IDs from URLs",
+        "path": "src\/field\/d2556e49-6f4a-44aa-8640-15e4f101fa9d",
+        "settings": "src\/field\/d2556e49-6f4a-44aa-8640-15e4f101fa9d\/item.json",
+        "guid": "d2556e49-6f4a-44aa-8640-15e4f101fa9d"
+    },
+    "82835f18-9ee4-41e4-957b-0000a6e8955f": {
+        "name": "Show Listing Object",
+        "path": "src\/field\/82835f18-9ee4-41e4-957b-0000a6e8955f",
+        "settings": "src\/field\/82835f18-9ee4-41e4-957b-0000a6e8955f\/item.json",
+        "guid": "82835f18-9ee4-41e4-957b-0000a6e8955f"
+    },
+    "9277d7f0-edf0-49a6-8615-cf450b286499": {
+        "name": "Max Number of Tags",
+        "path": "src\/field\/9277d7f0-edf0-49a6-8615-cf450b286499",
+        "settings": "src\/field\/9277d7f0-edf0-49a6-8615-cf450b286499\/item.json",
+        "guid": "9277d7f0-edf0-49a6-8615-cf450b286499"
+    },
+    "f8f2b407-bfb0-4b74-a21a-1b5db69c18ff": {
+        "name": "Max Number of Expertise",
+        "path": "src\/field\/f8f2b407-bfb0-4b74-a21a-1b5db69c18ff",
+        "settings": "src\/field\/f8f2b407-bfb0-4b74-a21a-1b5db69c18ff\/item.json",
+        "guid": "f8f2b407-bfb0-4b74-a21a-1b5db69c18ff"
+    },
+    "9506cad5-e3cc-466e-b6bb-17f242df6616": {
+        "name": "Max Number of Languages",
+        "path": "src\/field\/9506cad5-e3cc-466e-b6bb-17f242df6616",
+        "settings": "src\/field\/9506cad5-e3cc-466e-b6bb-17f242df6616\/item.json",
+        "guid": "9506cad5-e3cc-466e-b6bb-17f242df6616"
+    },
+    "10b7b6ec-74a3-454d-b7fa-55db619ac327": {
+        "name": "Show Login",
+        "path": "src\/field\/10b7b6ec-74a3-454d-b7fa-55db619ac327",
+        "settings": "src\/field\/10b7b6ec-74a3-454d-b7fa-55db619ac327\/item.json",
+        "guid": "10b7b6ec-74a3-454d-b7fa-55db619ac327"
+    },
+    "9531af7c-efb8-4a6b-8c15-4eccbf38522b": {
+        "name": "Max Number of Listings Per\/User",
+        "path": "src\/field\/9531af7c-efb8-4a6b-8c15-4eccbf38522b",
+        "settings": "src\/field\/9531af7c-efb8-4a6b-8c15-4eccbf38522b\/item.json",
+        "guid": "9531af7c-efb8-4a6b-8c15-4eccbf38522b"
     }
 }
