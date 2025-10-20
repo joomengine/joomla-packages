@@ -1,0 +1,168 @@
+{
+    "system_name": "Listing",
+    "name": "Listing",
+    "description": "Detailed view of listing",
+    "main_get": "3071eabb-8a2d-4281-b6a4-179dbfb30774",
+    "add_php_jview_display": 0,
+    "add_php_document": 0,
+    "add_php_view": 0,
+    "js_document": "",
+    "codename": "listing",
+    "javascript_file": "",
+    "context": "listing",
+    "default": "<?php echo $this->item->event->onContentBeforeDisplay ?? ''; ?>\r\n\r\n<?php echo $this->loadTemplate('company'); ?>\r\n\r\n<?php echo $this->loadTemplate('companydetails'); ?>\r\n\r\n<?php echo $this->loadTemplate('companyextras'); ?>\r\n\r\n<?php echo LayoutHelper::render('companyrelationships', ($this->item ?? (object) [])); ?>\r\n\r\n<?php echo $this->item->event->onContentAfterDisplay ?? ''; ?>\r\n\r\n<?php echo $this->loadTemplate('companydebug'); ?>",
+    "snippet": "0",
+    "add_php_jview": 1,
+    "custom_get": null,
+    "css_document": "",
+    "add_javascript_file": 0,
+    "css": "",
+    "add_js_document": 0,
+    "php_ajaxmethod": "[CUSTOMCODE=getFileTypeDetails]",
+    "add_css_document": 0,
+    "libraries": null,
+    "add_css": 0,
+    "dynamic_get": "",
+    "add_php_ajax": 1,
+    "ajax_input": {
+        "ajax_input0": {
+            "value_name": "guid",
+            "task_name": "getFileTypeDetails",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "getFileTypeDetails",
+            "user_check": "1"
+        },
+        "ajax_input1": {
+            "value_name": "target",
+            "task_name": "getFileTypeDetails",
+            "input_default": "NULL",
+            "input_filter": "BASE64",
+            "method_name": "getFileTypeDetails",
+            "user_check": "1"
+        },
+        "ajax_input2": {
+            "value_name": "guid",
+            "task_name": "uploadFile",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "uploadFile",
+            "user_check": "1"
+        },
+        "ajax_input3": {
+            "value_name": "entity",
+            "task_name": "uploadFile",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "uploadFile",
+            "user_check": "1"
+        },
+        "ajax_input4": {
+            "value_name": "target",
+            "task_name": "uploadFile",
+            "input_default": "NULL",
+            "input_filter": "BASE64",
+            "method_name": "uploadFile",
+            "user_check": "1"
+        },
+        "ajax_input5": {
+            "value_name": "guid",
+            "task_name": "deleteFile",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "deleteFile",
+            "user_check": "1"
+        },
+        "ajax_input6": {
+            "value_name": "entity",
+            "task_name": "displayFiles",
+            "input_default": "NULL",
+            "input_filter": "STRING",
+            "method_name": "displayFiles",
+            "user_check": "1"
+        },
+        "ajax_input7": {
+            "value_name": "target",
+            "task_name": "displayFiles",
+            "input_default": "NULL",
+            "input_filter": "BASE64",
+            "method_name": "displayFiles",
+            "user_check": "1"
+        }
+    },
+    "add_custom_button": 1,
+    "php_document": "",
+    "button_position": 2,
+    "php_view": "",
+    "php_jview_display": "",
+    "custom_button": null,
+    "php_jview": "\/\/ Joomla___7ab82272_0b3d_4bb1_af35_e63a096cfe0b___Power::render('filedisplay', $displayData);",
+    "php_controller": "",
+    "guid": "87eea9c7-a9ff-4c58-a821-792114cfbb51",
+    "php_model": "[CUSTOMCODE=processServiceDirectoryItem]",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "3071eabb-8a2d-4281-b6a4-179dbfb30774",
+            "entity": "dynamic_get",
+            "table": "#__componentbuilder_dynamic_get",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "36627309-1cd6-433c-acbe-f6e4dd94690b",
+            "entity": "template",
+            "table": "#__componentbuilder_template",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "7b2825c8-b96c-4153-81de-a653f03f4702",
+            "entity": "template",
+            "table": "#__componentbuilder_template",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "6cf8a790-0d9f-40e5-a5ee-9513fd715fde",
+            "entity": "template",
+            "table": "#__componentbuilder_template",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "6ffc4d9e-8334-4523-a573-ba611cd04aeb",
+            "entity": "template",
+            "table": "#__componentbuilder_template",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "ca28683a-d899-4f33-a771-a7b3b95fe2d3",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "getFileTypeDetails",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "95dbb469-1e50-4d26-a72d-9c57a57103f7",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "processServiceDirectoryItem",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        }
+    ]
+}
