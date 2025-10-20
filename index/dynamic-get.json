@@ -1,0 +1,56 @@
+{
+    "e7af7dbd-318b-4ee7-8b03-7e9215a73c36": {
+        "name": "Category",
+        "path": "src\/dynamic_get\/e7af7dbd-318b-4ee7-8b03-7e9215a73c36",
+        "settings": "src\/dynamic_get\/e7af7dbd-318b-4ee7-8b03-7e9215a73c36\/item.json",
+        "guid": "e7af7dbd-318b-4ee7-8b03-7e9215a73c36"
+    },
+    "3071eabb-8a2d-4281-b6a4-179dbfb30774": {
+        "name": "Company",
+        "path": "src\/dynamic_get\/3071eabb-8a2d-4281-b6a4-179dbfb30774",
+        "settings": "src\/dynamic_get\/3071eabb-8a2d-4281-b6a4-179dbfb30774\/item.json",
+        "guid": "3071eabb-8a2d-4281-b6a4-179dbfb30774"
+    },
+    "61660555-f60c-4d9d-9dc4-44515a4c9834": {
+        "name": "Directory",
+        "path": "src\/dynamic_get\/61660555-f60c-4d9d-9dc4-44515a4c9834",
+        "settings": "src\/dynamic_get\/61660555-f60c-4d9d-9dc4-44515a4c9834\/item.json",
+        "guid": "61660555-f60c-4d9d-9dc4-44515a4c9834"
+    },
+    "81f158f6-027b-4c37-89e9-4413b35cefeb": {
+        "name": "Get Entity Banner",
+        "path": "src\/dynamic_get\/81f158f6-027b-4c37-89e9-4413b35cefeb",
+        "settings": "src\/dynamic_get\/81f158f6-027b-4c37-89e9-4413b35cefeb\/item.json",
+        "guid": "81f158f6-027b-4c37-89e9-4413b35cefeb"
+    },
+    "cdc29b9e-ac51-4b0d-9c38-ee587c89509d": {
+        "name": "Tag",
+        "path": "src\/dynamic_get\/cdc29b9e-ac51-4b0d-9c38-ee587c89509d",
+        "settings": "src\/dynamic_get\/cdc29b9e-ac51-4b0d-9c38-ee587c89509d\/item.json",
+        "guid": "cdc29b9e-ac51-4b0d-9c38-ee587c89509d"
+    },
+    "294949dd-93b3-424d-abea-fc6242d625d3": {
+        "name": "Language",
+        "path": "src\/dynamic_get\/294949dd-93b3-424d-abea-fc6242d625d3",
+        "settings": "src\/dynamic_get\/294949dd-93b3-424d-abea-fc6242d625d3\/item.json",
+        "guid": "294949dd-93b3-424d-abea-fc6242d625d3"
+    },
+    "e4f3648b-a740-4727-bc79-7109f1db0581": {
+        "name": "Area of Expertise",
+        "path": "src\/dynamic_get\/e4f3648b-a740-4727-bc79-7109f1db0581",
+        "settings": "src\/dynamic_get\/e4f3648b-a740-4727-bc79-7109f1db0581\/item.json",
+        "guid": "e4f3648b-a740-4727-bc79-7109f1db0581"
+    },
+    "28dc3ae8-a928-4bfc-b8cd-751ff6248639": {
+        "name": "getMineCompanies",
+        "path": "src\/dynamic_get\/28dc3ae8-a928-4bfc-b8cd-751ff6248639",
+        "settings": "src\/dynamic_get\/28dc3ae8-a928-4bfc-b8cd-751ff6248639\/item.json",
+        "guid": "28dc3ae8-a928-4bfc-b8cd-751ff6248639"
+    },
+    "236df971-bf74-4f19-a091-06c8d1a3f9a2": {
+        "name": "Companies",
+        "path": "src\/dynamic_get\/236df971-bf74-4f19-a091-06c8d1a3f9a2",
+        "settings": "src\/dynamic_get\/236df971-bf74-4f19-a091-06c8d1a3f9a2\/item.json",
+        "guid": "236df971-bf74-4f19-a091-06c8d1a3f9a2"
+    }
+}
