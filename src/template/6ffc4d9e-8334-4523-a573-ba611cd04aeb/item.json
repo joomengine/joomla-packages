@@ -1,0 +1,12 @@
+{
+    "name": "Company Debug",
+    "description": "Company Debug",
+    "dynamic_get": "",
+    "guid": "6ffc4d9e-8334-4523-a573-ba611cd04aeb",
+    "php_view": "Html::_('bootstrap.collapse');",
+    "add_php_view": 1,
+    "template": "<?php if ($this->params->get('show_listing_object', 0) === 1): ?>\r\n<div class=\"container my-5\">\r\n\t<div class=\"accordion accordion-flush\" id=\"Service-Directory-Listing-Debug\">\r\n\t\t<div class=\"accordion-item\">\r\n\t\t\t<h2 class=\"accordion-header\">\r\n\t\t\t\t<button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#Listing-Object\" aria-expanded=\"false\" aria-controls=\"Listing-Object\">\r\n\t\t\t\t\t<?php echo Text::_('Listing Object'); ?>\r\n\t\t\t\t<\/button>\r\n\t\t\t<\/h2>\r\n\t\t\t<div id=\"Listing-Object\" class=\"accordion-collapse collapse\" data-bs-parent=\"#Service-Directory-Listing-Debug\">\r\n\t\t\t\t<div class=\"accordion-body\">\r\n\t\t\t\t\t<pre><?php var_dump($this->item); ?><\/pre>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>\r\n<?php endif; ?>",
+    "snippet": "0",
+    "libraries": null,
+    "alias": "companydebug"
+}
