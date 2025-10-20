@@ -1,0 +1,21 @@
+{
+    "name": "Company Portfolios",
+    "description": "Company Portfolios",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39",
+    "php_view": "$tabId = 'portfolios-tabs-' . substr(md5(uniqid('', true)), 0, 8);\r\n$activeId = $tabId . '-0';\r\n$count = !empty($displayData) ? count((array) $displayData) : 0;",
+    "add_php_view": 1,
+    "layout": "<?php if ($count > 0): ?>\r\n<div class=\"container my-5\">\r\n\t<?php if ($count == 1): ?>\r\n\t\t<h3 class=\"mb-3\"><?php echo Text::_('Portfolio'); ?><\/h3>\r\n\t\t<div class=\"card h-100\">\r\n\t\t\t<div class=\"card-body\">\r\n\t\t\t\t<?php echo LayoutHelper::render('companyportfolio', array_values($displayData)[0]); ?>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<?php else: ?>\r\n\t\t<h3 class=\"mb-3\"><?php echo Text::_('Portfolios'); ?><\/h3>\r\n\t\t<?php echo Html::_('uitab.startTabSet', $tabId, ['active' => $activeId, 'recall' => true]); ?>\r\n\t\t<?php foreach ($displayData as $idx => $portfolio): ?>\r\n\t\t\t<?php\r\n\t\t\t$targetId = $tabId . '-' . $idx;\r\n\t\t\t$label = !empty($portfolio->project_title)\r\n\t\t\t\t? $portfolio->project_title\r\n\t\t\t\t: (!empty($portfolio->client_name) ? $portfolio->client_name : 'Portfolio ' . ($idx + 1));\r\n\t\t\t?>\r\n\t\t\t<?php echo Html::_('uitab.addTab', $tabId, $targetId, $label); ?>\r\n\t\t\t\t<?php echo LayoutHelper::render('companyportfolio', $portfolio); ?>\r\n\t\t\t<?php echo Html::_('uitab.endTab'); ?>\r\n\t\t<?php endforeach; ?>\r\n\t\t<?php echo Html::_('uitab.endTabSet'); ?>\r\n\t<?php endif; ?>\r\n<\/div>\r\n<?php endif; ?>",
+    "libraries": null,
+    "alias": "companyportfolios",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "f576d714-6991-419b-bfcd-d6dd917346d7",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
