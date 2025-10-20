@@ -1,0 +1,35 @@
+{
+    "name": "Company Extras",
+    "description": "Company Extras",
+    "dynamic_get": "",
+    "guid": "6cf8a790-0d9f-40e5-a5ee-9513fd715fde",
+    "php_view": "\/\/ Single entity view\r\n$item = $this->item ?? (object) [];\r\n\r\n$addresses = $item->addresses ?? [];\r\n$social_handles = $item->social_handles ?? [];\r\n$portfolios = $item->portfolios ?? [];",
+    "add_php_view": 1,
+    "template": "<div class=\"container my-5\">\r\n\t<?php echo LayoutHelper::render('addresses', $addresses); ?>\r\n\t<?php echo LayoutHelper::render('socialhandles', $social_handles); ?>\r\n<\/div>\r\n\r\n<?php if (!empty($portfolios)): ?>\r\n\t<?php echo LayoutHelper::render('companyportfolios', $portfolios); ?>\r\n<?php endif; ?>",
+    "snippet": "0",
+    "libraries": null,
+    "alias": "companyextras",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "68109de5-aefa-449b-8222-6e78732ca735",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "aede0e20-e765-456c-a4a8-b898bf22dc2d",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
