@@ -99,8 +99,11 @@ This design encourages collaborative and modular development across multiple JCB
 
 
  - **CascadingSelectManager JS** | [Details](src/custom_code/cascadingSelectManagerJS) | [Settings](src/custom_code/cascadingSelectManagerJS/item.json) | JCB (manual)
+ - **Companies Data Set Mapper** | [Details](src/custom_code/companiesDataSetMapper) | [Settings](src/custom_code/companiesDataSetMapper/item.json) | JCB (manual)
+ - **Companies Data Setter** | [Details](src/custom_code/companiesDataSetter) | [Settings](src/custom_code/companiesDataSetter/item.json) | JCB (manual)
  - **Delete Method After Sync Children** | [Details](src/custom_code/deleteMethodAfterSyncChildren) | [Settings](src/custom_code/deleteMethodAfterSyncChildren/item.json) | JCB (manual)
  - **FormController Edit Method** | [Details](src/custom_code/formControllerEdit) | [Settings](src/custom_code/formControllerEdit/item.json) | JCB (manual)
+ - **Model Company Search Query** | [Details](src/custom_code/modelCompanySearchQuery) | [Settings](src/custom_code/modelCompanySearchQuery/item.json) | JCB (manual)
  - **Publish Method After Sync Children** | [Details](src/custom_code/publishMethodAfterSyncChildren) | [Settings](src/custom_code/publishMethodAfterSyncChildren/item.json) | JCB (manual)
  - **Set GUID in Form (power)** | [Details](src/custom_code/setGUIDFormPower) | [Settings](src/custom_code/setGUIDFormPower/item.json) | JCB (manual)
  - **addUikitThreeToAdminViews** | [Details](src/custom_code/addUikitThreeToAdminViews) | [Settings](src/custom_code/addUikitThreeToAdminViews/item.json) | JCB (manual)
