@@ -8,7 +8,7 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"list\"\n\tname=\"published\"\n\tlabel=\"Status\"\n\tdescription=\"The status of this [[[view]]]\"\n\tclass=\"list_class\"\n\tmultiple=\"false\"\n\tfilter=\"INT\"\n\trequired=\"true\"\n\toption=\"1|Open,0|On-hold,2|Closed,-2|Trashed\"\n\tdefault=\"1\"\n\/>",
+    "xml": "<field\n\ttype=\"list\"\n\tname=\"published\"\n\tlabel=\"Status\"\n\tdescription=\"The status of this [[[view]]]\"\n\tclass=\"list_class\"\n\tmultiple=\"false\"\n\tfilter=\"INT\"\n\trequired=\"false\"\n\toption=\"1|Open,0|On-hold,2|Closed,-2|Trashed\"\n\tdefault=\"1\"\n\/>",
     "datalenght": "1",
     "javascript_view_footer": "",
     "css_views": "",
