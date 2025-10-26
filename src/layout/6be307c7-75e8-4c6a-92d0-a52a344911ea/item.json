@@ -1,0 +1,21 @@
+{
+    "name": "Note Ticket Comments",
+    "description": "Note Ticket Comments",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "6be307c7-75e8-4c6a-92d0-a52a344911ea",
+    "php_view": "\/\/ Extract data\r\n$bundle = $displayData['bundle'] ?? [];\r\n$userId = (int) ($displayData['userId'] ?? 0);\r\n\r\nif (empty($bundle))\r\n{\r\n\treturn;\r\n}\r\n\r\n$first = reset($bundle);\r\n$authorName = $first->name;\r\n$isCurrent  = ((int) $first->created_by === $userId);\r\n\r\n\/\/ Choose Bootstrap contextual tone\r\n$bgClass   = $isCurrent ? 'bg-primary-subtle' : 'bg-body-secondary';\r\n$textClass = $isCurrent ? 'text-dark' : 'text-body';",
+    "add_php_view": 1,
+    "layout": "<div class=\"w-100 py-3 mb-3 border-bottom <?php echo $bgClass; ?>\">\r\n\t<div class=\"container-fluid px-3\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-12\">\r\n\t\t\t\t<div class=\"fw-semibold mb-2 text-secondary\">\r\n\t\t\t\t\t<?php echo $authorName; ?>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"<?php echo $textClass; ?> lh-base\">\r\n\t\t\t\t\t<?php foreach ($bundle as $comment): ?>\r\n\t\t\t\t\t\t<?php\r\n\t\t\t\t\t\t\techo LayoutHelper::render('noteticketcomment',\r\n\t\t\t\t\t\t\t\t[\r\n\t\t\t\t\t\t\t\t\t'comment' => $comment,\r\n\t\t\t\t\t\t\t\t\t'isCurrent' => $isCurrent,\r\n\t\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t\t);\r\n\t\t\t\t\t\t?>\r\n\t\t\t\t\t<?php endforeach; ?>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>",
+    "libraries": null,
+    "alias": "noteticketcomments",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "f6ab6dbc-d374-4737-af82-6efed5bf6902",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
