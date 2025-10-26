@@ -8,7 +8,7 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"text\"\n\tname=\"subject\"\n\tlabel=\"Subject\"\n\tdescription=\"Enter the Subject this ticket relates to.\"\n\tclass=\"text_area\"\n\thint=\"e.g., Listing Activation\"\n\/>",
+    "xml": "<field\n\ttype=\"text\"\n\tname=\"subject\"\n\tlabel=\"Subject\"\n\tdescription=\"Enter the Subject this ticket relates to.\"\n\tclass=\"text_area\"\n\trequired=\"true\"\n\thint=\"e.g., Listing Activation\"\n\/>",
     "datalenght": "255",
     "javascript_view_footer": "",
     "css_views": "",
