@@ -1,0 +1,21 @@
+{
+    "name": "Service Directory Tickets",
+    "description": "Service Directory Tickets",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "1d96d3fc-8ae3-44f1-b368-89d00deca004",
+    "php_view": "$items = $displayData->tickets ?? [];",
+    "add_php_view": 1,
+    "layout": "<div class=\"row g-4\">\r\n\t<?php echo Html::_('bootstrap.startAccordion', 'tickets', ['active' => array_values($items)[0]->guid]); ?>\r\n\t<?php foreach ($items as $item) : ?>\r\n\t\t<?php\r\n\t\t\t$name = $displayData->escape($item->company_name, false) .\r\n\t\t\t\t'<br>-&nbsp;' . $displayData->escape($item->subject, false) .\r\n\t\t\t\t'<br>-&nbsp;' . Html::_('date', $item->created, Text::_('DATE_FORMAT_LC3')) .\r\n\t\t\t\t'<br>-&nbsp;' . $item->guid;\r\n\t\t?>\r\n\t\t<?php echo Html::_('bootstrap.addSlide', 'tickets', $name, $item->guid); ?>\r\n\t\t\t<?php echo LayoutHelper::render('noteticketconversation', ['comments' => $item->comments, 'user' => $displayData->user]); ?>\r\n\t\t<?php echo Html::_('bootstrap.endSlide'); ?>\r\n\t<?php endforeach; ?>\r\n\t<?php echo Html::_('bootstrap.endAccordion'); ?>\r\n<\/div>",
+    "libraries": null,
+    "alias": "servicedirectorytickets",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "3b7a55ed-2e17-4ed4-bbec-6f24da546e33",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
