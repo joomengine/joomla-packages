@@ -1,5 +1,5 @@
 {
-    "system_name": "Ticket Comments (Service Directory)",
+    "system_name": "Ticket Comments (Directories)",
     "name_single": "Ticket Comment",
     "short_description": "Ticket Comments",
     "php_allowedit": "",
@@ -11,7 +11,7 @@
     "icon": "",
     "php_after_publish": "",
     "add_fadein": 1,
-    "description": "This view is for managing Ticket Comments in the Service Directory.",
+    "description": "This view is for managing Ticket Comments in the Directories.",
     "icon_category": "",
     "icon_add": "",
     "php_after_cancel": "",
