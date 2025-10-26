@@ -124,5 +124,19 @@
         "path": "src\/layout\/f6ab6dbc-d374-4737-af82-6efed5bf6902",
         "settings": "src\/layout\/f6ab6dbc-d374-4737-af82-6efed5bf6902\/item.json",
         "guid": "f6ab6dbc-d374-4737-af82-6efed5bf6902"
+    },
+    "19de75ee-c2ad-43dc-8102-d328491e8673": {
+        "name": "Company Listings",
+        "desc": "Company Listings",
+        "path": "src\/layout\/19de75ee-c2ad-43dc-8102-d328491e8673",
+        "settings": "src\/layout\/19de75ee-c2ad-43dc-8102-d328491e8673\/item.json",
+        "guid": "19de75ee-c2ad-43dc-8102-d328491e8673"
+    },
+    "1d96d3fc-8ae3-44f1-b368-89d00deca004": {
+        "name": "Service Directory Tickets",
+        "desc": "Service Directory Tickets",
+        "path": "src\/layout\/1d96d3fc-8ae3-44f1-b368-89d00deca004",
+        "settings": "src\/layout\/1d96d3fc-8ae3-44f1-b368-89d00deca004\/item.json",
+        "guid": "1d96d3fc-8ae3-44f1-b368-89d00deca004"
     }
 }
