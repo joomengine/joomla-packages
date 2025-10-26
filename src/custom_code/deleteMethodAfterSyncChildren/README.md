@@ -11,12 +11,13 @@
 		// we must also update all linked tables
 		if (!empty($_tables_array) && Super___0a59c65c_9daf_4bc9_baf4_e063ff9e6a8a___Power::check($pks))
 		{
+			$_field_key ??= 'guid';
 			Super___640b5352_fb09_425f_a26e_cd44eda03f15___Power::setOption('com_[[[component]]]');
 			foreach($_tables_array as $_delete_table => $_field_name)
 			{
-				// get the [[[view]]] guid's
+				// get the [[[view]]] field key's
 				$_guids = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Load')->values(
-					['a.guid' => 'guid'], // select
+					['a.guid' => $_field_key], // select
 					['a' => '[[[view]]]'], // tables
 					['a.id' =>
 						['value' => $pks, 'operator' => 'IN']
