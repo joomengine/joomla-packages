@@ -1,9 +1,9 @@
 ### JCB! Admin View
-# Ticket Comments (Service Directory) (TicketComment:TicketComments)
+# Ticket Comments (Directories) (TicketComment:TicketComments)
 
 > Ticket Comments
 
-This view is for managing Ticket Comments in the Service Directory.
+This view is for managing Ticket Comments in the Directories.
 
 > Manage single-record forms with this reusable Admin View designed for smooth data handling, customization, and full integration in JCB.
 
