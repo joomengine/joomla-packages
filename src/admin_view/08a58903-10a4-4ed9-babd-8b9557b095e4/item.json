@@ -42,7 +42,7 @@
         }
     },
     "php_save": "",
-    "php_allowadd": "",
+    "php_allowadd": "[CUSTOMCODE=helperModelAllowAdd]",
     "php_before_cancel": "",
     "addlinked_views": {
         "addlinked_views0": {
@@ -77,7 +77,7 @@
     "css_views": "",
     "add_php_postsavehook": 1,
     "add_javascript_view_file": 1,
-    "add_php_allowadd": 0,
+    "add_php_allowadd": 1,
     "javascript_view_file": "[CUSTOMCODE=cascadingSelectManagerJS]",
     "add_php_allowedit": 0,
     "add_javascript_view_footer": 0,
@@ -171,6 +171,13 @@
         {
             "key": "function_name",
             "value": "setGUIDFormPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "helperModelAllowAdd",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
             "direction": "out"
