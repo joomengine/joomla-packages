@@ -60,6 +60,7 @@ You can:
  - **Company Relationships** | [Details](src/layout/ca28683a-d899-4f33-a771-a7b3b95fe2d3) | [Settings](src/layout/ca28683a-d899-4f33-a771-a7b3b95fe2d3/item.json) | Company Relationships
  - **Entity Banner** | [Details](src/layout/1313d71e-1e97-466e-86e6-ea10054207f1) | [Settings](src/layout/1313d71e-1e97-466e-86e6-ea10054207f1/item.json) | Entity Banner
  - **File Display Engine (Updated)** | [Details](src/layout/95dbb469-1e50-4d26-a72d-9c57a57103f7) | [Settings](src/layout/95dbb469-1e50-4d26-a72d-9c57a57103f7/item.json) | File Display Engine
+ - **Note Ticket Comment** | [Details](src/layout/f6ab6dbc-d374-4737-af82-6efed5bf6902) | [Settings](src/layout/f6ab6dbc-d374-4737-af82-6efed5bf6902/item.json) | Note Ticket Comment
  - **Note Ticket Comments** | [Details](src/layout/6be307c7-75e8-4c6a-92d0-a52a344911ea) | [Settings](src/layout/6be307c7-75e8-4c6a-92d0-a52a344911ea/item.json) | Note Ticket Comments
  - **Note Ticket Conversation** | [Details](src/layout/3b7a55ed-2e17-4ed4-bbec-6f24da546e33) | [Settings](src/layout/3b7a55ed-2e17-4ed4-bbec-6f24da546e33/item.json) | Note Ticket Conversation
  - **Panel Box** | [Details](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0) | [Settings](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0/item.json) | Panel Boxes
