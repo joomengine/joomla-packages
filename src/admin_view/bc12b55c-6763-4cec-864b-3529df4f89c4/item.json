@@ -3,13 +3,13 @@
     "name_single": "Ticket",
     "short_description": "Tickets",
     "php_allowedit": "",
-    "php_postsavehook": "",
+    "php_postsavehook": "\t\t\/\/ current id and state\r\n\t\t$id = $model->getState('[[[view]]].id', 0);\r\n\t\t$published = (int) ($validData['published'] ?? $model->getState('[[[view]]].published', 0));\r\n\r\n\t\t\/\/ get current user\r\n\t\t$user = $this->app->getIdentity();\r\n\r\n\t\t\/\/ set the status based on the type of area and user editing this\r\n\t\t$isAdmin = $this->app->isClient('administrator');\r\n\r\n\t\t\/\/ get the permission\r\n\t\t$permission = $id > 0\r\n\t\t\t? $user->authorise('[[[view]]].edit.state', 'com_[[[component]]].[[[view]]].' . (int) $id)\r\n\t\t\t: $user->authorise('[[[view]]].edit.state', 'com_[[[component]]].[[[view]]]');\r\n\r\n\t\t\/\/ if this is a site area, and not staff, set the ticket to open = 1\r\n\t\tif (!$isAdmin && !$permission)\r\n\t\t{\r\n\t\t\t$published = 1;\r\n\t\t}\r\n\t\t\/\/ if this is a admin area or staff, and the ticket was open = 1, set it to hold = 0\r\n\t\telseif (($permission || $isAdmin) && $published === 1)\r\n\t\t{\r\n\t\t\t$published = 0;\r\n\t\t}\r\n\r\n\t\t\/\/ Ensure the ticket is always assigned to (created_by) the company owner,\r\n\t\t\/\/ allowing them to manage and respond to the ticket directly.\r\n\t\t\/\/ This maintains ownership-based access control - only this owner can edit their own tickets.\r\n\t\t$company = $validData['company'] ?? $model->getState('[[[view]]].company', null);\r\n\t\t$guid = $validData['guid'] ?? $model->getState('[[[view]]].guid', null);\r\n\t\tif (!empty($guid) && !empty($company) && ($owner = Super___9c513baf_b279_43fd_ae29_a585c8cbc4f0___Power::item($company, 'company', 'a.created_by', '[[[component]]]')) !== null)\r\n\t\t{\r\n\t\t\t$[[[view]]] = (object) [\r\n\t\t\t\t'created_by' => $owner,\r\n\t\t\t\t'guid' => $guid,\r\n\t\t\t\t'published' => $published\r\n\t\t\t];\r\n\r\n\t\t\tSuper___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Item')->table('[[[view]]]')->set($[[[view]]], 'guid', 'update');\r\n\t\t}",
     "php_before_save": "[CUSTOMCODE=saveGUIDPower]",
     "php_getlistquery": "",
     "php_getitems": "",
     "name_list": "Tickets",
     "icon": "images\/vdm\/icon\/tickets.png#joomlaImage:\/\/local-images\/vdm\/icon\/tickets.png?width=128&height=128",
-    "php_after_publish": "",
+    "php_after_publish": "\t\t\/\/ linked tables to update\r\n\t\t$_tables_array = [\r\n\t\t\t'ticket_comment' => 'ticket'\r\n\t\t];\r\n[CUSTOMCODE=publishMethodAfterSyncChildren]",
     "add_fadein": 1,
     "description": "This view is for managing tickets in the Service Directory.",
     "icon_category": "",
@@ -18,7 +18,7 @@
     "mysql_table_charset": "utf8mb4",
     "php_batchmove": "",
     "type": 1,
-    "php_after_delete": "",
+    "php_after_delete": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'ticket_comment' => 'ticket'\r\n\t\t];\r\n[CUSTOMCODE=deleteMethodAfterSyncChildren]",
     "source": 0,
     "php_getitem": "",
     "addpermissions": {
@@ -61,7 +61,14 @@
     },
     "php_getitems_after_all": "",
     "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
-    "addtabs": null,
+    "addtabs": {
+        "addtabs0": {
+            "name": "Details"
+        },
+        "addtabs1": {
+            "name": "Attachments"
+        }
+    },
     "php_save": "",
     "php_allowadd": "",
     "php_before_cancel": "",
@@ -70,7 +77,7 @@
     "php_before_publish": "",
     "alias_builder_type": 0,
     "php_before_delete": "",
-    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
+    "php_document": "\t\t$isSite = $this->app->isClient('site');\r\n\r\n\t\tif ($isSite)\r\n\t\t{\r\n\t\t\t\/\/ reset toolbar\r\n\t\t\t$this->toolbar->setItems([]);\r\n\r\n\t\t\t\/\/ create a save and back (apply) button\r\n\t\t\t$this->toolbar->apply('ticket.apply', JustTEXT::_('Save Comment & Return'));\r\n\t\t\t$this->toolbar->customHtml('&nbsp;&nbsp;');\r\n\t\t\t\/\/ create a return (cancel) button\r\n\t\t\t$this->toolbar->cancel('ticket.cancel', JustTEXT::_('Return'));\r\n\t\t\t\/\/ add inline help back\r\n\t\t\t$this->toolbar->inlinehelp(\"hide-aware-inline-help\");\r\n\t\t}\r\n\r\n\t\t\/\/ load the previous comments if there is any\r\n\t\tif (!empty($this->item->comments))\r\n\t\t{\r\n\t\t\t$this->form->setFieldAttribute('noteticketconversation', 'description',\r\n\t\t\t\tJoomla___7ab82272_0b3d_4bb1_af35_e63a096cfe0b___Power::render('noteticketconversation',\r\n\t\t\t\t\t[\r\n\t\t\t\t\t\t'comments' => $this->item->comments,\r\n\t\t\t\t\t\t'user' => $this->getCurrentUser()\r\n\t\t\t\t\t]\r\n\t\t\t\t)\r\n\t\t\t);\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\t$this->form->removeField('noteticketconversation');\r\n\t\t}\r\n\r\n\t\t\/\/ the ticket status must always be the same as published (little trick)\r\n\t\t$published = (int) (((int) ($this->item->published ?? -2) === -2) ? 2 : $this->item->published);\r\n\t\t$this->form->setValue('ticket_status', $published);\r\n\r\n\t\tif ($isSite)\r\n\t\t{\r\n\t\t\t\/\/ Make company hidden on the site area\r\n \t\t\t\/\/ Since ModelSelect does not work in the site area!\r\n\t\t\t$this->form->setFieldAttribute('company', 'type', 'hidden');\r\n\r\n\t\t\t\/\/ ticket_status can not be changed on the site area\r\n\t\t\t$this->form->setFieldAttribute('ticket_status', 'disabled', 'true');\r\n\t\t\t$this->form->setFieldAttribute('ticket_status', 'readonly', 'true');\r\n\t\t\t$this->form->setFieldAttribute('ticket_status', 'required', 'false');\r\n\t\t}\r\n[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
     "mysql_table_row_format": "DYNAMIC",
     "alias_builder": null,
     "sql": "",
@@ -86,7 +93,7 @@
     "add_css_views": 0,
     "add_php_save": 0,
     "css_views": "",
-    "add_php_postsavehook": 0,
+    "add_php_postsavehook": 1,
     "add_javascript_view_file": 0,
     "add_php_allowadd": 0,
     "javascript_view_file": "",
@@ -102,14 +109,14 @@
     "add_javascript_views_footer": 0,
     "add_php_before_publish": 0,
     "javascript_views_footer": "",
-    "add_php_after_publish": 0,
-    "add_custom_button": 0,
+    "add_php_after_publish": 1,
+    "add_custom_button": 1,
     "add_php_before_delete": 0,
     "custom_button": null,
-    "add_php_after_delete": 0,
-    "php_controller": "",
+    "add_php_after_delete": 1,
+    "php_controller": "[CUSTOMCODE=formControllerEdit]",
     "add_php_document": 1,
-    "php_model": "",
+    "php_model": "[CUSTOMCODE=convertMarkdownToHtml]",
     "mysql_table_engine": "InnoDB",
     "php_controller_list": "",
     "mysql_table_collate": "utf8mb4_unicode_ci",
@@ -136,6 +143,20 @@
         },
         {
             "key": "function_name",
+            "value": "publishMethodAfterSyncChildren",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "deleteMethodAfterSyncChildren",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
             "value": "setGUIDFormPower",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
@@ -151,6 +172,27 @@
         {
             "key": "function_name",
             "value": "addUikitThreeToAdminViews",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "3b7a55ed-2e17-4ed4-bbec-6f24da546e33",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "formControllerEdit",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "convertMarkdownToHtml",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
             "direction": "out"
