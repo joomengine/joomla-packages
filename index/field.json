@@ -718,5 +718,23 @@
         "path": "src\/field\/9531af7c-efb8-4a6b-8c15-4eccbf38522b",
         "settings": "src\/field\/9531af7c-efb8-4a6b-8c15-4eccbf38522b\/item.json",
         "guid": "9531af7c-efb8-4a6b-8c15-4eccbf38522b"
+    },
+    "eefbcf49-5603-457e-8d32-f744c2b35a47": {
+        "name": "Note Ticket Conversation",
+        "path": "src\/field\/eefbcf49-5603-457e-8d32-f744c2b35a47",
+        "settings": "src\/field\/eefbcf49-5603-457e-8d32-f744c2b35a47\/item.json",
+        "guid": "eefbcf49-5603-457e-8d32-f744c2b35a47"
+    },
+    "71b40cd8-05be-45ca-8b61-8eee9cb00694": {
+        "name": "Ticket Status (override)",
+        "path": "src\/field\/71b40cd8-05be-45ca-8b61-8eee9cb00694",
+        "settings": "src\/field\/71b40cd8-05be-45ca-8b61-8eee9cb00694\/item.json",
+        "guid": "71b40cd8-05be-45ca-8b61-8eee9cb00694"
+    },
+    "b54dba1f-bfdc-49a2-95c4-3bbcea0861f0": {
+        "name": "Priority (ticket)",
+        "path": "src\/field\/b54dba1f-bfdc-49a2-95c4-3bbcea0861f0",
+        "settings": "src\/field\/b54dba1f-bfdc-49a2-95c4-3bbcea0861f0\/item.json",
+        "guid": "b54dba1f-bfdc-49a2-95c4-3bbcea0861f0"
     }
 }
