@@ -1,0 +1,21 @@
+{
+    "name": "Note Ticket Conversation",
+    "description": "Note Ticket Conversation",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "3b7a55ed-2e17-4ed4-bbec-6f24da546e33",
+    "php_view": "\/\/ Extract data\r\n$comments = $displayData['comments'] ?? [];\r\n$user     = $displayData['user'] ?? null;\r\n$userId   = (int) ($user?->id ?? 0);\r\n\r\n\/\/ Group comments by day\r\n$grouped = [];\r\nforeach ($comments as $comment)\r\n{\r\n\ttry {\r\n\t\t$date = new Joomla___3864fa33_ab10_48d5_98ea_5e1397e6a191___Power($comment->created);\r\n\t\t$day  = $date->format('Y-m-d');\r\n\t} catch (Exception $e) {\r\n\t\t$day = date('Y-m-d');\r\n\t}\r\n\t$grouped[$day][] = $comment;\r\n}",
+    "add_php_view": 1,
+    "layout": "<div class=\"container-fluid px-0\">\r\n\t<div class=\"d-flex flex-column\">\r\n\t\t<?php foreach ($grouped as $day => $items): ?>\r\n\t\t\t<div class=\"d-flex justify-content-center my-3\">\r\n\t\t\t\t<span class=\"badge bg-light text-secondary border\">\r\n\t\t\t\t\t<?php echo Html::_('date', $day, Text::_('DATE_FORMAT_LC3')); ?>\r\n\t\t\t\t<\/span>\r\n\t\t\t<\/div>\r\n\t\t\t<?php\r\n\t\t\t\/\/ Render bundles of consecutive comments by same author\r\n\t\t\t$bundles = [];\r\n\t\t\t$prevAuthor = null;\r\n\t\t\tforeach ($items as $comment)\r\n\t\t\t{\r\n\t\t\t\tif ($prevAuthor === $comment->created_by)\r\n\t\t\t\t{\r\n\t\t\t\t\t\/\/ Add to current bundle\r\n\t\t\t\t\t$bundles[count($bundles) - 1][] = $comment;\r\n\t\t\t\t}\r\n\t\t\t\telse\r\n\t\t\t\t{\r\n\t\t\t\t\t\/\/ Start new bundle\r\n\t\t\t\t\t$bundles[] = [$comment];\r\n\t\t\t\t}\r\n\t\t\t\t$prevAuthor = $comment->created_by;\r\n\t\t\t}\r\n\t\t\tforeach ($bundles as $bundle)\r\n\t\t\t{\r\n\t\t\t\techo LayoutHelper::render('noteticketcomments',\r\n\t\t\t\t\t[\r\n\t\t\t\t\t\t'bundle'  => $bundle,\r\n\t\t\t\t\t\t'userId'  => $userId,\r\n\t\t\t\t\t]\r\n\t\t\t\t);\r\n\t\t\t}\r\n\t\t\t?>\r\n\t\t<?php endforeach; ?>\r\n\t<\/div>\r\n<\/div>",
+    "libraries": null,
+    "alias": "noteticketconversation",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "6be307c7-75e8-4c6a-92d0-a52a344911ea",
+            "entity": "layout",
+            "table": "#__componentbuilder_layout",
+            "direction": "out"
+        }
+    ]
+}
