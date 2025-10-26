@@ -107,6 +107,7 @@ This design encourages collaborative and modular development across multiple JCB
  - **FormController Edit Method** | [Details](src/custom_code/formControllerEdit) | [Settings](src/custom_code/formControllerEdit/item.json) | JCB (manual)
  - **Get Search Link** | [Details](src/custom_code/getSearchLink) | [Settings](src/custom_code/getSearchLink/item.json) | JCB (manual)
  - **Get Time Based Random Seed** | [Details](src/custom_code/getTimeBasedRandomSeed) | [Settings](src/custom_code/getTimeBasedRandomSeed/item.json) | JCB (manual)
+ - **Helper Model Allow Add (a helper call)** | [Details](src/custom_code/helperModelAllowAdd) | [Settings](src/custom_code/helperModelAllowAdd/item.json) | JCB (manual)
  - **Model Company Search Query** | [Details](src/custom_code/modelCompanySearchQuery) | [Settings](src/custom_code/modelCompanySearchQuery/item.json) | JCB (manual)
  - **Model Escape** | [Details](src/custom_code/modelEscape) | [Settings](src/custom_code/modelEscape/item.json) | JCB (manual)
  - **Process Service Directory Item** | [Details](src/custom_code/processServiceDirectoryItem) | [Settings](src/custom_code/processServiceDirectoryItem/item.json) | JCB (manual)
