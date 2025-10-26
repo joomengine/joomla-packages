@@ -13,7 +13,7 @@
 	class="list_class"
 	multiple="false"
 	filter="INT"
-	required="true"
+	required="false"
 	option="1|Open,0|On-hold,2|Closed,-2|Trashed"
 	default="1"
 />
