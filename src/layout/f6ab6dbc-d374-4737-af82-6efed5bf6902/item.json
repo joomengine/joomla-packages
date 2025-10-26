@@ -1,0 +1,12 @@
+{
+    "name": "Note Ticket Comment",
+    "description": "Note Ticket Comment",
+    "dynamic_get": "",
+    "snippet": "0",
+    "guid": "f6ab6dbc-d374-4737-af82-6efed5bf6902",
+    "php_view": "$comment   = $displayData['comment'] ?? null;\r\n$isCurrent = !empty($displayData['isCurrent']);\r\n\r\nif (!$comment)\r\n{\r\n\treturn;\r\n}\r\n\r\n$text  = $comment->comment;\r\n$time  = Html::_('date', $comment->created, 'g:i a');\r\n$shade = $isCurrent ? 'border-primary' : 'border-secondary';",
+    "add_php_view": 1,
+    "layout": "<div class=\"p-3 mb-2 bg-white rounded border-start border-4 <?php echo $shade; ?>\">\r\n\t<div class=\"lh-base\">\r\n\t\t<?php echo $text; ?>\r\n\t<\/div>\r\n\t<div class=\"mt-2 text-end\">\r\n\t\t<small class=\"text-muted\"><?php echo $time; ?><\/small>\r\n\t<\/div>\r\n<\/div>",
+    "libraries": null,
+    "alias": "noteticketcomment"
+}
