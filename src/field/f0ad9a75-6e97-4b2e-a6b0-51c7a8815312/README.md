@@ -11,6 +11,7 @@
 	label="Subject"
 	description="Enter the Subject this ticket relates to."
 	class="text_area"
+	required="true"
 	hint="e.g., Listing Activation"
 />
 ```
