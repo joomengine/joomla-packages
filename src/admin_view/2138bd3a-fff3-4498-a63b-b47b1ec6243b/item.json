@@ -9,7 +9,7 @@
     "php_getitems": "",
     "name_list": "Platforms",
     "icon": "",
-    "php_after_publish": "",
+    "php_after_publish": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'social_handle' => 'platform'\r\n\t\t];\r\n[CUSTOMCODE=publishMethodAfterSyncChildren]",
     "add_fadein": 1,
     "description": "",
     "icon_category": "",
@@ -18,7 +18,7 @@
     "mysql_table_charset": "utf8mb4",
     "php_batchmove": "",
     "type": 1,
-    "php_after_delete": "",
+    "php_after_delete": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'social_handle' => 'platform'\r\n\t\t];\r\n[CUSTOMCODE=deleteMethodAfterSyncChildren]",
     "source": 1,
     "php_getitem": "",
     "addpermissions": {
@@ -102,11 +102,11 @@
     "add_javascript_views_footer": 0,
     "add_php_before_publish": 0,
     "javascript_views_footer": "",
-    "add_php_after_publish": 0,
+    "add_php_after_publish": 1,
     "add_custom_button": 1,
     "add_php_before_delete": 0,
     "custom_button": null,
-    "add_php_after_delete": 0,
+    "add_php_after_delete": 1,
     "php_controller": "[CUSTOMCODE=formControllerEdit]",
     "add_php_document": 1,
     "php_model": "",
@@ -130,6 +130,20 @@
         {
             "key": "function_name",
             "value": "saveGUIDPower",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "publishMethodAfterSyncChildren",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
+            "key": "function_name",
+            "value": "deleteMethodAfterSyncChildren",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
             "direction": "out"
