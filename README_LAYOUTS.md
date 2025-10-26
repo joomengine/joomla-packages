@@ -54,6 +54,7 @@ You can:
  - **Basic Item Link** | [Details](src/layout/fb042c16-7652-4485-a5fd-9bb9ac1ab89c) | [Settings](src/layout/fb042c16-7652-4485-a5fd-9bb9ac1ab89c/item.json) | Basic Item Link
  - **Company Contacts** | [Details](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47) | [Settings](src/layout/dbd6c79e-63ed-4e1c-b0d8-a70821439b47/item.json) | Company Contacts
  - **Company Details** | [Details](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d) | [Settings](src/layout/11db13fe-e43b-4da7-be3d-c2422018d58d/item.json) | Company Details
+ - **Company Listings** | [Details](src/layout/19de75ee-c2ad-43dc-8102-d328491e8673) | [Settings](src/layout/19de75ee-c2ad-43dc-8102-d328491e8673/item.json) | Company Listings
  - **Company Portfolio** | [Details](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7) | [Settings](src/layout/f576d714-6991-419b-bfcd-d6dd917346d7/item.json) | Company Portfolio
  - **Company Portfolios** | [Details](src/layout/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39) | [Settings](src/layout/b26b33a4-af5e-4ec4-83f9-5c2ac0faaf39/item.json) | Company Portfolios
  - **Company Relationship** | [Details](src/layout/a03b67ce-b0ae-4e3b-b919-35e744693078) | [Settings](src/layout/a03b67ce-b0ae-4e3b-b919-35e744693078/item.json) | Company Relationship
@@ -65,6 +66,7 @@ You can:
  - **Note Ticket Conversation** | [Details](src/layout/3b7a55ed-2e17-4ed4-bbec-6f24da546e33) | [Settings](src/layout/3b7a55ed-2e17-4ed4-bbec-6f24da546e33/item.json) | Note Ticket Conversation
  - **Panel Box** | [Details](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0) | [Settings](src/layout/1afdb574-2773-49f6-86a4-ac0c63f798e0/item.json) | Panel Boxes
  - **Search Box** | [Details](src/layout/f9d33ff5-1621-4f7b-b55e-191960389d94) | [Settings](src/layout/f9d33ff5-1621-4f7b-b55e-191960389d94/item.json) | Search Box
+ - **Service Directory Tickets** | [Details](src/layout/1d96d3fc-8ae3-44f1-b368-89d00deca004) | [Settings](src/layout/1d96d3fc-8ae3-44f1-b368-89d00deca004/item.json) | Service Directory Tickets
  - **Social Handle** | [Details](src/layout/cae40d38-af5e-4b38-b1fb-0981077d3204) | [Settings](src/layout/cae40d38-af5e-4b38-b1fb-0981077d3204/item.json) | Social Handle
  - **Social Handles** | [Details](src/layout/aede0e20-e765-456c-a4a8-b898bf22dc2d) | [Settings](src/layout/aede0e20-e765-456c-a4a8-b898bf22dc2d/item.json) | Social Handles
 
