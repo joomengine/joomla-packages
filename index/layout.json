@@ -110,5 +110,12 @@
         "path": "src\/layout\/3b7a55ed-2e17-4ed4-bbec-6f24da546e33",
         "settings": "src\/layout\/3b7a55ed-2e17-4ed4-bbec-6f24da546e33\/item.json",
         "guid": "3b7a55ed-2e17-4ed4-bbec-6f24da546e33"
+    },
+    "6be307c7-75e8-4c6a-92d0-a52a344911ea": {
+        "name": "Note Ticket Comments",
+        "desc": "Note Ticket Comments",
+        "path": "src\/layout\/6be307c7-75e8-4c6a-92d0-a52a344911ea",
+        "settings": "src\/layout\/6be307c7-75e8-4c6a-92d0-a52a344911ea\/item.json",
+        "guid": "6be307c7-75e8-4c6a-92d0-a52a344911ea"
     }
 }
