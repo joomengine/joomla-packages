@@ -103,5 +103,12 @@
         "path": "src\/layout\/f9d33ff5-1621-4f7b-b55e-191960389d94",
         "settings": "src\/layout\/f9d33ff5-1621-4f7b-b55e-191960389d94\/item.json",
         "guid": "f9d33ff5-1621-4f7b-b55e-191960389d94"
+    },
+    "3b7a55ed-2e17-4ed4-bbec-6f24da546e33": {
+        "name": "Note Ticket Conversation",
+        "desc": "Note Ticket Conversation",
+        "path": "src\/layout\/3b7a55ed-2e17-4ed4-bbec-6f24da546e33",
+        "settings": "src\/layout\/3b7a55ed-2e17-4ed4-bbec-6f24da546e33\/item.json",
+        "guid": "3b7a55ed-2e17-4ed4-bbec-6f24da546e33"
     }
 }
