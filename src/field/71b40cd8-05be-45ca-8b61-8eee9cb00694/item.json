@@ -1,0 +1,35 @@
+{
+    "name": "Ticket Status (override)",
+    "fieldtype": "a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d",
+    "datatype": "TINYINT",
+    "indexes": "2",
+    "null_switch": "NOT NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"list\"\n\tname=\"ticket_status\"\n\tlabel=\"Status\"\n\tdescription=\"The status of this [[[view]]]\"\n\tclass=\"list_class\"\n\tmultiple=\"false\"\n\tfilter=\"INT\"\n\trequired=\"false\"\n\toption=\"1|Open,0|On-hold,2|Closed\"\n\tdefault=\"1\"\n\/>",
+    "datalenght": "1",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "71b40cd8-05be-45ca-8b61-8eee9cb00694",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
