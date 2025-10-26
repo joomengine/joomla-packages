@@ -145,5 +145,12 @@
         "path": "src\/custom_code\/unlockThePowerOfJoomlaDevelopment",
         "settings": "src\/custom_code\/unlockThePowerOfJoomlaDevelopment\/item.json",
         "guid": "unlockThePowerOfJoomlaDevelopment"
+    },
+    "helperModelAllowAdd": {
+        "name": "Helper Model Allow Add (a helper call)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/helperModelAllowAdd",
+        "settings": "src\/custom_code\/helperModelAllowAdd\/item.json",
+        "guid": "helperModelAllowAdd"
     }
 }
