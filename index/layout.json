@@ -117,5 +117,12 @@
         "path": "src\/layout\/6be307c7-75e8-4c6a-92d0-a52a344911ea",
         "settings": "src\/layout\/6be307c7-75e8-4c6a-92d0-a52a344911ea\/item.json",
         "guid": "6be307c7-75e8-4c6a-92d0-a52a344911ea"
+    },
+    "f6ab6dbc-d374-4737-af82-6efed5bf6902": {
+        "name": "Note Ticket Comment",
+        "desc": "Note Ticket Comment",
+        "path": "src\/layout\/f6ab6dbc-d374-4737-af82-6efed5bf6902",
+        "settings": "src\/layout\/f6ab6dbc-d374-4737-af82-6efed5bf6902\/item.json",
+        "guid": "f6ab6dbc-d374-4737-af82-6efed5bf6902"
     }
 }
