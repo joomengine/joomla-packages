@@ -159,5 +159,12 @@
         "settings": "src\/admin_view\/66ae94e9-5283-4bc5-bee8-7f36915f972e\/item.json",
         "guid": "66ae94e9-5283-4bc5-bee8-7f36915f972e",
         "desc": "File Type"
+    },
+    "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381": {
+        "name": "Review Company Updates (Service Directory)",
+        "path": "src\/admin_view\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "settings": "src\/admin_view\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381\/item.json",
+        "guid": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "desc": "List of companies updates to review"
     }
 }
