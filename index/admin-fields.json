@@ -136,5 +136,11 @@
         "path": "src\/admin_view\/children\/e85e7cd7-baf2-4bb2-939a-8d664f49b7da",
         "settings": "src\/admin_view\/children\/e85e7cd7-baf2-4bb2-939a-8d664f49b7da\/admin-fields.json",
         "guid": "e85e7cd7-baf2-4bb2-939a-8d664f49b7da"
+    },
+    "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381": {
+        "name": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "path": "src\/admin_view\/children\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "settings": "src\/admin_view\/children\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381\/admin-fields.json",
+        "guid": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381"
     }
 }
