@@ -1,5 +1,5 @@
 {
-    "system_name": "Company Portfolio",
+    "system_name": "Company Portfolio (Directories)",
     "name_single": "Portfolio",
     "short_description": "Compnay Portfolio",
     "php_postsavehook": "",
@@ -178,10 +178,10 @@
     "mysql_table_engine": "InnoDB",
     "add_view_toolbar": 0,
     "mysql_table_collate": "utf8mb4_unicode_ci",
-    "view_toolbar": null,
+    "view_toolbar": "",
     "add_sql": 1,
     "add_views_toolbar": 0,
-    "views_toolbar": null,
+    "views_toolbar": "",
     "guid": "7e615f03-c169-49fb-b72b-b75fcdec7672",
     "add_php_ajax": 0,
     "@dependencies": [
