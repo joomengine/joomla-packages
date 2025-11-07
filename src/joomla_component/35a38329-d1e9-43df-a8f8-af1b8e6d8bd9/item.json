@@ -24,7 +24,7 @@
     "add_css_admin": 0,
     "dashboard_type": 1,
     "bom": "joomla_basic.txt",
-    "component_version": "5.0.1",
+    "component_version": "5.0.2",
     "add_css_site": 0,
     "image": "images\/vdm\/Sevice_Directory_500.jpg#joomlaImage:\/\/local-images\/vdm\/Sevice_Directory_500.jpg?width=500&height=500",
     "dashboard": "",
@@ -82,7 +82,7 @@
     "add_backup_folder_path": "1",
     "addfootable": 0,
     "backup_folder_path": "\/var\/www\/jsd_j5",
-    "add_email_helper": 0,
+    "add_email_helper": 1,
     "add_php_helper_both": 0,
     "add_jcb_powers_path": "1",
     "php_helper_both": "",
@@ -127,6 +127,13 @@
             "value": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
             "entity": "component_updates",
             "table": "#__componentbuilder_component_updates",
+            "direction": "in"
+        },
+        {
+            "key": "joomla_component",
+            "value": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+            "entity": "component_custom_admin_menus",
+            "table": "#__componentbuilder_component_custom_admin_menus",
             "direction": "in"
         },
         {
