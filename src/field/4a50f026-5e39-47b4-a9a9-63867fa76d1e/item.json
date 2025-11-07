@@ -1,0 +1,56 @@
+{
+    "name": "Social Media Handles - local (company-subform)",
+    "fieldtype": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+    "datatype": "TEXT",
+    "indexes": "",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"subform\"\n\tname=\"social_handles\"\n\tlabel=\"Social Media Handles\"\n\tlayout=\"joomla.form.field.subform.repeatable\"\n\tmultiple=\"true\"\n\tbuttons=\"add,remove\"\n\tfields=\"fb3115a1-e579-401a-9b53-9469cd4739e4,6fc68e03-8e01-41dc-895d-0bf8a29b65a6,d8d19384-f81c-4655-bd21-30149c2d4ead\"\n\ticon=\"list\"\n\tmax=\"20\"\n\tmin=\"0\"\n\/>",
+    "datalenght": "",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "4a50f026-5e39-47b4-a9a9-63867fa76d1e",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "fb3115a1-e579-401a-9b53-9469cd4739e4",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "6fc68e03-8e01-41dc-895d-0bf8a29b65a6",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "d8d19384-f81c-4655-bd21-30149c2d4ead",
+            "entity": "field",
+            "table": "#__componentbuilder_field",
+            "direction": "out"
+        }
+    ]
+}
