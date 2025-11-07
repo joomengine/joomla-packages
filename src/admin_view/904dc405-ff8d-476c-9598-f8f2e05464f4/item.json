@@ -2,127 +2,10 @@
     "system_name": "Categories (Directories)",
     "name_single": "Category",
     "short_description": "Categories",
-    "php_allowedit": "",
     "php_postsavehook": "",
     "php_before_save": "[CUSTOMCODE=saveGUIDPower]",
     "php_getlistquery": "",
     "php_getitems": "",
-    "name_list": "Categories",
-    "icon": "images\/vdm\/icon\/category.png#joomlaImage:\/\/local-images\/vdm\/icon\/category.png?width=128&height=128",
-    "php_after_publish": "",
-    "add_fadein": 1,
-    "description": "The Extension Directory Categories",
-    "icon_category": "",
-    "icon_add": "",
-    "php_after_cancel": "",
-    "mysql_table_charset": "utf8mb4",
-    "php_batchmove": "",
-    "type": 1,
-    "php_after_delete": "",
-    "source": 1,
-    "php_getitem": "",
-    "addpermissions": {
-        "addpermissions0": {
-            "action": "view.edit",
-            "implementation": 3
-        },
-        "addpermissions1": {
-            "action": "view.edit.own",
-            "implementation": 3
-        },
-        "addpermissions2": {
-            "action": "view.edit.state",
-            "implementation": 3
-        },
-        "addpermissions3": {
-            "action": "view.edit.created_by",
-            "implementation": 3
-        },
-        "addpermissions4": {
-            "action": "view.edit.created",
-            "implementation": 3
-        },
-        "addpermissions5": {
-            "action": "view.create",
-            "implementation": 3
-        },
-        "addpermissions6": {
-            "action": "view.delete",
-            "implementation": 3
-        },
-        "addpermissions7": {
-            "action": "view.access",
-            "implementation": 3
-        }
-    },
-    "php_getitems_after_all": "",
-    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
-    "addtabs": {
-        "addtabs0": {
-            "name": "Details"
-        },
-        "addtabs1": {
-            "name": "Media"
-        }
-    },
-    "php_save": "",
-    "php_allowadd": "",
-    "php_before_cancel": "",
-    "addlinked_views": null,
-    "php_batchcopy": "",
-    "php_before_publish": "",
-    "alias_builder_type": 1,
-    "php_before_delete": "",
-    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
-    "mysql_table_row_format": "DYNAMIC",
-    "alias_builder": {
-        "0": ""
-    },
-    "sql": "--\r\n-- Dumping data for table `#__[[[component]]]_category`\r\n--\r\n\r\nINSERT INTO `#__[[[component]]]_category` (`id`, `alias`, `description`, `guid`, `level`, `lft`, `name`, `parent_guid`, `published`, `rgt`, `params`, `created`, `modified`, `version`, `access`) VALUES\r\n(1, 'creative-strategy', 'Focuses on developing innovative ideas and brand strategies to enhance communication, identity, and project direction.', '43bfb9c5-6d61-4f67-8c2d-5bf8ee81465a', 0, 0, 'Creative Strategy', '', 1, 0, NULL, '2025-10-08 15:13:20', NULL, 1, 1),\r\n(2, 'extension-development', 'Specializes in building, customizing, and maintaining Joomla! extensions, plugins, and components.', '5095b34a-1def-48dc-ad6b-174c891c5ba2', 0, 0, 'Extension Development', '', 1, 0, NULL, '2025-10-08 15:13:38', NULL, 1, 1),\r\n(3, 'programming', 'Covers all aspects of coding, backend logic, integrations, and custom application functionality for Joomla! and web systems.', '317e379b-896f-486f-b522-3cb5007f56d7', 0, 0, 'Programming', '', 1, 0, NULL, '2025-10-08 15:13:50', NULL, 1, 1),\r\n(4, 'configuration-support', 'Assists with Joomla! setup, environment tuning, server configuration, and optimization for stable performance.', 'eb52ff1d-dbbf-4a71-8c6d-1c62aa872231', 0, 0, 'Configuration Support', '', 1, 0, NULL, '2025-10-08 15:14:03', NULL, 1, 1),\r\n(5, 'hosting-providers', 'Provides managed hosting, infrastructure, and domain-related services optimized for Joomla! and PHP applications.', '4b6337c4-6131-40c3-8c9e-51a6c48e1c41', 0, 0, 'Hosting Providers', '', 1, 0, NULL, '2025-10-08 15:14:12', NULL, 1, 1),\r\n(6, 'project-management', 'Oversees development timelines, communication, and coordination between clients, developers, and contributors.', '93a3bcad-8698-49c5-bef3-035db9c0a898', 0, 0, 'Project Management', '', 1, 0, NULL, '2025-10-08 15:14:23', NULL, 1, 1),\r\n(7, 'consulting', 'Advises on technical strategy, business processes, and digital transformation for Joomla!-based systems.', '9fe41a26-39dd-4c21-8842-ac07d8a1b38d', 0, 0, 'Consulting', '', 1, 0, NULL, '2025-10-08 15:14:34', NULL, 1, 1),\r\n(8, 'joomla-security', 'Focuses on securing Joomla! installations through audits, vulnerability patching, and best-practice hardening.', 'd3aed17e-a686-4608-998b-1c6c638af5eb', 0, 0, 'Joomla! Security', '', 1, 0, NULL, '2025-10-08 15:14:45', '2025-10-08 21:02:13', 2, 1),\r\n(9, 'training-education', 'Provides structured learning resources, tutorials, and workshops for Joomla! users, administrators, and developers.', '3f18b1ec-a50a-41df-a0b2-98a5be609479', 0, 0, 'Training & Education', '', 1, 0, NULL, '2025-10-08 15:14:56', NULL, 1, 1),\r\n(10, 'content-development', 'Creates, manages, and optimizes web content including text, media, and structured data for Joomla! websites.', '009c21fe-012c-43b0-948f-bd865c26af89', 0, 0, 'Content Development', '', 1, 0, NULL, '2025-10-08 15:15:04', NULL, 1, 1),\r\n(11, 'marketing-support', 'Supports campaigns, SEO, and analytics to improve brand visibility and engagement for Joomla! projects.', 'b8b255fa-9706-407e-bc9b-2b635313361a', 0, 0, 'Marketing Support', '', 1, 0, NULL, '2025-10-08 15:15:12', NULL, 1, 1),\r\n(12, 'technical-support', 'Provides assistance with bug fixes, performance tuning, troubleshooting, and general Joomla! maintenance.', '87ef3688-127d-4d04-9587-aa6dc2c47f50', 0, 0, ' Technical Support', '', 1, 0, NULL, '2025-10-08 15:15:22', '2025-10-08 21:11:05', 3, 1),\r\n(13, 'design-development', 'Combines user interface design and frontend coding to deliver visually appealing, functional Joomla! sites.', '2fec9e0a-d5aa-4b11-9c46-58dfe3eb80c0', 0, 0, 'Design & Development', '', 1, 0, NULL, '2025-10-08 15:15:35', '2025-10-08 21:11:00', 7, 1),\r\n(14, 'migrations-upgrades', 'Handles Joomla! site migrations, version upgrades, and compatibility adjustments between major releases.', '81e03b0e-7804-47e5-9f5c-05e8cd638c8a', 0, 0, 'Migrations & Upgrades', '', 1, 0, NULL, '2025-10-08 15:15:46', '2025-10-08 20:52:16', 5, 1),\r\n(15, 'template-development', 'Designs and builds custom Joomla! templates using HTML, CSS, JavaScript, and Joomla! layout frameworks.', '350d6005-0df0-4cac-abdd-f8619f2940e8', 0, 0, 'Template development', '', 1, 0, NULL, '2025-10-08 15:15:56', '2025-10-08 20:58:30', 6, 1);",
-    "add_php_getitem": 0,
-    "add_category_submenu": 1,
-    "add_php_getitems": 0,
-    "add_php_getitems_after_all": 0,
-    "add_php_getlistquery": 0,
-    "add_css_view": 0,
-    "add_php_getform": 1,
-    "css_view": "",
-    "add_php_before_save": 1,
-    "add_css_views": 0,
-    "add_php_save": 0,
-    "css_views": "",
-    "add_php_postsavehook": 0,
-    "add_javascript_view_file": 0,
-    "add_php_allowadd": 0,
-    "javascript_view_file": "",
-    "add_php_allowedit": 0,
-    "add_javascript_view_footer": 0,
-    "add_php_before_cancel": 0,
-    "javascript_view_footer": "",
-    "add_php_after_cancel": 0,
-    "add_javascript_views_file": 0,
-    "add_php_batchcopy": 0,
-    "javascript_views_file": "",
-    "add_php_batchmove": 0,
-    "add_javascript_views_footer": 0,
-    "add_php_before_publish": 0,
-    "javascript_views_footer": "",
-    "add_php_after_publish": 0,
-    "add_custom_button": 1,
-    "add_php_before_delete": 0,
-    "custom_button": null,
-    "add_php_after_delete": 0,
-    "php_controller": "[CUSTOMCODE=formControllerEdit]",
-    "add_php_document": 1,
-    "php_model": "",
-    "mysql_table_engine": "InnoDB",
-    "php_controller_list": "",
-    "mysql_table_collate": "utf8mb4_unicode_ci",
-    "php_model_list": "",
-    "add_sql": 1,
-    "add_php_ajax": 0,
-    "php_ajaxmethod": "",
-    "guid": "904dc405-ff8d-476c-9598-f8f2e05464f4",
     "ajax_input": {
         "ajax_input0": {
             "value_name": "idName",
@@ -189,6 +72,127 @@
             "user_check": "1"
         }
     },
+    "source": 1,
+    "icon": "images\/vdm\/icon\/category.png#joomlaImage:\/\/local-images\/vdm\/icon\/category.png?width=128&height=128",
+    "php_batchmove": "",
+    "add_fadein": 1,
+    "description": "The Extension Directory Categories",
+    "icon_category": "",
+    "icon_add": "",
+    "php_allowedit": "",
+    "php_after_delete": "",
+    "php_after_cancel": "",
+    "type": 1,
+    "php_after_publish": "",
+    "mysql_table_charset": "utf8mb4",
+    "name_list": "Categories",
+    "addpermissions": {
+        "addpermissions0": {
+            "action": "view.edit",
+            "implementation": 3
+        },
+        "addpermissions1": {
+            "action": "view.edit.own",
+            "implementation": 3
+        },
+        "addpermissions2": {
+            "action": "view.edit.state",
+            "implementation": 3
+        },
+        "addpermissions3": {
+            "action": "view.edit.created_by",
+            "implementation": 3
+        },
+        "addpermissions4": {
+            "action": "view.edit.created",
+            "implementation": 3
+        },
+        "addpermissions5": {
+            "action": "view.create",
+            "implementation": 3
+        },
+        "addpermissions6": {
+            "action": "view.delete",
+            "implementation": 3
+        },
+        "addpermissions7": {
+            "action": "view.access",
+            "implementation": 3
+        }
+    },
+    "php_getitem": "",
+    "php_getitems_after_all": "",
+    "addtabs": {
+        "addtabs0": {
+            "name": "Details"
+        },
+        "addtabs1": {
+            "name": "Media"
+        }
+    },
+    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
+    "php_save": "",
+    "php_allowadd": "",
+    "addlinked_views": null,
+    "php_before_cancel": "",
+    "php_batchcopy": "",
+    "alias_builder_type": 1,
+    "php_before_publish": "",
+    "php_before_delete": "",
+    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
+    "alias_builder": {
+        "0": ""
+    },
+    "mysql_table_row_format": "DYNAMIC",
+    "sql": "--\r\n-- Dumping data for table `#__[[[component]]]_category`\r\n--\r\n\r\nINSERT INTO `#__[[[component]]]_category` (`id`, `alias`, `description`, `guid`, `level`, `lft`, `name`, `parent_guid`, `published`, `rgt`, `params`, `created`, `modified`, `version`, `access`) VALUES\r\n(1, 'creative-strategy', 'Focuses on developing innovative ideas and brand strategies to enhance communication, identity, and project direction.', '43bfb9c5-6d61-4f67-8c2d-5bf8ee81465a', 0, 0, 'Creative Strategy', '', 1, 0, NULL, '2025-10-08 15:13:20', NULL, 1, 1),\r\n(2, 'extension-development', 'Specializes in building, customizing, and maintaining Joomla! extensions, plugins, and components.', '5095b34a-1def-48dc-ad6b-174c891c5ba2', 0, 0, 'Extension Development', '', 1, 0, NULL, '2025-10-08 15:13:38', NULL, 1, 1),\r\n(3, 'programming', 'Covers all aspects of coding, backend logic, integrations, and custom application functionality for Joomla! and web systems.', '317e379b-896f-486f-b522-3cb5007f56d7', 0, 0, 'Programming', '', 1, 0, NULL, '2025-10-08 15:13:50', NULL, 1, 1),\r\n(4, 'configuration-support', 'Assists with Joomla! setup, environment tuning, server configuration, and optimization for stable performance.', 'eb52ff1d-dbbf-4a71-8c6d-1c62aa872231', 0, 0, 'Configuration Support', '', 1, 0, NULL, '2025-10-08 15:14:03', NULL, 1, 1),\r\n(5, 'hosting-providers', 'Provides managed hosting, infrastructure, and domain-related services optimized for Joomla! and PHP applications.', '4b6337c4-6131-40c3-8c9e-51a6c48e1c41', 0, 0, 'Hosting Providers', '', 1, 0, NULL, '2025-10-08 15:14:12', NULL, 1, 1),\r\n(6, 'project-management', 'Oversees development timelines, communication, and coordination between clients, developers, and contributors.', '93a3bcad-8698-49c5-bef3-035db9c0a898', 0, 0, 'Project Management', '', 1, 0, NULL, '2025-10-08 15:14:23', NULL, 1, 1),\r\n(7, 'consulting', 'Advises on technical strategy, business processes, and digital transformation for Joomla!-based systems.', '9fe41a26-39dd-4c21-8842-ac07d8a1b38d', 0, 0, 'Consulting', '', 1, 0, NULL, '2025-10-08 15:14:34', NULL, 1, 1),\r\n(8, 'joomla-security', 'Focuses on securing Joomla! installations through audits, vulnerability patching, and best-practice hardening.', 'd3aed17e-a686-4608-998b-1c6c638af5eb', 0, 0, 'Joomla! Security', '', 1, 0, NULL, '2025-10-08 15:14:45', '2025-10-08 21:02:13', 2, 1),\r\n(9, 'training-education', 'Provides structured learning resources, tutorials, and workshops for Joomla! users, administrators, and developers.', '3f18b1ec-a50a-41df-a0b2-98a5be609479', 0, 0, 'Training & Education', '', 1, 0, NULL, '2025-10-08 15:14:56', NULL, 1, 1),\r\n(10, 'content-development', 'Creates, manages, and optimizes web content including text, media, and structured data for Joomla! websites.', '009c21fe-012c-43b0-948f-bd865c26af89', 0, 0, 'Content Development', '', 1, 0, NULL, '2025-10-08 15:15:04', NULL, 1, 1),\r\n(11, 'marketing-support', 'Supports campaigns, SEO, and analytics to improve brand visibility and engagement for Joomla! projects.', 'b8b255fa-9706-407e-bc9b-2b635313361a', 0, 0, 'Marketing Support', '', 1, 0, NULL, '2025-10-08 15:15:12', NULL, 1, 1),\r\n(12, 'technical-support', 'Provides assistance with bug fixes, performance tuning, troubleshooting, and general Joomla! maintenance.', '87ef3688-127d-4d04-9587-aa6dc2c47f50', 0, 0, ' Technical Support', '', 1, 0, NULL, '2025-10-08 15:15:22', '2025-10-08 21:11:05', 3, 1),\r\n(13, 'design-development', 'Combines user interface design and frontend coding to deliver visually appealing, functional Joomla! sites.', '2fec9e0a-d5aa-4b11-9c46-58dfe3eb80c0', 0, 0, 'Design & Development', '', 1, 0, NULL, '2025-10-08 15:15:35', '2025-10-08 21:11:00', 7, 1),\r\n(14, 'migrations-upgrades', 'Handles Joomla! site migrations, version upgrades, and compatibility adjustments between major releases.', '81e03b0e-7804-47e5-9f5c-05e8cd638c8a', 0, 0, 'Migrations & Upgrades', '', 1, 0, NULL, '2025-10-08 15:15:46', '2025-10-08 20:52:16', 5, 1),\r\n(15, 'template-development', 'Designs and builds custom Joomla! templates using HTML, CSS, JavaScript, and Joomla! layout frameworks.', '350d6005-0df0-4cac-abdd-f8619f2940e8', 0, 0, 'Template development', '', 1, 0, NULL, '2025-10-08 15:15:56', '2025-10-08 20:58:30', 6, 1);",
+    "add_category_submenu": 1,
+    "php_ajaxmethod": "",
+    "add_php_getitem": 0,
+    "add_php_getitems": 0,
+    "add_css_view": 0,
+    "add_php_getitems_after_all": 0,
+    "css_view": "",
+    "add_php_getlistquery": 0,
+    "add_css_views": 0,
+    "add_php_getform": 1,
+    "css_views": "",
+    "add_php_before_save": 1,
+    "add_javascript_view_file": 0,
+    "add_php_save": 0,
+    "javascript_view_file": "",
+    "add_php_postsavehook": 0,
+    "add_javascript_view_footer": 0,
+    "add_php_allowadd": 0,
+    "javascript_view_footer": "",
+    "add_php_allowedit": 0,
+    "add_javascript_views_file": 0,
+    "add_php_before_cancel": 0,
+    "javascript_views_file": "",
+    "add_php_after_cancel": 0,
+    "add_javascript_views_footer": 0,
+    "add_php_batchcopy": 0,
+    "javascript_views_footer": "",
+    "add_php_batchmove": 0,
+    "add_custom_button": 1,
+    "add_php_before_publish": 0,
+    "custom_button": null,
+    "add_php_after_publish": 0,
+    "php_controller": "[CUSTOMCODE=formControllerEdit]",
+    "add_php_before_delete": 0,
+    "php_model": "",
+    "add_php_after_delete": 0,
+    "php_controller_list": "",
+    "add_php_document": 1,
+    "php_model_list": "",
+    "mysql_table_engine": "InnoDB",
+    "add_view_toolbar": 0,
+    "mysql_table_collate": "utf8mb4_unicode_ci",
+    "view_toolbar": null,
+    "add_sql": 1,
+    "add_views_toolbar": 0,
+    "views_toolbar": null,
+    "guid": "904dc405-ff8d-476c-9598-f8f2e05464f4",
+    "add_php_ajax": 0,
     "@dependencies": [
         {
             "key": "admin_view",
