@@ -736,5 +736,47 @@
         "path": "src\/field\/b54dba1f-bfdc-49a2-95c4-3bbcea0861f0",
         "settings": "src\/field\/b54dba1f-bfdc-49a2-95c4-3bbcea0861f0\/item.json",
         "guid": "b54dba1f-bfdc-49a2-95c4-3bbcea0861f0"
+    },
+    "9c2d9f33-c81a-46a9-866e-d08e9d836680": {
+        "name": "Areas of Expertise - local (custom)",
+        "path": "src\/field\/9c2d9f33-c81a-46a9-866e-d08e9d836680",
+        "settings": "src\/field\/9c2d9f33-c81a-46a9-866e-d08e9d836680\/item.json",
+        "guid": "9c2d9f33-c81a-46a9-866e-d08e9d836680"
+    },
+    "4a50f026-5e39-47b4-a9a9-63867fa76d1e": {
+        "name": "Social Media Handles - local (company-subform)",
+        "path": "src\/field\/4a50f026-5e39-47b4-a9a9-63867fa76d1e",
+        "settings": "src\/field\/4a50f026-5e39-47b4-a9a9-63867fa76d1e\/item.json",
+        "guid": "4a50f026-5e39-47b4-a9a9-63867fa76d1e"
+    },
+    "2a3b6f1b-7324-4222-9052-ddcbd477d366": {
+        "name": "Addresses - local (company-subform)",
+        "path": "src\/field\/2a3b6f1b-7324-4222-9052-ddcbd477d366",
+        "settings": "src\/field\/2a3b6f1b-7324-4222-9052-ddcbd477d366\/item.json",
+        "guid": "2a3b6f1b-7324-4222-9052-ddcbd477d366"
+    },
+    "b65747a9-265f-4282-a0d1-5101aec59233": {
+        "name": "Portfolio - local (company-subform)",
+        "path": "src\/field\/b65747a9-265f-4282-a0d1-5101aec59233",
+        "settings": "src\/field\/b65747a9-265f-4282-a0d1-5101aec59233\/item.json",
+        "guid": "b65747a9-265f-4282-a0d1-5101aec59233"
+    },
+    "8e6af75a-ae26-4301-8a23-6a311336b2fb": {
+        "name": "Languages - local",
+        "path": "src\/field\/8e6af75a-ae26-4301-8a23-6a311336b2fb",
+        "settings": "src\/field\/8e6af75a-ae26-4301-8a23-6a311336b2fb\/item.json",
+        "guid": "8e6af75a-ae26-4301-8a23-6a311336b2fb"
+    },
+    "4f1bb016-60cb-4356-bbca-df8a0e8d08df": {
+        "name": "Tags - local (custom)",
+        "path": "src\/field\/4f1bb016-60cb-4356-bbca-df8a0e8d08df",
+        "settings": "src\/field\/4f1bb016-60cb-4356-bbca-df8a0e8d08df\/item.json",
+        "guid": "4f1bb016-60cb-4356-bbca-df8a0e8d08df"
+    },
+    "50f270e2-bd81-481a-a86b-d343767a63b0": {
+        "name": "Company Review Status",
+        "path": "src\/field\/50f270e2-bd81-481a-a86b-d343767a63b0",
+        "settings": "src\/field\/50f270e2-bd81-481a-a86b-d343767a63b0\/item.json",
+        "guid": "50f270e2-bd81-481a-a86b-d343767a63b0"
     }
 }
