@@ -44,12 +44,12 @@
 		if (method_exists($document, 'getWebAssetManager'))
 		{
 			/** @var \Joomla\CMS\WebAsset\WebAssetManager $wa */
-			$wa = $document->getWebAssetManager();
+			$wa = $document -> getWebAssetManager();
 			$wa->addInlineScript($script);
 		}
 		else
 		{
-			$document->addScriptDeclaration($script);
+			$document -> addScriptDeclaration($script);
 		}
 ```
 
