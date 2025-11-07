@@ -1,5 +1,5 @@
 ### JCB! Admin View
-# Company Portfolio (Portfolio:Portfolios)
+# Company Portfolio (Directories) (Portfolio:Portfolios)
 
 > Compnay Portfolio
 
