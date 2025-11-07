@@ -2,127 +2,10 @@
     "system_name": "Tags (Directories)",
     "name_single": "Tag",
     "short_description": "Tags",
-    "php_allowedit": "",
     "php_postsavehook": "",
     "php_before_save": "[CUSTOMCODE=saveGUIDPower]",
     "php_getlistquery": "",
     "php_getitems": "",
-    "name_list": "Tags",
-    "icon": "images\/vdm\/icon\/tag.png#joomlaImage:\/\/local-images\/vdm\/icon\/tag.png?width=128&height=128",
-    "php_after_publish": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'company_tag' => 'tag'\r\n\t\t];\r\n[CUSTOMCODE=publishMethodAfterSyncChildren]",
-    "add_fadein": 1,
-    "description": "The Extension Directory Tags",
-    "icon_category": "",
-    "icon_add": "",
-    "php_after_cancel": "",
-    "mysql_table_charset": "utf8mb4",
-    "php_batchmove": "",
-    "type": 1,
-    "php_after_delete": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'company_tag' => 'tag'\r\n\t\t];\r\n[CUSTOMCODE=deleteMethodAfterSyncChildren]",
-    "source": 1,
-    "php_getitem": "",
-    "addpermissions": {
-        "addpermissions0": {
-            "action": "view.edit",
-            "implementation": 3
-        },
-        "addpermissions1": {
-            "action": "view.edit.own",
-            "implementation": 3
-        },
-        "addpermissions2": {
-            "action": "view.edit.state",
-            "implementation": 3
-        },
-        "addpermissions3": {
-            "action": "view.edit.created_by",
-            "implementation": 3
-        },
-        "addpermissions4": {
-            "action": "view.edit.created",
-            "implementation": 3
-        },
-        "addpermissions5": {
-            "action": "view.create",
-            "implementation": 3
-        },
-        "addpermissions6": {
-            "action": "view.delete",
-            "implementation": 3
-        },
-        "addpermissions7": {
-            "action": "view.access",
-            "implementation": 3
-        }
-    },
-    "php_getitems_after_all": "",
-    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
-    "addtabs": {
-        "addtabs0": {
-            "name": "Details"
-        },
-        "addtabs1": {
-            "name": "Media"
-        }
-    },
-    "php_save": "",
-    "php_allowadd": "",
-    "php_before_cancel": "",
-    "addlinked_views": null,
-    "php_batchcopy": "",
-    "php_before_publish": "",
-    "alias_builder_type": 1,
-    "php_before_delete": "",
-    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
-    "mysql_table_row_format": "DYNAMIC",
-    "alias_builder": {
-        "0": ""
-    },
-    "sql": "--\r\n-- Dumping data for table `#__[[[component]]]_tag`\r\n--\r\nINSERT INTO `#__[[[component]]]_tag` (`id`, `alias`, `description`, `guid`, `level`, `lft`, `name`, `parent_guid`, `published`, `rgt`, `created`, `modified`) VALUES\r\n(1, 'php', 'Server-side scripting language widely used for web development.', 'a1d2f88b-3a2b-4d6b-9817-13b2944c9a1e', 1, 1, 'PHP', '', 1, 2, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(2, 'python', 'High-level interpreted language known for readability and versatility.', 'b3c9a8e1-4d0e-45e9-b6e1-c92f2f5a97ad', 1, 3, 'Python', '', 1, 4, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(3, 'javascript', 'Core language of the web for client and server-side development.', 'f5f31a0a-05e8-41ad-bb73-650f2c66c4e7', 1, 5, 'JavaScript', '', 1, 6, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(4, 'typescript', 'Superset of JavaScript adding static typing and advanced tooling.', 'ce42a710-43b0-4cf5-9b0a-20764b4370b5', 1, 7, 'TypeScript', '', 1, 8, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(5, 'java', 'Object-oriented programming language used for enterprise applications.', 'f3ad42b1-bf48-47ae-9532-203994688e3d', 1, 9, 'Java', '', 1, 10, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(6, 'csharp', 'Language developed by Microsoft for .NET development.', 'a4f72e6c-cc0b-4c90-8a27-9490a8f6d05a', 1, 11, 'C#', '', 1, 12, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(7, 'cpp', 'C++ \u2014 powerful general-purpose language for high-performance software.', 'fd182e91-78c5-4c8d-b048-2ce7d4f52fa3', 1, 13, 'C++', '', 1, 14, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(8, 'go', 'Compiled, concurrent programming language from Google.', 'b13241ea-0679-4b26-9cb0-7a584ca1ac9f', 1, 15, 'Go (Golang)', '', 1, 16, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(9, 'rust', 'Memory-safe systems programming language with strong performance.', '9c8d4b3f-9cf0-4e3a-9b33-319a7f8f5b99', 1, 17, 'Rust', '', 1, 18, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(10, 'ruby', 'Dynamic, open source language focused on simplicity and productivity.', '5fd3bdf5-b60e-49de-9e93-efc6a36e9e8f', 1, 19, 'Ruby', '', 1, 20, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(11, 'html', 'Standard markup language for creating web pages.', '36af5b47-c0f4-44d2-82b9-8dc2c4fa8ad8', 1, 21, 'HTML', '', 1, 22, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(12, 'css', 'Stylesheet language used to describe the look and formatting of web pages.', '3b4b046e-6b4b-4fc2-8ac0-24aeb2df251b', 1, 23, 'CSS', '', 1, 24, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(13, 'react', 'JavaScript library for building modern user interfaces.', '7d6bfe2b-9623-4024-9d77-3481e0e4f611', 1, 25, 'React', '', 1, 26, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(14, 'vue', 'Progressive JavaScript framework for building interactive web interfaces.', '2a4a7aef-6a33-4d12-812d-352fa229cc84', 1, 27, 'Vue.js', '', 1, 28, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(15, 'angular', 'Web application framework developed by Google.', '9c6e5b2d-f7b8-4d56-b08e-d065c20e9b9c', 1, 29, 'Angular', '', 1, 30, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(16, 'joomla', 'Content management system written in PHP.', '8a38cfd3-046a-42ee-817a-b89b01035173', 1, 31, 'Joomla', '', 1, 32, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(17, 'wordpress', 'Popular PHP-based CMS for blogs and websites.', 'cc872f89-5a09-4f7b-bf7f-3ffbd44a13df', 1, 33, 'WordPress', '', 1, 34, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(18, 'laravel', 'Modern PHP framework for web artisans.', 'a8d2e676-28b3-4a4e-89b1-fb96d38b29f1', 1, 35, 'Laravel', '', 1, 36, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(19, 'symfony', 'PHP framework for large-scale enterprise applications.', 'b58b3bcb-92f7-4761-b9da-50a5df6d7f62', 1, 37, 'Symfony', '', 1, 38, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(20, 'django', 'High-level Python web framework promoting rapid development.', 'f8e91e73-19f2-457b-8b3a-7c389f34a5a8', 1, 39, 'Django', '', 1, 40, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(21, 'flask', 'Lightweight Python web framework.', 'e5b88c12-78b8-4878-8f9d-b9f39cc78a94', 1, 41, 'Flask', '', 1, 42, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(22, 'nodejs', 'Runtime for executing JavaScript server-side.', 'd7a25cf1-6466-42d0-91ea-9782cb09ad0a', 1, 43, 'Node.js', '', 1, 44, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(23, 'express', 'Fast, unopinionated web framework for Node.js.', 'bbf3c48f-789d-4c4f-9e61-fca4cc68b7cb', 1, 45, 'Express.js', '', 1, 46, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(24, 'graphql', 'Query language for APIs and runtime for executing those queries.', 'f0b232d1-28a4-47d8-9d10-91e83f6163c8', 1, 47, 'GraphQL', '', 1, 48, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(25, 'docker', 'Container platform for packaging and running applications.', 'a693b2b6-b214-4c41-97da-6a8db5b1e1a9', 1, 49, 'Docker', '', 1, 50, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(26, 'kubernetes', 'System for automating deployment, scaling, and management of containers.', 'aa6b71fa-fd49-4b84-8d69-9f21a76a00b1', 1, 51, 'Kubernetes', '', 1, 52, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(27, 'ci-cd', 'Continuous Integration and Continuous Deployment pipelines.', 'da0e8a87-4e39-4b93-bb7c-9ebcf4b90876', 1, 53, 'CI\/CD', '', 1, 54, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(28, 'git', 'Version control system for tracking source code changes.', 'ef3924a9-bf7d-4e0a-b44a-5e6adf6e2102', 1, 55, 'Git', '', 1, 56, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(29, 'github', 'Platform for hosting Git repositories and collaboration.', '8d7f259e-62dc-40e6-9c79-3c5fcbf223d9', 1, 57, 'GitHub', '', 1, 58, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(30, 'gitlab', 'Git-based DevOps lifecycle tool for CI\/CD.', 'a12f7e09-b76c-41a9-963b-d8e7e3ea9a47', 1, 59, 'GitLab', '', 1, 60, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(31, 'bitbucket', 'Git and Mercurial-based code hosting service by Atlassian.', 'c2a59a55-15b9-4abf-8a2f-38a13e415f5a', 1, 61, 'Bitbucket', '', 1, 62, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(32, 'aws', 'Amazon Web Services \u2014 leading cloud computing platform.', 'e4e4b1b1-dc42-4d79-b217-29e29027e3f0', 1, 63, 'AWS', '', 1, 64, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(33, 'azure', 'Microsoft Azure cloud services platform.', 'd8a3a18c-c46d-4b8c-b82e-350cd6a39a2b', 1, 65, 'Azure', '', 1, 66, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(34, 'gcp', 'Google Cloud Platform for scalable infrastructure and services.', 'bc46e8f8-6c18-4f78-a7d2-4df1a9ffad03', 1, 67, 'GCP', '', 1, 68, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(35, 'linux', 'Open-source operating system kernel widely used in servers.', 'b87291c8-1793-42b7-b5a8-d05de3bdf911', 1, 69, 'Linux', '', 1, 70, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(36, 'bash', 'Unix shell and command language for scripting.', 'dfcce9e1-39a8-4f12-8bbd-6fa7eb3c478b', 1, 71, 'Bash', '', 1, 72, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(37, 'devops', 'Set of practices combining software development and IT operations.', 'f8a7a79c-5324-46ee-9b57-cb129cfa2bfa', 1, 73, 'DevOps', '', 1, 74, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(38, 'cybersecurity', 'Practices for protecting systems and data from digital attacks.', 'eb52fd83-1e13-44c5-8547-39d1a9b5d4cd', 1, 75, 'Cybersecurity', '', 1, 76, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(39, 'database', 'Organized collection of structured information or data.', '8d46b76a-d9ed-4c14-9303-1fcb90d2c3db', 1, 77, 'Database', '', 1, 78, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(40, 'mysql', 'Popular open-source relational database system.', 'b43d372c-6b12-4ed3-a67a-16a7c9234513', 1, 79, 'MySQL', '', 1, 80, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(41, 'postgresql', 'Advanced open-source relational database system.', '6f418b92-4f8e-4c37-bc06-f5ee8f7bb3a3', 1, 81, 'PostgreSQL', '', 1, 82, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(42, 'mongodb', 'NoSQL database using flexible document-based storage.', 'f96e2cd1-1a93-4a3a-9d6d-33c3ec9267b8', 1, 83, 'MongoDB', '', 1, 84, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(43, 'api', 'Application Programming Interface \u2014 defines communication rules between systems.', 'dc9b5d71-431f-4c70-a6db-49b18db3570f', 1, 85, 'API', '', 1, 86, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(44, 'rest', 'Representational State Transfer \u2014 architectural style for web APIs.', 'd2d68c5a-72cf-4060-8cc0-311aef9ad02e', 1, 87, 'REST', '', 1, 88, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(45, 'ai', 'Artificial Intelligence \u2014 simulation of human intelligence in machines.', 'b8e89a82-f93d-4e48-a7a7-601ff444c3fa', 1, 89, 'AI', '', 1, 90, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(46, 'ml', 'Machine Learning \u2014 subset of AI using statistical models to learn from data.', 'c3e7f691-c1da-48da-a71a-9b1a6b8192a4', 1, 91, 'Machine Learning', '', 1, 92, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(47, 'nlp', 'Natural Language Processing \u2014 AI field for understanding human language.', 'df8d5bfb-32a4-4b36-8bba-d9aa3f12f5c3', 1, 93, 'NLP', '', 1, 94, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(48, 'blockchain', 'Decentralized technology for secure and transparent data recording.', 'e8c2a3b4-4e72-4968-91a3-bfb4a3e3f7dc', 1, 95, 'Blockchain', '', 1, 96, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(49, 'testing', 'Software testing for validation and verification of applications.', 'f45e2b71-2067-4e93-b58a-3a7d687bfb18', 1, 97, 'Testing', '', 1, 98, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(50, 'automation', 'Automation tools and frameworks to streamline development processes.', 'd8f48a41-b7b1-4a53-8f7d-f0fbc7cb4105', 1, 99, 'Automation', '', 1, 100, '2025-03-28 10:00:00', '2025-10-10 07:47:43');",
-    "add_php_getitem": 0,
-    "add_category_submenu": 1,
-    "add_php_getitems": 0,
-    "add_php_getitems_after_all": 0,
-    "add_php_getlistquery": 0,
-    "add_css_view": 0,
-    "add_php_getform": 1,
-    "css_view": "",
-    "add_php_before_save": 1,
-    "add_css_views": 0,
-    "add_php_save": 0,
-    "css_views": "",
-    "add_php_postsavehook": 0,
-    "add_javascript_view_file": 0,
-    "add_php_allowadd": 0,
-    "javascript_view_file": "",
-    "add_php_allowedit": 0,
-    "add_javascript_view_footer": 0,
-    "add_php_before_cancel": 0,
-    "javascript_view_footer": "",
-    "add_php_after_cancel": 0,
-    "add_javascript_views_file": 0,
-    "add_php_batchcopy": 0,
-    "javascript_views_file": "",
-    "add_php_batchmove": 0,
-    "add_javascript_views_footer": 0,
-    "add_php_before_publish": 0,
-    "javascript_views_footer": "",
-    "add_php_after_publish": 1,
-    "add_custom_button": 0,
-    "add_php_before_delete": 0,
-    "custom_button": null,
-    "add_php_after_delete": 1,
-    "php_controller": "",
-    "add_php_document": 1,
-    "php_model": "",
-    "mysql_table_engine": "InnoDB",
-    "php_controller_list": "",
-    "mysql_table_collate": "utf8mb4_unicode_ci",
-    "php_model_list": "",
-    "add_sql": 1,
-    "add_php_ajax": 0,
-    "php_ajaxmethod": "",
-    "guid": "22bdc95c-d3de-4c25-af21-5a17d118b1df",
     "ajax_input": {
         "ajax_input0": {
             "value_name": "idName",
@@ -189,6 +72,127 @@
             "user_check": "1"
         }
     },
+    "source": 1,
+    "icon": "images\/vdm\/icon\/tag.png#joomlaImage:\/\/local-images\/vdm\/icon\/tag.png?width=128&height=128",
+    "php_batchmove": "",
+    "add_fadein": 1,
+    "description": "The Extension Directory Tags",
+    "icon_category": "",
+    "icon_add": "",
+    "php_allowedit": "",
+    "php_after_delete": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'company_tag' => 'tag'\r\n\t\t];\r\n[CUSTOMCODE=deleteMethodAfterSyncChildren]",
+    "php_after_cancel": "",
+    "type": 1,
+    "php_after_publish": "\t\t\/\/ linked tables to also update\r\n\t\t$_tables_array = [\r\n\t\t\t'company_tag' => 'tag'\r\n\t\t];\r\n[CUSTOMCODE=publishMethodAfterSyncChildren]",
+    "mysql_table_charset": "utf8mb4",
+    "name_list": "Tags",
+    "addpermissions": {
+        "addpermissions0": {
+            "action": "view.edit",
+            "implementation": 3
+        },
+        "addpermissions1": {
+            "action": "view.edit.own",
+            "implementation": 3
+        },
+        "addpermissions2": {
+            "action": "view.edit.state",
+            "implementation": 3
+        },
+        "addpermissions3": {
+            "action": "view.edit.created_by",
+            "implementation": 3
+        },
+        "addpermissions4": {
+            "action": "view.edit.created",
+            "implementation": 3
+        },
+        "addpermissions5": {
+            "action": "view.create",
+            "implementation": 3
+        },
+        "addpermissions6": {
+            "action": "view.delete",
+            "implementation": 3
+        },
+        "addpermissions7": {
+            "action": "view.access",
+            "implementation": 3
+        }
+    },
+    "php_getitem": "",
+    "php_getitems_after_all": "",
+    "addtabs": {
+        "addtabs0": {
+            "name": "Details"
+        },
+        "addtabs1": {
+            "name": "Media"
+        }
+    },
+    "php_getform": "[CUSTOMCODE=setGUIDFormPower]",
+    "php_save": "",
+    "php_allowadd": "",
+    "addlinked_views": null,
+    "php_before_cancel": "",
+    "php_batchcopy": "",
+    "alias_builder_type": 1,
+    "php_before_publish": "",
+    "php_before_delete": "",
+    "php_document": "[CUSTOMCODE=vdmUploaderConfig+vdm-uikit-uploader,file_vdm_uploader,getFileTypeDetails,uploadFile,displayFiles,deleteFile]\r\n[CUSTOMCODE=addUikitThreeToAdminViews]",
+    "alias_builder": {
+        "0": ""
+    },
+    "mysql_table_row_format": "DYNAMIC",
+    "sql": "--\r\n-- Dumping data for table `#__[[[component]]]_tag`\r\n--\r\nINSERT INTO `#__[[[component]]]_tag` (`id`, `alias`, `description`, `guid`, `level`, `lft`, `name`, `parent_guid`, `published`, `rgt`, `created`, `modified`) VALUES\r\n(1, 'php', 'Server-side scripting language widely used for web development.', 'a1d2f88b-3a2b-4d6b-9817-13b2944c9a1e', 1, 1, 'PHP', '', 1, 2, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(2, 'python', 'High-level interpreted language known for readability and versatility.', 'b3c9a8e1-4d0e-45e9-b6e1-c92f2f5a97ad', 1, 3, 'Python', '', 1, 4, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(3, 'javascript', 'Core language of the web for client and server-side development.', 'f5f31a0a-05e8-41ad-bb73-650f2c66c4e7', 1, 5, 'JavaScript', '', 1, 6, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(4, 'typescript', 'Superset of JavaScript adding static typing and advanced tooling.', 'ce42a710-43b0-4cf5-9b0a-20764b4370b5', 1, 7, 'TypeScript', '', 1, 8, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(5, 'java', 'Object-oriented programming language used for enterprise applications.', 'f3ad42b1-bf48-47ae-9532-203994688e3d', 1, 9, 'Java', '', 1, 10, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(6, 'csharp', 'Language developed by Microsoft for .NET development.', 'a4f72e6c-cc0b-4c90-8a27-9490a8f6d05a', 1, 11, 'C#', '', 1, 12, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(7, 'cpp', 'C++ \u2014 powerful general-purpose language for high-performance software.', 'fd182e91-78c5-4c8d-b048-2ce7d4f52fa3', 1, 13, 'C++', '', 1, 14, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(8, 'go', 'Compiled, concurrent programming language from Google.', 'b13241ea-0679-4b26-9cb0-7a584ca1ac9f', 1, 15, 'Go (Golang)', '', 1, 16, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(9, 'rust', 'Memory-safe systems programming language with strong performance.', '9c8d4b3f-9cf0-4e3a-9b33-319a7f8f5b99', 1, 17, 'Rust', '', 1, 18, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(10, 'ruby', 'Dynamic, open source language focused on simplicity and productivity.', '5fd3bdf5-b60e-49de-9e93-efc6a36e9e8f', 1, 19, 'Ruby', '', 1, 20, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(11, 'html', 'Standard markup language for creating web pages.', '36af5b47-c0f4-44d2-82b9-8dc2c4fa8ad8', 1, 21, 'HTML', '', 1, 22, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(12, 'css', 'Stylesheet language used to describe the look and formatting of web pages.', '3b4b046e-6b4b-4fc2-8ac0-24aeb2df251b', 1, 23, 'CSS', '', 1, 24, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(13, 'react', 'JavaScript library for building modern user interfaces.', '7d6bfe2b-9623-4024-9d77-3481e0e4f611', 1, 25, 'React', '', 1, 26, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(14, 'vue', 'Progressive JavaScript framework for building interactive web interfaces.', '2a4a7aef-6a33-4d12-812d-352fa229cc84', 1, 27, 'Vue.js', '', 1, 28, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(15, 'angular', 'Web application framework developed by Google.', '9c6e5b2d-f7b8-4d56-b08e-d065c20e9b9c', 1, 29, 'Angular', '', 1, 30, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(16, 'joomla', 'Content management system written in PHP.', '8a38cfd3-046a-42ee-817a-b89b01035173', 1, 31, 'Joomla', '', 1, 32, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(17, 'wordpress', 'Popular PHP-based CMS for blogs and websites.', 'cc872f89-5a09-4f7b-bf7f-3ffbd44a13df', 1, 33, 'WordPress', '', 1, 34, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(18, 'laravel', 'Modern PHP framework for web artisans.', 'a8d2e676-28b3-4a4e-89b1-fb96d38b29f1', 1, 35, 'Laravel', '', 1, 36, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(19, 'symfony', 'PHP framework for large-scale enterprise applications.', 'b58b3bcb-92f7-4761-b9da-50a5df6d7f62', 1, 37, 'Symfony', '', 1, 38, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(20, 'django', 'High-level Python web framework promoting rapid development.', 'f8e91e73-19f2-457b-8b3a-7c389f34a5a8', 1, 39, 'Django', '', 1, 40, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(21, 'flask', 'Lightweight Python web framework.', 'e5b88c12-78b8-4878-8f9d-b9f39cc78a94', 1, 41, 'Flask', '', 1, 42, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(22, 'nodejs', 'Runtime for executing JavaScript server-side.', 'd7a25cf1-6466-42d0-91ea-9782cb09ad0a', 1, 43, 'Node.js', '', 1, 44, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(23, 'express', 'Fast, unopinionated web framework for Node.js.', 'bbf3c48f-789d-4c4f-9e61-fca4cc68b7cb', 1, 45, 'Express.js', '', 1, 46, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(24, 'graphql', 'Query language for APIs and runtime for executing those queries.', 'f0b232d1-28a4-47d8-9d10-91e83f6163c8', 1, 47, 'GraphQL', '', 1, 48, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(25, 'docker', 'Container platform for packaging and running applications.', 'a693b2b6-b214-4c41-97da-6a8db5b1e1a9', 1, 49, 'Docker', '', 1, 50, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(26, 'kubernetes', 'System for automating deployment, scaling, and management of containers.', 'aa6b71fa-fd49-4b84-8d69-9f21a76a00b1', 1, 51, 'Kubernetes', '', 1, 52, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(27, 'ci-cd', 'Continuous Integration and Continuous Deployment pipelines.', 'da0e8a87-4e39-4b93-bb7c-9ebcf4b90876', 1, 53, 'CI\/CD', '', 1, 54, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(28, 'git', 'Version control system for tracking source code changes.', 'ef3924a9-bf7d-4e0a-b44a-5e6adf6e2102', 1, 55, 'Git', '', 1, 56, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(29, 'github', 'Platform for hosting Git repositories and collaboration.', '8d7f259e-62dc-40e6-9c79-3c5fcbf223d9', 1, 57, 'GitHub', '', 1, 58, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(30, 'gitlab', 'Git-based DevOps lifecycle tool for CI\/CD.', 'a12f7e09-b76c-41a9-963b-d8e7e3ea9a47', 1, 59, 'GitLab', '', 1, 60, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(31, 'bitbucket', 'Git and Mercurial-based code hosting service by Atlassian.', 'c2a59a55-15b9-4abf-8a2f-38a13e415f5a', 1, 61, 'Bitbucket', '', 1, 62, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(32, 'aws', 'Amazon Web Services \u2014 leading cloud computing platform.', 'e4e4b1b1-dc42-4d79-b217-29e29027e3f0', 1, 63, 'AWS', '', 1, 64, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(33, 'azure', 'Microsoft Azure cloud services platform.', 'd8a3a18c-c46d-4b8c-b82e-350cd6a39a2b', 1, 65, 'Azure', '', 1, 66, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(34, 'gcp', 'Google Cloud Platform for scalable infrastructure and services.', 'bc46e8f8-6c18-4f78-a7d2-4df1a9ffad03', 1, 67, 'GCP', '', 1, 68, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(35, 'linux', 'Open-source operating system kernel widely used in servers.', 'b87291c8-1793-42b7-b5a8-d05de3bdf911', 1, 69, 'Linux', '', 1, 70, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(36, 'bash', 'Unix shell and command language for scripting.', 'dfcce9e1-39a8-4f12-8bbd-6fa7eb3c478b', 1, 71, 'Bash', '', 1, 72, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(37, 'devops', 'Set of practices combining software development and IT operations.', 'f8a7a79c-5324-46ee-9b57-cb129cfa2bfa', 1, 73, 'DevOps', '', 1, 74, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(38, 'cybersecurity', 'Practices for protecting systems and data from digital attacks.', 'eb52fd83-1e13-44c5-8547-39d1a9b5d4cd', 1, 75, 'Cybersecurity', '', 1, 76, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(39, 'database', 'Organized collection of structured information or data.', '8d46b76a-d9ed-4c14-9303-1fcb90d2c3db', 1, 77, 'Database', '', 1, 78, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(40, 'mysql', 'Popular open-source relational database system.', 'b43d372c-6b12-4ed3-a67a-16a7c9234513', 1, 79, 'MySQL', '', 1, 80, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(41, 'postgresql', 'Advanced open-source relational database system.', '6f418b92-4f8e-4c37-bc06-f5ee8f7bb3a3', 1, 81, 'PostgreSQL', '', 1, 82, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(42, 'mongodb', 'NoSQL database using flexible document-based storage.', 'f96e2cd1-1a93-4a3a-9d6d-33c3ec9267b8', 1, 83, 'MongoDB', '', 1, 84, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(43, 'api', 'Application Programming Interface \u2014 defines communication rules between systems.', 'dc9b5d71-431f-4c70-a6db-49b18db3570f', 1, 85, 'API', '', 1, 86, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(44, 'rest', 'Representational State Transfer \u2014 architectural style for web APIs.', 'd2d68c5a-72cf-4060-8cc0-311aef9ad02e', 1, 87, 'REST', '', 1, 88, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(45, 'ai', 'Artificial Intelligence \u2014 simulation of human intelligence in machines.', 'b8e89a82-f93d-4e48-a7a7-601ff444c3fa', 1, 89, 'AI', '', 1, 90, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(46, 'ml', 'Machine Learning \u2014 subset of AI using statistical models to learn from data.', 'c3e7f691-c1da-48da-a71a-9b1a6b8192a4', 1, 91, 'Machine Learning', '', 1, 92, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(47, 'nlp', 'Natural Language Processing \u2014 AI field for understanding human language.', 'df8d5bfb-32a4-4b36-8bba-d9aa3f12f5c3', 1, 93, 'NLP', '', 1, 94, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(48, 'blockchain', 'Decentralized technology for secure and transparent data recording.', 'e8c2a3b4-4e72-4968-91a3-bfb4a3e3f7dc', 1, 95, 'Blockchain', '', 1, 96, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(49, 'testing', 'Software testing for validation and verification of applications.', 'f45e2b71-2067-4e93-b58a-3a7d687bfb18', 1, 97, 'Testing', '', 1, 98, '2025-03-28 10:00:00', '2025-03-28 10:00:00'),\r\n(50, 'automation', 'Automation tools and frameworks to streamline development processes.', 'd8f48a41-b7b1-4a53-8f7d-f0fbc7cb4105', 1, 99, 'Automation', '', 1, 100, '2025-03-28 10:00:00', '2025-10-10 07:47:43');",
+    "add_category_submenu": 1,
+    "php_ajaxmethod": "",
+    "add_php_getitem": 0,
+    "add_php_getitems": 0,
+    "add_css_view": 0,
+    "add_php_getitems_after_all": 0,
+    "css_view": "",
+    "add_php_getlistquery": 0,
+    "add_css_views": 0,
+    "add_php_getform": 1,
+    "css_views": "",
+    "add_php_before_save": 1,
+    "add_javascript_view_file": 0,
+    "add_php_save": 0,
+    "javascript_view_file": "",
+    "add_php_postsavehook": 0,
+    "add_javascript_view_footer": 0,
+    "add_php_allowadd": 0,
+    "javascript_view_footer": "",
+    "add_php_allowedit": 0,
+    "add_javascript_views_file": 0,
+    "add_php_before_cancel": 0,
+    "javascript_views_file": "",
+    "add_php_after_cancel": 0,
+    "add_javascript_views_footer": 0,
+    "add_php_batchcopy": 0,
+    "javascript_views_footer": "",
+    "add_php_batchmove": 0,
+    "add_custom_button": 0,
+    "add_php_before_publish": 0,
+    "custom_button": null,
+    "add_php_after_publish": 1,
+    "php_controller": "",
+    "add_php_before_delete": 0,
+    "php_model": "",
+    "add_php_after_delete": 1,
+    "php_controller_list": "",
+    "add_php_document": 1,
+    "php_model_list": "",
+    "mysql_table_engine": "InnoDB",
+    "add_view_toolbar": 0,
+    "mysql_table_collate": "utf8mb4_unicode_ci",
+    "view_toolbar": null,
+    "add_sql": 1,
+    "add_views_toolbar": 0,
+    "views_toolbar": null,
+    "guid": "22bdc95c-d3de-4c25-af21-5a17d118b1df",
+    "add_php_ajax": 0,
     "@dependencies": [
         {
             "key": "admin_view",
@@ -213,14 +217,14 @@
         },
         {
             "key": "function_name",
-            "value": "publishMethodAfterSyncChildren",
+            "value": "deleteMethodAfterSyncChildren",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
             "direction": "out"
         },
         {
             "key": "function_name",
-            "value": "deleteMethodAfterSyncChildren",
+            "value": "publishMethodAfterSyncChildren",
             "entity": "custom_code",
             "table": "#__componentbuilder_custom_code",
             "direction": "out"
