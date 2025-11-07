@@ -18,7 +18,6 @@
             "adminview": "08a58903-10a4-4ed9-babd-8b9557b095e4",
             "icomoon": "address",
             "mainmenu": "1",
-            "dashboard_add": "1",
             "dashboard_list": "1",
             "checkin": "1",
             "history": "1",
@@ -287,6 +286,18 @@
             "filter": "2",
             "edit_create_site_view": "",
             "order": "25"
+        },
+        "addadmin_views23": {
+            "adminview": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+            "icomoon": "pencil",
+            "checkin": "1",
+            "history": "1",
+            "metadata": "1",
+            "access": "1",
+            "add_api": "0",
+            "filter": "2",
+            "edit_create_site_view": "",
+            "order": "26"
         }
     },
     "@dependencies": [
@@ -454,6 +465,13 @@
         {
             "key": "guid",
             "value": "4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
             "entity": "admin_view",
             "table": "#__componentbuilder_admin_view",
             "direction": "out"
