@@ -1,0 +1,30 @@
+{
+    "joomla_component": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+    "addcustommenus": {
+        "addcustommenus0": {
+            "name": "Company Reviews",
+            "name_code": "company_review",
+            "link": "index.php?option=com_servicedirectory&view=review_company_updates",
+            "icon": "company_review.png",
+            "mainmenu": "1",
+            "dashboard_list": "1",
+            "before": "08a58903-10a4-4ed9-babd-8b9557b095e4"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "35a38329-d1e9-43df-a8f8-af1b8e6d8bd9",
+            "entity": "joomla_component",
+            "table": "#__componentbuilder_joomla_component",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        }
+    ]
+}
