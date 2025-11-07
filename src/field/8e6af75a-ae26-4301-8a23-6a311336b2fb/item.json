@@ -1,0 +1,35 @@
+{
+    "name": "Languages - local",
+    "fieldtype": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+    "datatype": "TEXT",
+    "indexes": "",
+    "null_switch": "NULL",
+    "store": 0,
+    "on_get_model_field": null,
+    "on_save_model_field": null,
+    "initiator_on_get_model": "",
+    "xml": "<field\n\ttype=\"lang\"\n\tname=\"languages\"\n\tlabel=\"Language(s)\"\n\tdescription=\"\"\n\tclass=\"list_class\"\n\tlayout=\"joomla.form.field.list-fancy-select\"\n\tmultiple=\"true\"\n\tdefault=\"en-GB\"\n\trequired=\"true\"\n\textends=\"list\"\n\tbutton=\"true\"\n\ttable=\"#__###component###_language\"\n\tcomponent=\"com_###component###\"\n\tview=\"language\"\n\tviews=\"languages\"\n\tvalue_field=\"name\"\n\tkey_field=\"langtag\"\n\tprime_php=\"1\"\n\ttype_php_1=\"__.o0=base64=Oo.__JGRiID0gRmFjdG9yeTo6Z2V0REJPKCk7DQoJCSRxdWVyeSA9ICRkYi0+Z2V0UXVlcnkodHJ1ZSk7DQoJCSRxdWVyeS0+c2VsZWN0KCRkYi0+cXVvdGVOYW1lKGFycmF5KCdhLiMjI0lEIyMjJywnYS4jIyNURVhUIyMjJyksYXJyYXkoJyMjI0lEIyMjJywnIyMjQ09ERV9URVhUIyMjJykpKTsNCgkJJHF1ZXJ5LT5mcm9tKCRkYi0+cXVvdGVOYW1lKCcjIyNUQUJMRSMjIycsICdhJykpOw0KCQkkcXVlcnktPndoZXJlKCRkYi0+cXVvdGVOYW1lKCdhLnB1Ymxpc2hlZCcpIC4gJyA+PSAxJyk7DQoJCSRxdWVyeS0+b3JkZXIoJ2EuIyMjSUQjIyMgQVNDJyk7DQoJCSRkYi0+c2V0UXVlcnkoKHN0cmluZykkcXVlcnkpOw0KCQkkaXRlbXMgPSAkZGItPmxvYWRPYmplY3RMaXN0KCk7DQoJCS8vIGFkZCB0aGUgbWFpbiBsYW5ndWFnZQ0KCQkkbWFpbl9sYW5nID0gdHJpbShKb29tbGFfX19hZWI4ZTQ2M18yOTFmXzQ0NDVfOWFjNF8zNGI2MzdjMTJkYmRfX19Qb3dlcjo6Z2V0UGFyYW1zKCdjb21fIyMjY29tcG9uZW50IyMjJyktPmdldCgnbGFuZ3VhZ2UnLCAnZW4tR0InKSk7DQoJCS8vIG1ha2Ugc3VyZSB0aGUgbWFpbiBsYW5ndWFnZSBpcyBhZGRlZA0KCQkkd2FzQWRkZWQgPSBmYWxzZTsNCgkJJG9wdGlvbnMgPSBhcnJheSgpOw0KCQlpZiAoJGl0ZW1zKQ0KCQl7DQoJCQkkb3B0aW9uc1tdID0gSm9vbWxhX19fMzQ2OTBjNzVfMTA5MF80N2ViXzhjMDZfNzIyOGRjN2VlZGQ2X19fUG93ZXI6Ol8oJ3NlbGVjdC5vcHRpb24nLCAnJywgJ1NlbGVjdCBhbiBvcHRpb24nKTsNCgkJCWZvcmVhY2goJGl0ZW1zIGFzICRpdGVtKQ0KCQkJew0KCQkJCSRpdGVtLT4jIyNJRCMjIyA9IHRyaW0oJGl0ZW0tPiMjI0lEIyMjKTsNCgkJCQkkb3B0aW9uc1tdID0gSm9vbWxhX19fMzQ2OTBjNzVfMTA5MF80N2ViXzhjMDZfNzIyOGRjN2VlZGQ2X19fUG93ZXI6Ol8oJ3NlbGVjdC5vcHRpb24nLCAkaXRlbS0+IyMjSUQjIyMsICRpdGVtLT4jIyNDT0RFX1RFWFQjIyMgLiAnICgnIC4kaXRlbS0+IyMjSUQjIyMuJyknKTsNCgkJCQlpZiAoJG1haW5fbGFuZyA9PT0gJGl0ZW0tPiMjI0lEIyMjKQ0KCQkJCXsNCgkJCQkJJHdhc0FkZGVkID0gdHJ1ZTsNCgkJCQl9DQoJCQl9DQoJCX0NCgkJLy8gbm93IGFkZCBpdCBpZiBub3QgYWxyZWFkeSBhZGRlZCAoaXQgbXVzdCBkZWZhdWx0IHRvICRtYWluX2xhbmcpDQoJCWlmICghJHdhc0FkZGVkKQ0KCQl7DQoJCQlpZiAoJ2VuLUdCJyA9PT0gJG1haW5fbGFuZykNCgkJCXsNCgkJCQkkb3B0aW9uc1tdID0gSm9vbWxhX19fMzQ2OTBjNzVfMTA5MF80N2ViXzhjMDZfNzIyOGRjN2VlZGQ2X19fUG93ZXI6Ol8oJ3NlbGVjdC5vcHRpb24nLCAkbWFpbl9sYW5nLCAnRW5nbGlzaCBHQiAoJyAuICRtYWluX2xhbmcgLiAnKScpOw0KCQkJfQ0KCQkJZWxzZQ0KCQkJew0KCQkJCSRvcHRpb25zW10gPSBKb29tbGFfX18zNDY5MGM3NV8xMDkwXzQ3ZWJfOGMwNl83MjI4ZGM3ZWVkZDZfX19Qb3dlcjo6Xygnc2VsZWN0Lm9wdGlvbicsICRtYWluX2xhbmcsICdNYWluIExhbmd1YWdlICgnIC4gJG1haW5fbGFuZyAuICcpJyk7DQoJCQl9DQoJCX0NCgkJcmV0dXJuICRvcHRpb25zOw==\"\n\/>",
+    "datalenght": "",
+    "javascript_view_footer": "",
+    "css_views": "",
+    "css_view": "",
+    "datadefault_other": "",
+    "datadefault": "",
+    "datalenght_other": "",
+    "javascript_views_footer": "",
+    "add_css_view": 0,
+    "add_css_views": 0,
+    "add_javascript_view_footer": 0,
+    "add_javascript_views_footer": 0,
+    "initiator_on_save_model": "",
+    "guid": "8e6af75a-ae26-4301-8a23-6a311336b2fb",
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+            "entity": "fieldtype",
+            "table": "#__componentbuilder_fieldtype",
+            "direction": "out"
+        }
+    ]
+}
