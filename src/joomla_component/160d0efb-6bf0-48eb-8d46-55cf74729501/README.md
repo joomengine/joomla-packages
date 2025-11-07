@@ -1,5 +1,5 @@
 ### JCB! Joomla Component
-# Service Directory (v6.0.1)
+# Service Directory (v6.0.2)
 ## Service Directory J6 (ServiceDirectory)
 
 > A professional directory component for listing and showcasing service providers.
