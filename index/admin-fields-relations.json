@@ -4,5 +4,11 @@
         "path": "src\/admin_view\/children\/08a58903-10a4-4ed9-babd-8b9557b095e4",
         "settings": "src\/admin_view\/children\/08a58903-10a4-4ed9-babd-8b9557b095e4\/admin-fields-relations.json",
         "guid": "08a58903-10a4-4ed9-babd-8b9557b095e4"
+    },
+    "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381": {
+        "name": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "path": "src\/admin_view\/children\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
+        "settings": "src\/admin_view\/children\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381\/admin-fields-relations.json",
+        "guid": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381"
     }
 }
