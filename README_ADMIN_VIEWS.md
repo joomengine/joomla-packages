@@ -61,6 +61,7 @@ This ensures maintainability while still allowing total customization per projec
  - **Languages (Directories)** | [Details](src/admin_view/671a0faa-afe7-430e-bef1-54701a924ee2) | [Settings](src/admin_view/671a0faa-afe7-430e-bef1-54701a924ee2/item.json) | A list of languages.
  - **Platform (Directories)** | [Details](src/admin_view/2138bd3a-fff3-4498-a63b-b47b1ec6243b) | [Settings](src/admin_view/2138bd3a-fff3-4498-a63b-b47b1ec6243b/item.json) | Platforms
  - **Regions (Directories)** | [Details](src/admin_view/275a0506-e63f-4c11-a731-124f5ad8cf0f) | [Settings](src/admin_view/275a0506-e63f-4c11-a731-124f5ad8cf0f/item.json) | Regions
+ - **Review Company Updates (Service Directory)** | [Details](src/admin_view/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381) | [Settings](src/admin_view/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381/item.json) | List of companies updates to review
  - **Social Media Handles** | [Details](src/admin_view/6f3c01b6-7cab-4c17-b113-6ca532af49af) | [Settings](src/admin_view/6f3c01b6-7cab-4c17-b113-6ca532af49af/item.json) | Social Media Handles
  - **States (Directories)** | [Details](src/admin_view/8345b808-fc30-4b51-8c9b-05e96bfe26d6) | [Settings](src/admin_view/8345b808-fc30-4b51-8c9b-05e96bfe26d6/item.json) | States
  - **Sub-Regions (Directories)** | [Details](src/admin_view/58f0fc24-0030-49b2-b77a-83f6b7aedfbb) | [Settings](src/admin_view/58f0fc24-0030-49b2-b77a-83f6b7aedfbb/item.json) | Subregions
