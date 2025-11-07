@@ -24,7 +24,7 @@
     "add_css_admin": 0,
     "dashboard_type": 1,
     "bom": "joomla_basic.txt",
-    "component_version": "6.0.1",
+    "component_version": "6.0.2",
     "add_css_site": 0,
     "image": "images\/vdm\/Sevice_Directory_500.jpg#joomlaImage:\/\/local-images\/vdm\/Sevice_Directory_500.jpg?width=500&height=500",
     "dashboard": "",
@@ -127,6 +127,13 @@
             "value": "160d0efb-6bf0-48eb-8d46-55cf74729501",
             "entity": "component_updates",
             "table": "#__componentbuilder_component_updates",
+            "direction": "in"
+        },
+        {
+            "key": "joomla_component",
+            "value": "160d0efb-6bf0-48eb-8d46-55cf74729501",
+            "entity": "component_custom_admin_menus",
+            "table": "#__componentbuilder_component_custom_admin_menus",
             "direction": "in"
         },
         {
