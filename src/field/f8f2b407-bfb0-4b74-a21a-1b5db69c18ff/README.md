@@ -9,6 +9,7 @@
 	type="number"
 	name="max_expertise"
 	label="Max Number of Expertise"
+	description="Set the maximum number of expertise areas that can be linked to a single listing. Once this limit is reached, no additional areas can be assigned."
 	default="5"
 	min="1"
 	max="10"
