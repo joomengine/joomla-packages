@@ -63,10 +63,14 @@ Whether you're building for:
  - **Companies** | [Details](src/dynamic_get/236df971-bf74-4f19-a091-06c8d1a3f9a2) | [Settings](src/dynamic_get/236df971-bf74-4f19-a091-06c8d1a3f9a2/item.json)
  - **Company** | [Details](src/dynamic_get/3071eabb-8a2d-4281-b6a4-179dbfb30774) | [Settings](src/dynamic_get/3071eabb-8a2d-4281-b6a4-179dbfb30774/item.json)
  - **Directory** | [Details](src/dynamic_get/61660555-f60c-4d9d-9dc4-44515a4c9834) | [Settings](src/dynamic_get/61660555-f60c-4d9d-9dc4-44515a4c9834/item.json)
+ - **Get Category Thumb Images** | [Details](src/dynamic_get/1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2) | [Settings](src/dynamic_get/1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2/item.json)
+ - **Get Company Logos** | [Details](src/dynamic_get/c00a187e-340c-4bd0-9783-48de834183c9) | [Settings](src/dynamic_get/c00a187e-340c-4bd0-9783-48de834183c9/item.json)
  - **Get Entity Banner** | [Details](src/dynamic_get/81f158f6-027b-4c37-89e9-4413b35cefeb) | [Settings](src/dynamic_get/81f158f6-027b-4c37-89e9-4413b35cefeb/item.json)
+ - **Get Language** | [Details](src/dynamic_get/c05be929-4987-48de-b73e-1d6a8bc368f3) | [Settings](src/dynamic_get/c05be929-4987-48de-b73e-1d6a8bc368f3/item.json)
  - **Language** | [Details](src/dynamic_get/294949dd-93b3-424d-abea-fc6242d625d3) | [Settings](src/dynamic_get/294949dd-93b3-424d-abea-fc6242d625d3/item.json)
  - **Tag** | [Details](src/dynamic_get/cdc29b9e-ac51-4b0d-9c38-ee587c89509d) | [Settings](src/dynamic_get/cdc29b9e-ac51-4b0d-9c38-ee587c89509d/item.json)
  - **getMineCompanies** | [Details](src/dynamic_get/28dc3ae8-a928-4bfc-b8cd-751ff6248639) | [Settings](src/dynamic_get/28dc3ae8-a928-4bfc-b8cd-751ff6248639/item.json)
+ - **getMineTickets** | [Details](src/dynamic_get/606cf9cb-cbd1-427e-8dce-16ea7764cd47) | [Settings](src/dynamic_get/606cf9cb-cbd1-427e-8dce-16ea7764cd47/item.json)
 
 ### All used in [Joomla Component Builder](https://www.joomlacomponentbuilder.com) - [Source](https://git.vdm.dev/joomla/Component-Builder) - [Mirror](https://github.com/vdm-io/Joomla-Component-Builder) - [Download](https://git.vdm.dev/joomla/pkg-component-builder/releases)
 
