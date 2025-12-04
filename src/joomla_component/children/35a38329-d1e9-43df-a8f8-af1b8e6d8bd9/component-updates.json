@@ -36,6 +36,18 @@
             "update_target_version": "5\\.[01234]",
             "change_log": "- Add Company Review Updates area for managing owner-submitted updates on listings.\r\n- Add custom toolbar in Company Review area to replace default actions.",
             "update_client": "site"
+        },
+        "version_update3": {
+            "version": "5.0.3",
+            "mysql": "",
+            "url": "https:\/\/github.com\/joomengine\/pkg-servicedirectory\/archive\/refs\/tags\/v5.0.3.zip",
+            "update_server_adv": "1",
+            "update_server_type": "package",
+            "update_element": "pkg_servicedirectory",
+            "update_state": "stable",
+            "update_target_version": "5\\.[01234]",
+            "change_log": "- Update Site Router to align with the new JCB Router Helper class.\r\n- Fix the redundant slash in ListingModel in certain subdirectory setups. #1\r\n- Fix the strpos() deprecation warning in the router where null is passed to $haystack. #1\r\n- Update depreciated Factory::getDBO() calls to use latest standards. #1",
+            "update_client": "site"
         }
     },
     "@dependencies": [
