@@ -1,0 +1,118 @@
+{
+    "name": "getMineTickets",
+    "main_source": 1,
+    "gettype": 4,
+    "php_calculation": "",
+    "php_router_parse": null,
+    "add_php_after_getitems": 1,
+    "add_php_router_parse": 0,
+    "view_selection": "a.id AS id\r\na.subject AS subject\r\na.priority AS priority\r\na.company AS company\r\na.guid AS guid\r\na.published AS published\r\na.created_by AS created_by\r\na.created AS created",
+    "add_php_before_getitems": 0,
+    "add_php_before_getitem": 0,
+    "add_php_after_getitem": 0,
+    "db_table_main": null,
+    "php_custom_get": null,
+    "plugin_events": null,
+    "db_selection": null,
+    "view_table_main": "bc12b55c-6763-4cec-864b-3529df4f89c4",
+    "add_php_getlistquery": 0,
+    "join_db_table": {
+        "join_db_table0": {
+            "db_table": "users",
+            "row_type": 1,
+            "as": "u",
+            "type": 1,
+            "on_field": "t.created_by",
+            "operator": 1,
+            "join_field": "u.id",
+            "selection": "u.name AS name"
+        }
+    },
+    "select_all": 0,
+    "php_before_getitem": "",
+    "getcustom": "getTickets",
+    "php_after_getitem": "",
+    "pagination": 1,
+    "php_getlistquery": "",
+    "php_before_getitems": "",
+    "filter": {
+        "filter0": {
+            "filter_type": 2,
+            "state_key": "$user",
+            "operator": 1,
+            "table_key": "a.created_by"
+        }
+    },
+    "php_after_getitems": "\t\tif (!empty($items))\r\n\t\t{\r\n\t\t\tunset($item);\r\n\t\t\tforeach ($items as $item)\r\n\t\t\t{\r\n\t\t\t\t$item->comments = $item->guidTicketTicket_commentT ?? [];\r\n\t\t\t\tunset($item->guidTicketTicket_commentT);\r\n\t\t\t\tforeach ($item->comments as $ticket)\r\n\t\t\t\t{\r\n\t\t\t\t\t$ticket->comment = $this->convertMarkdownToHtml($ticket->comment ?? '');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}",
+    "where": {
+        "where0": {
+            "table_key": "a.published",
+            "operator": 6,
+            "value_key": "0"
+        },
+        "where1": {
+            "table_key": "t.published",
+            "operator": 6,
+            "value_key": "0"
+        }
+    },
+    "order": {
+        "order0": {
+            "table_key": "a.id",
+            "direction": "DESC"
+        },
+        "order1": {
+            "table_key": "t.id",
+            "direction": "DESC"
+        }
+    },
+    "addcalculation": 0,
+    "group": null,
+    "global": null,
+    "guid": "606cf9cb-cbd1-427e-8dce-16ea7764cd47",
+    "join_view_table": {
+        "join_view_table0": {
+            "view_table": "4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a",
+            "row_type": 2,
+            "as": "t",
+            "type": 1,
+            "on_field": "a.guid",
+            "operator": 1,
+            "join_field": "t.ticket",
+            "selection": "t.comment AS comment\r\nt.created_by AS created_by\r\nt.created AS created"
+        },
+        "join_view_table1": {
+            "view_table": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "row_type": 1,
+            "as": "c",
+            "type": 1,
+            "on_field": "a.company",
+            "operator": 1,
+            "join_field": "c.guid",
+            "selection": "c.name AS company_name"
+        }
+    },
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "bc12b55c-6763-4cec-864b-3529df4f89c4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "4aeeb39e-74f4-4ecd-b61f-7f4f71d46c3a",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "08a58903-10a4-4ed9-babd-8b9557b095e4",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        }
+    ]
+}
