@@ -152,5 +152,12 @@
         "path": "src\/custom_code\/helperModelAllowAdd",
         "settings": "src\/custom_code\/helperModelAllowAdd\/item.json",
         "guid": "helperModelAllowAdd"
+    },
+    "helperModelAllowAddListing": {
+        "name": "Helper Model Allow Add Lisitng (a helper call)",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/helperModelAllowAddListing",
+        "settings": "src\/custom_code\/helperModelAllowAddListing\/item.json",
+        "guid": "helperModelAllowAddListing"
     }
 }
