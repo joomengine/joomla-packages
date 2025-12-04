@@ -104,7 +104,7 @@
             "order_edit": "1"
         },
         "10": {
-            "field": "e24026ef-294a-48e5-9be0-3f95dcb2b66b",
+            "field": "9574b7ec-ffde-4c9d-9844-ed9fdbc536d7",
             "list": "",
             "order_list": "0",
             "search": "1",
@@ -204,7 +204,7 @@
         },
         {
             "key": "guid",
-            "value": "e24026ef-294a-48e5-9be0-3f95dcb2b66b",
+            "value": "9574b7ec-ffde-4c9d-9844-ed9fdbc536d7",
             "entity": "field",
             "table": "#__componentbuilder_field",
             "direction": "out"
