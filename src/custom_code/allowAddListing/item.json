@@ -1,0 +1,15 @@
+{
+    "system_name": "Helper::allowAddListing(..) max listings",
+    "path": null,
+    "target": 2,
+    "type": 0,
+    "comment_type": 1,
+    "joomla_version": 3,
+    "function_name": "allowAddListing",
+    "code": "\t\/**\r\n\t * Check whether the user is allowed to add or update an item.\r\n\t *\r\n\t * Enforces a per-user item limit while still allowing updates to existing\r\n\t * records owned by the user.\r\n\t *\r\n\t * @param  Joomla___effdaf6d_2275_425d_9f52_d4952e564d34___Power|null   $user  The current user.\r\n\t * @param  array|null  $data  The submitted data (may include 'id' for updates).\r\n\t *\r\n\t * @return bool  True to allow the action, false otherwise.\r\n\t * @since  5.1.4\r\n\t *\/\r\n\tpublic static function allowAddListing(?Joomla___effdaf6d_2275_425d_9f52_d4952e564d34___Power $user, ?array $data): bool\r\n\t{\r\n\t\t\/\/ User validation\r\n\t\tif (!$user || empty($user->id))\r\n\t\t{\r\n\t\t\treturn false;\r\n\t\t}\r\n\r\n\t\t\/\/ Normalize incoming item ID\r\n\t\t$itemId = (isset($data['id']) && is_numeric($data['id']) && (int) $data['id'] > 0)\r\n\t\t\t? (int) $data['id']\r\n\t\t\t: null;\r\n\r\n\t\t\/\/ Fetch existing item IDs for user\r\n\t\t$existing = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Data.Items')\r\n\t\t\t->table('company')\r\n\t\t\t->values([$user->id], 'created_by', 'id');\r\n\r\n\t\t\/\/ Normalize DB result to array\r\n\t\tif (!is_array($existing))\r\n\t\t{\r\n\t\t\t$existing = [];\r\n\t\t}\r\n\r\n\t\t\/\/ Clean + normalize to integers\r\n\t\t$existing = array_values(array_filter(array_map('intval', $existing)));\r\n\r\n\t\t\/\/ Count existing items\r\n\t\t$count = count($existing);\r\n\r\n\t\t\/\/ Fetch maximum allowed listings\r\n\t\t$max = (int) Super___640b5352_fb09_425f_a26e_cd44eda03f15___Power::getParams('com_[[[component]]]')\r\n\t\t\t->get('max_listings', 1);\r\n\r\n\t\t\/\/ Ensure sane configuration\r\n\t\tif ($max < 1)\r\n\t\t{\r\n\t\t\treturn false;\r\n\t\t}\r\n\r\n\t\t\/\/ ---------- UPDATE MODE ----------\r\n\t\t\/\/ Item exists and belongs to user \u2192 always allow\r\n\t\tif ($itemId !== null && in_array($itemId, $existing, true))\r\n\t\t{\r\n\t\t\treturn true;\r\n\t\t}\r\n\r\n\t\t\/\/ ---------- CREATE MODE ----------\r\n\t\t\/\/ No ID in request OR ID not owned by user = new item\r\n\r\n\t\t\/\/ Already at or above max \u2192 deny\r\n\t\tif ($count >= $max)\r\n\t\t{\r\n\t\t\treturn false;\r\n\t\t}\r\n\r\n\t\t\/\/ Below max \u2192 allow new item\r\n\t\treturn true;\r\n\t}\r\n",
+    "hashendtarget": "",
+    "to_line": "",
+    "from_line": "",
+    "hashtarget": "",
+    "component": ""
+}
