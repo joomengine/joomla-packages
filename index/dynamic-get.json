@@ -52,5 +52,29 @@
         "path": "src\/dynamic_get\/236df971-bf74-4f19-a091-06c8d1a3f9a2",
         "settings": "src\/dynamic_get\/236df971-bf74-4f19-a091-06c8d1a3f9a2\/item.json",
         "guid": "236df971-bf74-4f19-a091-06c8d1a3f9a2"
+    },
+    "1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2": {
+        "name": "Get Category Thumb Images",
+        "path": "src\/dynamic_get\/1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2",
+        "settings": "src\/dynamic_get\/1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2\/item.json",
+        "guid": "1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2"
+    },
+    "c00a187e-340c-4bd0-9783-48de834183c9": {
+        "name": "Get Company Logos",
+        "path": "src\/dynamic_get\/c00a187e-340c-4bd0-9783-48de834183c9",
+        "settings": "src\/dynamic_get\/c00a187e-340c-4bd0-9783-48de834183c9\/item.json",
+        "guid": "c00a187e-340c-4bd0-9783-48de834183c9"
+    },
+    "c05be929-4987-48de-b73e-1d6a8bc368f3": {
+        "name": "Get Language",
+        "path": "src\/dynamic_get\/c05be929-4987-48de-b73e-1d6a8bc368f3",
+        "settings": "src\/dynamic_get\/c05be929-4987-48de-b73e-1d6a8bc368f3\/item.json",
+        "guid": "c05be929-4987-48de-b73e-1d6a8bc368f3"
+    },
+    "606cf9cb-cbd1-427e-8dce-16ea7764cd47": {
+        "name": "getMineTickets",
+        "path": "src\/dynamic_get\/606cf9cb-cbd1-427e-8dce-16ea7764cd47",
+        "settings": "src\/dynamic_get\/606cf9cb-cbd1-427e-8dce-16ea7764cd47\/item.json",
+        "guid": "606cf9cb-cbd1-427e-8dce-16ea7764cd47"
     }
 }
