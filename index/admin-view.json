@@ -166,5 +166,12 @@
         "settings": "src\/admin_view\/5f35fa98-64d6-45ab-9a76-1cdf3a3a0381\/item.json",
         "guid": "5f35fa98-64d6-45ab-9a76-1cdf3a3a0381",
         "desc": "List of companies updates to review"
+    },
+    "f9692057-845b-47c9-a1d5-59b4eddc5057": {
+        "name": "Address (Service Directory)",
+        "path": "src\/admin_view\/f9692057-845b-47c9-a1d5-59b4eddc5057",
+        "settings": "src\/admin_view\/f9692057-845b-47c9-a1d5-59b4eddc5057\/item.json",
+        "guid": "f9692057-845b-47c9-a1d5-59b4eddc5057",
+        "desc": "Addresses of Companies"
     }
 }
