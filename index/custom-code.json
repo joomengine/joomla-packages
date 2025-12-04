@@ -159,5 +159,12 @@
         "path": "src\/custom_code\/helperModelAllowAddListing",
         "settings": "src\/custom_code\/helperModelAllowAddListing\/item.json",
         "guid": "helperModelAllowAddListing"
+    },
+    "allowAddListing": {
+        "name": "Helper::allowAddListing(..) max listings",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/allowAddListing",
+        "settings": "src\/custom_code\/allowAddListing\/item.json",
+        "guid": "allowAddListing"
     }
 }
