@@ -9,6 +9,7 @@
 	type="number"
 	name="max_listings"
 	label="Max Number of Listings Per/User"
+	description="Set the maximum number of listings a single user is allowed to create. Once this limit is reached, the user will no longer be able to add new listings."
 	default="1"
 	min="1"
 	max="100"
