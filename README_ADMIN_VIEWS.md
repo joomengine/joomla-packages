@@ -46,6 +46,7 @@ This ensures maintainability while still allowing total customization per projec
 
 
  - **Address (Service Directory)** | [Details](src/admin_view/b7b2aba5-8a94-443b-814b-aed5b0b7c550) | [Settings](src/admin_view/b7b2aba5-8a94-443b-814b-aed5b0b7c550/item.json) | Addresses of Companies
+ - **Address (Service Directory)** | [Details](src/admin_view/f9692057-845b-47c9-a1d5-59b4eddc5057) | [Settings](src/admin_view/f9692057-845b-47c9-a1d5-59b4eddc5057/item.json) | Addresses of Companies
  - **Address Types (Directories)** | [Details](src/admin_view/5992077e-15a5-4ea9-b882-e6e0e1b723ae) | [Settings](src/admin_view/5992077e-15a5-4ea9-b882-e6e0e1b723ae/item.json) | Types of Addresses
  - **Area of Expertise (Service Directory)** | [Details](src/admin_view/d3507dce-582f-49c2-a068-86b789540a97) | [Settings](src/admin_view/d3507dce-582f-49c2-a068-86b789540a97/item.json) | Area of Expertise
  - **Categories (Directories)** | [Details](src/admin_view/904dc405-ff8d-476c-9598-f8f2e05464f4) | [Settings](src/admin_view/904dc405-ff8d-476c-9598-f8f2e05464f4/item.json) | Categories
