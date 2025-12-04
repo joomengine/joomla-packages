@@ -59,6 +59,7 @@ This preserves version control while allowing your own field improvements to liv
 
  - **Abbreviation (demo)** | [Details](src/field/c35e18fa-cade-48b8-b067-6289cc7a0f60) | [Settings](src/field/c35e18fa-cade-48b8-b067-6289cc7a0f60/item.json)
  - **Addresses (company-subform)** | [Details](src/field/9ef6e0ca-7d3e-40e6-b8ea-ff43224573f8) | [Settings](src/field/9ef6e0ca-7d3e-40e6-b8ea-ff43224573f8/item.json)
+ - **Addresses (company-subform)** | [Details](src/field/36cb11a7-fe23-4d75-b579-12686db52fb8) | [Settings](src/field/36cb11a7-fe23-4d75-b579-12686db52fb8/item.json)
  - **Addresses - local (company-subform)** | [Details](src/field/2a3b6f1b-7324-4222-9052-ddcbd477d366) | [Settings](src/field/2a3b6f1b-7324-4222-9052-ddcbd477d366/item.json)
  - **Alias** | [Details](src/field/335866ce-b81b-4329-901d-c20254135c9c) | [Settings](src/field/335866ce-b81b-4329-901d-c20254135c9c/item.json)
  - **Allowed Document Formats** | [Details](src/field/24f17aaf-cc19-4bad-bc8b-4d37c79a898d) | [Settings](src/field/24f17aaf-cc19-4bad-bc8b-4d37c79a898d/item.json)
@@ -100,6 +101,7 @@ This preserves version control while allowing your own field improvements to liv
  - **Download Access** | [Details](src/field/794ac8d4-c78b-4f98-9953-07e4ce5ad491) | [Settings](src/field/794ac8d4-c78b-4f98-9953-07e4ce5ad491/item.json)
  - **E-mail Address** | [Details](src/field/ba32af1e-0b57-4dcc-b9bb-7cec104c0ee7) | [Settings](src/field/ba32af1e-0b57-4dcc-b9bb-7cec104c0ee7/item.json)
  - **Entity File Type** | [Details](src/field/2a877e46-59b9-4f97-9dec-8c84c16741f2) | [Settings](src/field/2a877e46-59b9-4f97-9dec-8c84c16741f2/item.json)
+ - **Entity Type (Directories)** | [Details](src/field/fcca71d0-8dbf-4caf-a4aa-80226e33c0e6) | [Settings](src/field/fcca71d0-8dbf-4caf-a4aa-80226e33c0e6/item.json)
  - **Entity Type (docs)** | [Details](src/field/2e24a9fe-5793-46be-b071-631c0b18d8f4) | [Settings](src/field/2e24a9fe-5793-46be-b071-631c0b18d8f4/item.json)
  - **FIPS code** | [Details](src/field/fa0ead84-06c8-4f18-89ae-4cdf646fd961) | [Settings](src/field/fa0ead84-06c8-4f18-89ae-4cdf646fd961/item.json)
  - **File Extension** | [Details](src/field/080b92dc-a4b4-46b2-83d4-3430284f5e06) | [Settings](src/field/080b92dc-a4b4-46b2-83d4-3430284f5e06/item.json)
@@ -173,6 +175,7 @@ This preserves version control while allowing your own field improvements to liv
  - **Tag (modalselect)** | [Details](src/field/66f11387-8824-45b9-991d-af0c85c1f5db) | [Settings](src/field/66f11387-8824-45b9-991d-af0c85c1f5db/item.json)
  - **Tags (custom)** | [Details](src/field/83b63e41-afde-4578-af6c-c2010b01faee) | [Settings](src/field/83b63e41-afde-4578-af6c-c2010b01faee/item.json)
  - **Tags - local (custom)** | [Details](src/field/4f1bb016-60cb-4356-bbca-df8a0e8d08df) | [Settings](src/field/4f1bb016-60cb-4356-bbca-df8a0e8d08df/item.json)
+ - **Target (Files - Directories)** | [Details](src/field/9574b7ec-ffde-4c9d-9844-ed9fdbc536d7) | [Settings](src/field/9574b7ec-ffde-4c9d-9844-ed9fdbc536d7/item.json)
  - **Target (Files)** | [Details](src/field/e24026ef-294a-48e5-9be0-3f95dcb2b66b) | [Settings](src/field/e24026ef-294a-48e5-9be0-3f95dcb2b66b/item.json)
  - **Target Industry** | [Details](src/field/bf24f5e2-a0bf-4db0-b993-8c836f9e5b44) | [Settings](src/field/bf24f5e2-a0bf-4db0-b993-8c836f9e5b44/item.json)
  - **Ticket (comments)** | [Details](src/field/d835209a-6955-4047-bb91-3dfeed7c2e30) | [Settings](src/field/d835209a-6955-4047-bb91-3dfeed7c2e30/item.json)
