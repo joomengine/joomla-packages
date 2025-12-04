@@ -1,5 +1,5 @@
 {
-    "name": "Company",
+    "name": "Company (modalselect)",
     "fieldtype": "a1cdb0a5-517c-425c-998a-333e92af3e32",
     "datatype": "VARCHAR",
     "indexes": "2",
