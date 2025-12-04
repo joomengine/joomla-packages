@@ -1,29 +1,33 @@
 ### JCB! Field
 # Parent Category
 
-> Field Type: Custom
+> Field Type: ModalSelect
 
 ## Field XML:
 ```xml
 <field
-	type="categories"
+	type="ModalSelect"
 	name="parent_guid"
 	label="Parent"
-	description="Select a Parent Category"
-	class="list_class"
-	layout="joomla.form.field.list-fancy-select"
-	multiple="true"
+	sql_title_table="#__###component###_category"
+	sql_title_column="name"
+	sql_title_key="guid"
+	urlSelect="index.php?option=com_###component###&amp;view=categories&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid"
+	urlNew="index.php?option=com_###component###&amp;task=category.add&amp;layout=modal&amp;tmpl=component"
+	urlEdit="index.php?option=com_###component###&amp;task=category.edit&amp;guid={id}&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid"
+	titleSelect="Select a Parent Category"
+	titleNew="New Parent Category"
+	titleEdit="Edit Parent Category"
+	iconSelect="icon-copy"
+	select="true"
+	new="true"
+	edit="true"
+	clear="true"
 	required="false"
-	extends="list"
-	button="false"
-	table="#__###component###_category"
-	component="com_###component###"
-	entity="###view###"
-	view="category"
-	views="categories"
-	value_field="name"
-	key_field="guid"
-	type_php_1="__.o0=base64=Oo.__CQkvLyBHZXQgdGhlIGRhdGFic2Ugb2JqZWN0Lg0KCQkkZGIgPSBGYWN0b3J5OjpnZXREQk8oKTsNCgkJJHF1ZXJ5ID0gJGRiLT5nZXRRdWVyeSh0cnVlKTsNCgkJJHF1ZXJ5LT5zZWxlY3QoJGRiLT5xdW90ZU5hbWUoYXJyYXkoJ2EuIyMjSUQjIyMnLCdhLiMjI1RFWFQjIyMnKSxhcnJheSgnIyMjSUQjIyMnLCcjIyNDT0RFX1RFWFQjIyMnKSkpOw0KCQkkcXVlcnktPmZyb20oJGRiLT5xdW90ZU5hbWUoJyMjI1RBQkxFIyMjJywgJ2EnKSk7DQoJCSRxdWVyeS0+d2hlcmUoJGRiLT5xdW90ZU5hbWUoJ2EucHVibGlzaGVkJykgLiAnID0gMScpOw0KCQkkcXVlcnktPm9yZGVyKCdhLiMjI1RFWFQjIyMgQVNDJyk7DQoJCSRkYi0+c2V0UXVlcnkoKHN0cmluZykkcXVlcnkpOw0KCQkkaXRlbXMgPSAkZGItPmxvYWRPYmplY3RMaXN0KCk7DQoJCSRvcHRpb25zID0gW107DQoJCWlmICgkaXRlbXMpDQoJCXsNCgkJCWlmICgkdGhpcy0+bXVsdGlwbGUgPT09IGZhbHNlKQ0KCQkJew0KCQkJCSRvcHRpb25zW10gPSBIdG1sOjpfKCdzZWxlY3Qub3B0aW9uJywgJycsIFRleHQ6Ol8oJy0gTm8gcGFyZW50IC0nKSk7DQoJCQl9DQoJCQlmb3JlYWNoKCRpdGVtcyBhcyAkaXRlbSkNCgkJCXsNCgkJCQkkb3B0aW9uc1tdID0gSHRtbDo6Xygnc2VsZWN0Lm9wdGlvbicsICRpdGVtLT4jIyNJRCMjIywgJGl0ZW0tPiMjI0NPREVfVEVYVCMjIyk7DQoJCQl9DQoJCX0NCgkJcmV0dXJuICRvcHRpb25zOw=="
+	filter="STRING"
+	class="input-large"
+	description="Set a Parent Category"
+	hint="Select a Parent Category"
 />
 ```
 
