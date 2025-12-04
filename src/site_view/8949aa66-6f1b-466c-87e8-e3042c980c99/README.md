@@ -5,8 +5,8 @@ Directory or Categories of Companies
 
 ## HTML:
 ```html
-<?php if (!empty($items)): ?>
 <?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>
+<?php if (!empty($items)): ?>
 <div class="container-xxl my-4">
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 		<?php foreach ($items as $item): ?>
@@ -63,7 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <?php else: ?>
-	<div class="alert alert-warning mb-0" role="alert"><?php echo Text::_('No Categories'); ?></div>
+	<div class="container-xxl my-4">
+		<div class="row">
+			<div class="alert alert-warning mb-0" role="alert"><?php echo Text::_('No Categories'); ?></div>
+		</div>
+	</div>
 <?php endif; ?>
 
 <?php if ($access_listing): ?>
@@ -80,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		<b><?php echo Text::sprintf('Welcome back, %s!', $this->escape($this->user->name)); ?></b><br>
 		<?php echo Text::_('Your account is not permitted to add a listing.'); ?>
 	</div>
-<?php elseif ((bool) $this->params->get('show_login', 0)): ?>
+<?php elseif ((int) $this->params->get('show_login', 0) === 1): ?>
 	<?php echo Text::_('You must be signed in to view or manage your company listings.'); ?>
 	<?php echo $this->loadTemplate('loginmodule'); ?>
 <?php endif; ?>
