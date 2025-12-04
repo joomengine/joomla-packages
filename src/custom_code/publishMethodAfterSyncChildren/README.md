@@ -8,39 +8,65 @@
 
 ### Code
 ```php
-		// we must also update all linked tables
+		// Update all linked tables
 		if (!empty($_tables_array) && Super___0a59c65c_9daf_4bc9_baf4_e063ff9e6a8a___Power::check($pks))
 		{
+			// Ensure field key
 			$_field_key ??= 'guid';
+
+			// Set active component context
 			Super___640b5352_fb09_425f_a26e_cd44eda03f15___Power::setOption('com_[[[component]]]');
-			foreach($_tables_array as $_update_table => $_field_name)
+
+			// Load GUIDs once
+			$_guids = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Load')->values(
+				['a.' . $_field_key], // selection
+				['a' => '[[[view]]]'], // source table
+				['a.id' => ['value' => (array) $pks, 'operator' => 'IN']] // where
+			);
+
+			// Abort early if nothing returned
+			if (empty($_guids))
 			{
-				// get the [[[view]]] field key's
-				$_guids = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Load')->values(
-					['a.guid' => $_field_key], // select
-					['a' => '[[[view]]]'], // tables
-					['a.id' =>
-						['value' => $pks, 'operator' => 'IN']
-					] // where
-				);
+				return true;
+			}
 
-				// get the linked IDs
-				$_pks = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Load')->values(
-					['a.id' => 'id'], // select
-					['a' => $_update_table], // tables
-					['a.' . $_field_name =>
-						['value' => $_guids, 'operator' => 'IN']
-					] // where
-				);
+			// Normalize & deduplicate GUIDs
+			$_guids = array_values(array_unique((array) $_guids));
 
-				if ($_pks !== null)
+			foreach ($_tables_array as $_update_table => $_field_name)
+			{
+				// Skip invalid config
+				if (empty($_update_table) || empty($_field_name))
 				{
-					// load the model
-					$_Model = Super___640b5352_fb09_425f_a26e_cd44eda03f15___Power::getModel($_update_table);
-
-					// change publish state
-					$_Model->publish($_pks, $value);
+					continue;
 				}
+
+				// Load linked IDs
+				$_pks = Super___9d76b8dc_3883_4755_b11c_131d19ca8a53___Power::_('Load')->values(
+					['a.id' => 'id'], // selection
+					['a' => $_update_table], // source table
+					['a.' . $_field_name => ['value' => $_guids, 'operator' => 'IN']] // where
+				);
+
+				// Skip empty or broken relations
+				if (empty($_pks))
+				{
+					continue;
+				}
+
+				// Normalize keys
+				$_pks = array_values(array_unique((array) $_pks));
+
+				// Load model safely
+				try {
+					$_Model = Super___640b5352_fb09_425f_a26e_cd44eda03f15___Power::getModel($_update_table);
+				} catch (\Throwable $e) {
+					// Intentionally ignored
+					continue;
+				}
+
+				// Apply publish state
+				$_Model->publish($_pks, $value);
 			}
 		}
 ```
