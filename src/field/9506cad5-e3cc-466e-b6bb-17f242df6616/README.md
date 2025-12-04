@@ -9,6 +9,7 @@
 	type="number"
 	name="max_languages"
 	label="Max Number of Languages"
+	description="Set the maximum number of languages a user may assign to a single listing. Once this limit is reached, no additional languages can be linked."
 	default="5"
 	min="1"
 	max="10"
