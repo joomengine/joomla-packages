@@ -9,10 +9,12 @@
 	type="radio"
 	name="show_login"
 	label="Show Login"
+	description="Enable this option to display the login module in this component's frontend. Disable it if you do not want users to see the login form."
 	layout="joomla.form.field.radio.switcher"
-	option="1|Yes,0|No"
+	option="0|No,1|Yes"
 	default="0"
 	filter="integer"
+	display="config"
 />
 ```
 
