@@ -121,7 +121,7 @@
 		if ($this->allowCompanyEdit($item))
 		{
 			$item->edit_link = Joomla___d4c76099_4c32_408a_8701_d0a724484dfd___Power::_(
-				"/index.php?option=com_[[[component]]]&view=company&task=company.edit&id={$item->id}{$return}"
+				"index.php?option=com_[[[component]]]&view=company&task=company.edit&id={$item->id}{$return}"
 			);
 		}
 
