@@ -9,6 +9,7 @@
 	type="number"
 	name="max_tags"
 	label="Max Number of Tags"
+	description="Set the maximum number of tags a user may assign to a single listing. Once this limit is reached, no additional tags can be added."
 	default="5"
 	min="1"
 	max="10"
