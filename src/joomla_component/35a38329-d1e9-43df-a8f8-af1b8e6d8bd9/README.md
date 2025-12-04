@@ -1,5 +1,5 @@
 ### JCB! Joomla Component
-# Service Directory (v5.0.2)
+# Service Directory (v5.0.3)
 ## Service Directory J5 (ServiceDirectory)
 
 > A professional directory component for listing and showcasing service providers.
