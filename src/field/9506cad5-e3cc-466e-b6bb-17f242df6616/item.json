@@ -8,7 +8,7 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"number\"\n\tname=\"max_languages\"\n\tlabel=\"Max Number of Languages\"\n\tdefault=\"5\"\n\tmin=\"1\"\n\tmax=\"10\"\n\tstep=\"1\"\n\/>",
+    "xml": "<field\n\ttype=\"number\"\n\tname=\"max_languages\"\n\tlabel=\"Max Number of Languages\"\n\tdescription=\"Set the maximum number of languages a user may assign to a single listing. Once this limit is reached, no additional languages can be linked.\"\n\tdefault=\"5\"\n\tmin=\"1\"\n\tmax=\"10\"\n\tstep=\"1\"\n\/>",
     "datalenght": "1",
     "javascript_view_footer": "",
     "css_views": "",
