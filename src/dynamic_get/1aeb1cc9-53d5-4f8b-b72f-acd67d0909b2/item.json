@@ -1,0 +1,56 @@
+{
+    "name": "Get Category Thumb Images",
+    "main_source": 1,
+    "gettype": 4,
+    "php_calculation": "",
+    "php_router_parse": null,
+    "add_php_after_getitems": 1,
+    "add_php_router_parse": 0,
+    "view_selection": "a.name AS name\r\na.entity AS entity\r\na.guid AS guid",
+    "add_php_before_getitems": 0,
+    "add_php_before_getitem": 0,
+    "add_php_after_getitem": 0,
+    "db_table_main": null,
+    "php_custom_get": null,
+    "plugin_events": null,
+    "db_selection": null,
+    "view_table_main": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+    "add_php_getlistquery": 1,
+    "join_db_table": null,
+    "select_all": 0,
+    "php_before_getitem": "",
+    "getcustom": "getImages",
+    "php_after_getitem": "",
+    "pagination": 1,
+    "php_getlistquery": "\t\t$thumb = 'thumb__%';\r\n\t\t$category = 'category';",
+    "php_before_getitems": "",
+    "filter": null,
+    "php_after_getitems": "\t\t$baseUrl = rtrim(Joomla___eecc143e_b5cf_4c33_ba4d_97da1df61422___Power::root(), '\/');\r\n\r\n\t\t$queryParams = [\r\n\t\t\t'option'     => 'com_[[[component]]]',\r\n\t\t\t'controller' => 'download',\r\n\t\t\t'task'       => 'download.image',\r\n\t\t];\r\n\r\n\t\t$images = [];\r\n\r\n\t\tforeach ($items as $_item)\r\n\t\t{\r\n\t\t\t$queryParams['file'] = $_item->guid;\r\n\t\t\t$queryParams['name'] = $_item->name;\r\n\r\n\t\t\t$images[$_item->entity] = $baseUrl . Joomla___d4c76099_4c32_408a_8701_d0a724484dfd___Power::_(\r\n\t\t\t\t'index.php?' . http_build_query($queryParams)\r\n\t\t\t);\r\n\t\t}\r\n\r\n\t\t$items = $images;",
+    "where": {
+        "where0": {
+            "table_key": "a.name",
+            "operator": 12,
+            "value_key": "$thumb"
+        },
+        "where1": {
+            "table_key": "a.entity_type",
+            "operator": 1,
+            "value_key": "$category"
+        }
+    },
+    "order": null,
+    "addcalculation": 0,
+    "group": null,
+    "global": null,
+    "guid": "1aeb1cc9-53d5-4f8b-b72f-acd67d0909b2",
+    "join_view_table": null,
+    "@dependencies": [
+        {
+            "key": "guid",
+            "value": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
+            "entity": "admin_view",
+            "table": "#__componentbuilder_admin_view",
+            "direction": "out"
+        }
+    ]
+}
