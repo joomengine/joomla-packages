@@ -7,9 +7,9 @@
     "php_ajaxmethod": "",
     "add_php_document": 0,
     "javascript_file": "",
-    "view_toolbar": null,
+    "view_toolbar": "",
     "context": "category",
-    "default": "<?php echo LayoutHelper::render('entitybanner', $this->banner ?? null); ?>\r\n<?php if (!empty($this->items)): ?>\r\n\t<?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>\r\n\t<?php echo $this->loadTemplate('companies'); ?>\r\n<?php else: ?>\r\n\t<div class=\"alert alert-warning mb-0\" role=\"alert\"><?php echo Text::_('No Items Found'); ?><\/div>\r\n<?php endif; ?>\r\n\r\n<?php\r\n\/\/ Show only if there are items\r\nif (!empty($this->items) && isset($this->pagination)) :\r\n\t$showLinks   = isset($this->pagination->pagesTotal) && $this->pagination->pagesTotal > 1;\r\n\t$showResults = $this->params->def('show_pagination_results', 1);\r\n\t?>\r\n\t<div class=\"pagination d-flex justify-content-between align-items-center flex-wrap mt-3\">\r\n\t\t<?php if ($showLinks) : ?>\r\n\t\t\t<div class=\"page-links\">\r\n\t\t\t\t[[[PAGESLINKS]]]\r\n\t\t\t<\/div>\r\n\t\t<?php else : ?>\r\n\t\t\t<!-- Keep layout stable when links are hidden -->\r\n\t\t\t<div class=\"page-links\"><\/div>\r\n\t\t<?php endif; ?>\r\n\r\n\t\t<?php if ($showResults) : ?>\r\n\t\t\t<div class=\"page-info d-flex align-items-center justify-content-end text-end\">\r\n\t\t\t\t<span class=\"me-2\">[[[PAGESCOUNTER]]]<\/span>\r\n\t\t\t\t[[[LIMITBOX]]]\r\n\t\t\t<\/div>\r\n\t\t<?php endif; ?>\r\n\t<\/div>\r\n<?php endif; ?>",
+    "default": "<?php echo LayoutHelper::render('entitybanner', $this->banner ?? null); ?>\r\n<?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>\r\n<?php if (!empty($this->items)): ?>\r\n\t<?php echo $this->loadTemplate('companies'); ?>\r\n<?php else: ?>\r\n\t<div class=\"container-xxl my-4\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"alert alert-warning mb-0\" role=\"alert\"><?php echo Text::_('No Items Found'); ?><\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<?php endif; ?>\r\n\r\n<?php\r\n\/\/ Show only if there are items\r\nif (!empty($this->items) && isset($this->pagination)) :\r\n\t$showLinks   = isset($this->pagination->pagesTotal) && $this->pagination->pagesTotal > 1;\r\n\t$showResults = $this->params->def('show_pagination_results', 1);\r\n\t?>\r\n\t<div class=\"pagination d-flex justify-content-between align-items-center flex-wrap mt-3\">\r\n\t\t<?php if ($showLinks) : ?>\r\n\t\t\t<div class=\"page-links\">\r\n\t\t\t\t[[[PAGESLINKS]]]\r\n\t\t\t<\/div>\r\n\t\t<?php else : ?>\r\n\t\t\t<!-- Keep layout stable when links are hidden -->\r\n\t\t\t<div class=\"page-links\"><\/div>\r\n\t\t<?php endif; ?>\r\n\r\n\t\t<?php if ($showResults) : ?>\r\n\t\t\t<div class=\"page-info d-flex align-items-center justify-content-end text-end\">\r\n\t\t\t\t<span class=\"me-2\">[[[PAGESCOUNTER]]]<\/span>\r\n\t\t\t\t[[[LIMITBOX]]]\r\n\t\t\t<\/div>\r\n\t\t<?php endif; ?>\r\n\t<\/div>\r\n<?php endif; ?>",
     "snippet": "0",
     "add_php_jview_display": 0,
     "custom_get": {
@@ -44,6 +44,13 @@
         {
             "key": "guid",
             "value": "e7af7dbd-318b-4ee7-8b03-7e9215a73c36",
+            "entity": "dynamic_get",
+            "table": "#__componentbuilder_dynamic_get",
+            "direction": "out"
+        },
+        {
+            "key": "guid",
+            "value": "c00a187e-340c-4bd0-9783-48de834183c9",
             "entity": "dynamic_get",
             "table": "#__componentbuilder_dynamic_get",
             "direction": "out"
