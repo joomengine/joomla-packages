@@ -109,6 +109,7 @@ This design encourages collaborative and modular development across multiple JCB
  - **Get Time Based Random Seed** | [Details](src/custom_code/getTimeBasedRandomSeed) | [Settings](src/custom_code/getTimeBasedRandomSeed/item.json) | JCB (manual)
  - **Helper Model Allow Add (a helper call)** | [Details](src/custom_code/helperModelAllowAdd) | [Settings](src/custom_code/helperModelAllowAdd/item.json) | JCB (manual)
  - **Helper Model Allow Add Lisitng (a helper call)** | [Details](src/custom_code/helperModelAllowAddListing) | [Settings](src/custom_code/helperModelAllowAddListing/item.json) | JCB (manual)
+ - **Helper::allowAddListing(..) max listings** | [Details](src/custom_code/allowAddListing) | [Settings](src/custom_code/allowAddListing/item.json) | JCB (manual)
  - **Model Company Search Query** | [Details](src/custom_code/modelCompanySearchQuery) | [Settings](src/custom_code/modelCompanySearchQuery/item.json) | JCB (manual)
  - **Model Escape** | [Details](src/custom_code/modelEscape) | [Settings](src/custom_code/modelEscape/item.json) | JCB (manual)
  - **Process Service Directory Item** | [Details](src/custom_code/processServiceDirectoryItem) | [Settings](src/custom_code/processServiceDirectoryItem/item.json) | JCB (manual)
