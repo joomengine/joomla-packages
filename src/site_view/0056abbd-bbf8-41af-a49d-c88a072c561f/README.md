@@ -6,11 +6,15 @@ Category of companies
 ## HTML:
 ```html
 <?php echo LayoutHelper::render('entitybanner', $this->banner ?? null); ?>
+<?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>
 <?php if (!empty($this->items)): ?>
-	<?php echo LayoutHelper::render('searchbox', ['url' => $search_link, 'value' => $search_value]); ?>
 	<?php echo $this->loadTemplate('companies'); ?>
 <?php else: ?>
-	<div class="alert alert-warning mb-0" role="alert"><?php echo Text::_('No Items Found'); ?></div>
+	<div class="container-xxl my-4">
+		<div class="row">
+			<div class="alert alert-warning mb-0" role="alert"><?php echo Text::_('No Items Found'); ?></div>
+		</div>
+	</div>
 <?php endif; ?>
 
 <?php
