@@ -8,7 +8,7 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"radio\"\n\tname=\"show_login\"\n\tlabel=\"Show Login\"\n\tlayout=\"joomla.form.field.radio.switcher\"\n\toption=\"1|Yes,0|No\"\n\tdefault=\"0\"\n\tfilter=\"integer\"\n\/>",
+    "xml": "<field\n\ttype=\"radio\"\n\tname=\"show_login\"\n\tlabel=\"Show Login\"\n\tdescription=\"Enable this option to display the login module in this component's frontend. Disable it if you do not want users to see the login form.\"\n\tlayout=\"joomla.form.field.radio.switcher\"\n\toption=\"0|No,1|Yes\"\n\tdefault=\"0\"\n\tfilter=\"integer\"\n\tdisplay=\"config\"\n\/>",
     "datalenght": "1",
     "javascript_view_footer": "",
     "css_views": "",
