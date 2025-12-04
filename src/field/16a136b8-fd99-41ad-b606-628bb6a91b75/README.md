@@ -1,5 +1,5 @@
 ### JCB! Field
-# Company
+# Company (modalselect)
 
 > Field Type: ModalSelect
 
