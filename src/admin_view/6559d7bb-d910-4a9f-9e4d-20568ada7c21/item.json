@@ -117,10 +117,10 @@
     "mysql_table_engine": "InnoDB",
     "add_view_toolbar": 0,
     "mysql_table_collate": "utf8mb4_unicode_ci",
-    "view_toolbar": null,
+    "view_toolbar": "",
     "add_sql": 0,
     "add_views_toolbar": 0,
-    "views_toolbar": null,
+    "views_toolbar": "",
     "guid": "6559d7bb-d910-4a9f-9e4d-20568ada7c21",
     "add_php_ajax": 0,
     "@dependencies": [
