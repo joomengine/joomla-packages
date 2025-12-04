@@ -8,7 +8,7 @@
 <field
 	type="ModalSelect"
 	name="language"
-	label="Language(s)"
+	label="Language"
 	sql_title_table="#__###component###_language"
 	sql_title_column="name"
 	sql_title_key="langtag"
