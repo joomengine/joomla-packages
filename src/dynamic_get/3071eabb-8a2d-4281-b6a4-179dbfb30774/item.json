@@ -177,7 +177,7 @@
             "selection": "p.id AS id\r\np.name AS name\r\np.website AS website"
         },
         "join_view_table9": {
-            "view_table": "b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+            "view_table": "f9692057-845b-47c9-a1d5-59b4eddc5057",
             "row_type": 2,
             "as": "hh",
             "type": 1,
@@ -320,7 +320,7 @@
         },
         {
             "key": "guid",
-            "value": "b7b2aba5-8a94-443b-814b-aed5b0b7c550",
+            "value": "f9692057-845b-47c9-a1d5-59b4eddc5057",
             "entity": "admin_view",
             "table": "#__componentbuilder_admin_view",
             "direction": "out"
