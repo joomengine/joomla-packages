@@ -8,7 +8,7 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"number\"\n\tname=\"max_listings\"\n\tlabel=\"Max Number of Listings Per\/User\"\n\tdefault=\"1\"\n\tmin=\"1\"\n\tmax=\"100\"\n\tstep=\"1\"\n\/>",
+    "xml": "<field\n\ttype=\"number\"\n\tname=\"max_listings\"\n\tlabel=\"Max Number of Listings Per\/User\"\n\tdescription=\"Set the maximum number of listings a single user is allowed to create. Once this limit is reached, the user will no longer be able to add new listings.\"\n\tdefault=\"1\"\n\tmin=\"1\"\n\tmax=\"100\"\n\tstep=\"1\"\n\/>",
     "datalenght": "1",
     "javascript_view_footer": "",
     "css_views": "",
