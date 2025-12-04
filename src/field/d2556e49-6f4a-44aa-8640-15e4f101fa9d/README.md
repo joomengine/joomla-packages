@@ -9,10 +9,11 @@
 	type="radio"
 	name="sef_ids"
 	label="Remove IDs from URLs"
+	description="Choose whether item IDs should be hidden or shown in listing URLs. When disabled, IDs remain visible in the url."
 	layout="joomla.form.field.radio.switcher"
-	option="1|Yes,0|No"
-	filter="integer"
+	option="0|No,1|Yes"
 	default="1"
+	filter="integer"
 />
 ```
 
