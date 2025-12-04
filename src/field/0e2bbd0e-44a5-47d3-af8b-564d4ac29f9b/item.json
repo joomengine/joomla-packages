@@ -1,6 +1,6 @@
 {
     "name": "Parent Tags",
-    "fieldtype": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+    "fieldtype": "a1cdb0a5-517c-425c-998a-333e92af3e32",
     "datatype": "VARCHAR",
     "indexes": "2",
     "null_switch": "NULL",
@@ -8,8 +8,8 @@
     "on_get_model_field": null,
     "on_save_model_field": null,
     "initiator_on_get_model": "",
-    "xml": "<field\n\ttype=\"tags\"\n\tname=\"parent_guid\"\n\tlabel=\"Parent\"\n\tdescription=\"Select a Parent Tag\"\n\tclass=\"list_class\"\n\tlayout=\"joomla.form.field.list-fancy-select\"\n\tmultiple=\"true\"\n\trequired=\"false\"\n\textends=\"list\"\n\tbutton=\"false\"\n\ttable=\"#__###component###_tag\"\n\tcomponent=\"com_###component###\"\n\tentity=\"###view###\"\n\tview=\"tag\"\n\tviews=\"tags\"\n\tvalue_field=\"name\"\n\tkey_field=\"guid\"\n\ttype_php_1=\"__.o0=base64=Oo.__CQkvLyBHZXQgdGhlIGRhdGFic2Ugb2JqZWN0Lg0KCQkkZGIgPSBGYWN0b3J5OjpnZXREQk8oKTsNCgkJJHF1ZXJ5ID0gJGRiLT5nZXRRdWVyeSh0cnVlKTsNCgkJJHF1ZXJ5LT5zZWxlY3QoJGRiLT5xdW90ZU5hbWUoYXJyYXkoJ2EuIyMjSUQjIyMnLCdhLiMjI1RFWFQjIyMnKSxhcnJheSgnIyMjSUQjIyMnLCcjIyNDT0RFX1RFWFQjIyMnKSkpOw0KCQkkcXVlcnktPmZyb20oJGRiLT5xdW90ZU5hbWUoJyMjI1RBQkxFIyMjJywgJ2EnKSk7DQoJCSRxdWVyeS0+d2hlcmUoJGRiLT5xdW90ZU5hbWUoJ2EucHVibGlzaGVkJykgLiAnID0gMScpOw0KCQkkcXVlcnktPm9yZGVyKCdhLiMjI1RFWFQjIyMgQVNDJyk7DQoJCSRkYi0+c2V0UXVlcnkoKHN0cmluZykkcXVlcnkpOw0KCQkkaXRlbXMgPSAkZGItPmxvYWRPYmplY3RMaXN0KCk7DQoJCSRvcHRpb25zID0gW107DQoJCWlmICgkaXRlbXMpDQoJCXsNCgkJCWlmICgkdGhpcy0+bXVsdGlwbGUgPT09IGZhbHNlKQ0KCQkJew0KCQkJCSRvcHRpb25zW10gPSBIdG1sOjpfKCdzZWxlY3Qub3B0aW9uJywgJycsIFRleHQ6Ol8oJy0gTm8gcGFyZW50IC0nKSk7DQoJCQl9DQoJCQlmb3JlYWNoKCRpdGVtcyBhcyAkaXRlbSkNCgkJCXsNCgkJCQkkb3B0aW9uc1tdID0gSHRtbDo6Xygnc2VsZWN0Lm9wdGlvbicsICRpdGVtLT4jIyNJRCMjIywgJGl0ZW0tPiMjI0NPREVfVEVYVCMjIyk7DQoJCQl9DQoJCX0NCgkJcmV0dXJuICRvcHRpb25zOw==\"\n\/>",
-    "datalenght": "Other",
+    "xml": "<field\n\ttype=\"ModalSelect\"\n\tname=\"parent_guid\"\n\tlabel=\"Parent\"\n\tsql_title_table=\"#__###component###_tag\"\n\tsql_title_column=\"name\"\n\tsql_title_key=\"guid\"\n\turlSelect=\"index.php?option=com_###component###&amp;view=tags&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid\"\n\turlNew=\"index.php?option=com_###component###&amp;task=tag.add&amp;layout=modal&amp;tmpl=component\"\n\turlEdit=\"index.php?option=com_###component###&amp;task=tag.edit&amp;guid={id}&amp;layout=modal&amp;tmpl=component&amp;titleKey=guid\"\n\ttitleSelect=\"Select the Parent Tag\"\n\ttitleNew=\"New Parent Tag\"\n\ttitleEdit=\"Edit Parent Tag\"\n\ticonSelect=\"icon-copy\"\n\tselect=\"true\"\n\tnew=\"true\"\n\tedit=\"true\"\n\tclear=\"true\"\n\trequired=\"false\"\n\tfilter=\"STRING\"\n\tclass=\"input-large\"\n\tdescription=\"Set a Parent Tag\"\n\thint=\"Select a Parent Tag\"\n\/>",
+    "datalenght": "36",
     "javascript_view_footer": "",
     "css_views": "",
     "css_view": "",
@@ -26,7 +26,7 @@
     "@dependencies": [
         {
             "key": "guid",
-            "value": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+            "value": "a1cdb0a5-517c-425c-998a-333e92af3e32",
             "entity": "fieldtype",
             "table": "#__componentbuilder_fieldtype",
             "direction": "out"
