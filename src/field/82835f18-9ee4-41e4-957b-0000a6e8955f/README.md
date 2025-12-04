@@ -9,8 +9,10 @@
 	type="radio"
 	name="show_listing_object"
 	label="Show Listing Object"
+	description="Enable this option to display the full output of the listing's database object in the Company Listing site view. This is intended strictly for development and debugging purposes.
+(leave this disabled in production environments, as it exposes internal structure and data that should not be visible to visitors)."
 	layout="joomla.form.field.radio.switcher"
-	option="1|Yes,0|No"
+	option="0|No,1|Yes"
 	default="0"
 	filter="integer"
 />
