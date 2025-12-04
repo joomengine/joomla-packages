@@ -24,7 +24,7 @@
     "add_css_admin": 0,
     "dashboard_type": 1,
     "bom": "joomla_basic.txt",
-    "component_version": "6.0.2",
+    "component_version": "6.0.3",
     "add_css_site": 0,
     "image": "images\/vdm\/Sevice_Directory_500.jpg#joomlaImage:\/\/local-images\/vdm\/Sevice_Directory_500.jpg?width=500&height=500",
     "dashboard": "",
@@ -83,9 +83,9 @@
     "addfootable": 0,
     "backup_folder_path": "\/var\/www\/jsd_j6",
     "add_email_helper": 0,
-    "add_php_helper_both": 0,
+    "add_php_helper_both": 1,
     "add_jcb_powers_path": "1",
-    "php_helper_both": "",
+    "php_helper_both": "[CUSTOMCODE=allowAddListing]",
     "add_changelog_server": 1,
     "add_php_helper_admin": 0,
     "changelog_server_target": 2,
@@ -186,12 +186,27 @@
             "direction": "out"
         },
         {
+            "key": "function_name",
+            "value": "allowAddListing",
+            "entity": "custom_code",
+            "table": "#__componentbuilder_custom_code",
+            "direction": "out"
+        },
+        {
             "key": "007e7e6b-4c00-5ebf-b652-6500a0ed2a6c.jpg",
             "pointer": "007e7e6b-4c00-5ebf-b652-6500a0ed2a6c--jpg",
             "value": "images\/vdm\/Sevice_Directory_500.jpg",
             "entity": "file",
             "table": "file_system",
             "target": "images"
+        },
+        {
+            "key": "cc45985c-e21f-59bf-938f-3dd2666088ca.txt",
+            "pointer": "cc45985c-e21f-59bf-938f-3dd2666088ca--txt",
+            "value": "joomla_basic.txt",
+            "entity": "file",
+            "table": "file_system",
+            "target": "compiler"
         }
     ]
 }
