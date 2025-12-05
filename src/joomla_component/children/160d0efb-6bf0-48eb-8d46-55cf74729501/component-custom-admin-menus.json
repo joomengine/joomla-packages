@@ -25,6 +25,14 @@
             "entity": "admin_view",
             "table": "#__componentbuilder_admin_view",
             "direction": "out"
+        },
+        {
+            "key": "898aa551-3544-5974-8674-adf43e9adf71.png",
+            "pointer": "898aa551-3544-5974-8674-adf43e9adf71--png",
+            "value": "company_review.png",
+            "entity": "file",
+            "table": "file_system",
+            "target": "image"
         }
     ]
 }
