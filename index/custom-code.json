@@ -166,5 +166,12 @@
         "path": "src\/custom_code\/allowAddListing",
         "settings": "src\/custom_code\/allowAddListing\/item.json",
         "guid": "allowAddListing"
+    },
+    "getFileExtensionsOptions": {
+        "name": "getFileExtensionsOptions",
+        "desc": "JCB (manual)",
+        "path": "src\/custom_code\/getFileExtensionsOptions",
+        "settings": "src\/custom_code\/getFileExtensionsOptions\/item.json",
+        "guid": "getFileExtensionsOptions"
     }
 }
