@@ -118,6 +118,7 @@ This design encourages collaborative and modular development across multiple JCB
  - **Unlock the Power of Joomla! Development** | [Details](src/custom_code/unlockThePowerOfJoomlaDevelopment) | [Settings](src/custom_code/unlockThePowerOfJoomlaDevelopment/item.json) | JCB (manual)
  - **addUikitThreeToAdminViews** | [Details](src/custom_code/addUikitThreeToAdminViews) | [Settings](src/custom_code/addUikitThreeToAdminViews/item.json) | JCB (manual)
  - **allowCompanyEdit** | [Details](src/custom_code/allowCompanyEdit) | [Settings](src/custom_code/allowCompanyEdit/item.json) | JCB (manual)
+ - **getFileExtensionsOptions** | [Details](src/custom_code/getFileExtensionsOptions) | [Settings](src/custom_code/getFileExtensionsOptions/item.json) | JCB (manual)
  - **getFileTypeDetails** | [Details](src/custom_code/getFileTypeDetails) | [Settings](src/custom_code/getFileTypeDetails/item.json) | JCB (manual)
  - **php Configuration Check (call)** | [Details](src/custom_code/phpConfigurationCheckCall) | [Settings](src/custom_code/phpConfigurationCheckCall/item.json) | JCB (manual)
  - **save GUID (Power)** | [Details](src/custom_code/saveGUIDPower) | [Settings](src/custom_code/saveGUIDPower/item.json) | JCB (manual)
