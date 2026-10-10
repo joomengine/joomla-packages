@@ -48,6 +48,18 @@
             "update_target_version": "5\\.[01234]",
             "change_log": "- Update Site Router to align with the new JCB Router Helper class.\r\n- Fix the redundant slash in ListingModel in certain subdirectory setups. #1\r\n- Fix the strpos() deprecation warning in the router where null is passed to $haystack. #1\r\n- Update depreciated Factory::getDBO() calls to use latest standards. #1",
             "update_client": "site"
+        },
+        "version_update4": {
+            "version": "5.0.4",
+            "mysql": "",
+            "url": "https:\/\/github.com\/joomengine\/pkg-servicedirectory\/archive\/refs\/tags\/v5.0.4.zip",
+            "update_server_adv": "1",
+            "update_server_type": "package",
+            "update_element": "pkg_servicedirectory",
+            "update_state": "stable",
+            "update_target_version": "5\\.[01234]",
+            "change_log": "- Add comprehensive Joomla Web Services API support for Service Directory resources.\r\n- Add JSON:API controllers, models, and views for managing directory data.\r\n- Integrate the API application into the component installation package.\r\n- Improve security across administrative and frontend controllers and models.\r\n- Apply security improvements inherited from Joomla Component Builder (JCB).\r\n- Introduce an improved file management architecture with dedicated handlers,\r\n  managers, definitions, and service interfaces.\r\n- Redesign the administration dashboard with a modern, responsive icon grid.\r\n- Improve company support layouts and frontend presentation.\r\n- Update database structures to improve alias field compatibility.",
+            "update_client": "site"
         }
     },
     "@dependencies": [
