@@ -5,5 +5,12 @@
         "path": "src\/joomla_plugin\/8aa96d76-94e3-47d1-8dd8-f430b72ed0f7",
         "settings": "src\/joomla_plugin\/8aa96d76-94e3-47d1-8dd8-f430b72ed0f7\/item.json",
         "guid": "8aa96d76-94e3-47d1-8dd8-f430b72ed0f7"
+    },
+    "d8252031-d758-4ed3-90a5-24e1c39efc6a": {
+        "name": "Component API Routes",
+        "desc": "Registers the JCB-generated Joomla JSON:API routes for the component.",
+        "path": "src\/joomla_plugin\/d8252031-d758-4ed3-90a5-24e1c39efc6a",
+        "settings": "src\/joomla_plugin\/d8252031-d758-4ed3-90a5-24e1c39efc6a\/item.json",
+        "guid": "d8252031-d758-4ed3-90a5-24e1c39efc6a"
     }
 }
