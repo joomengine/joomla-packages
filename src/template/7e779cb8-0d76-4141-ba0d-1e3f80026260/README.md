@@ -13,7 +13,7 @@ $this->loadTemplate('companies', [?]);
 		<?php foreach ($this->items as $item): ?>
 		<?php
 			$url = $item->link ?? '#';
-			$name = $this->escape($item->name ?? '');
+			$name = $this->sanitize($item->name ?? '');
 			$description = $this->sanitize($item->description ?? '', true, 100);
 			$logo = is_array($this->logos) ? ($this->logos[$item->guid] ?? null) : null;
 		?>
