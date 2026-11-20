@@ -12,7 +12,7 @@ Directory or Categories of Companies
 		<?php foreach ($items as $item): ?>
 		<?php
 			$url = $item->link ?? null;
-			$name = $this->escape($item->name ?? 'error');
+			$name = $this->sanitize($item->name ?? 'error');
 			$description = $this->sanitize($item->description ?? '');
 			$image = $this->images[$item->guid] ?? null;
 		?>
